@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -31,6 +31,11 @@ R.~Courant, K.~Friedrichs, and H.~Lewy.
 \newblock {\"U}ber die partiellen {D}ifferenzengleichungen der mathematischen
   {P}hysik.
 \newblock \emph{Mathematische {A}nnalen}, 100:\penalty0 32 -- 74, 1928.
+
+\bibitem[Dussan(1976)]{Dussan76}
+E.~B.~V. Dussan.
+\newblock The moving contact line: the slip boundary condition.
+\newblock \emph{Journal of {F}luid {M}echanics}, 77:\penalty0 665--684, 1976.
 
 \bibitem[Frahm(1982)]{Frahm82}
 Charles~P. Frahm.
@@ -103,6 +108,13 @@ Michael Manga and H.~A. Stone.
 \newblock Low {R}eynolds number motion of bubbles, drops and rigid spheres
   through fluid-fluid interfaces.
 \newblock \emph{Journal of {F}luid {M}echanics}, 287:\penalty0 279--298, 1995.
+
+\bibitem[Maxwell(1879)]{Maxwell1879}
+J.~C. Maxwell.
+\newblock On {S}tresses in {R}arefied {G}ases {A}rising from {I}nequalities in
+  {T}emperature.
+\newblock \emph{Philosophical {T}ransactions of the {R}oyal {S}ociety of
+  {L}ondon}, 170:\penalty0 231--256, 1879.
 
 \bibitem[Pozrikids(1992)]{Pozrikidis92}
 C.~Pozrikids.
