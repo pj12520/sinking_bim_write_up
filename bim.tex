@@ -800,7 +800,7 @@ We then re-write the integrand as the sum of a regular and singular part. Denoti
 I(\zeta, \zeta_{i})_{s} = [I_{s}(\zeta, \zeta_{i}) -L(\zeta, \zeta_{i})] + L(\zeta, \zeta_{i}),
 \end{equation}
 
-where $L$ is the leading order contribution to $I_{s}$. The terms in square parenthesese now form a regular function. For the case that the integral is $1/\epsilon$ singular, the final term can be expressed as
+where $L$ is the leading order contribution to $I_{s}$. The terms in square parenthesese now form a regular function which can be integrated numerically. For the case that the integral is $1/\epsilon$ singular, the final term can be expressed as
 
 \begin{equation}
 \label{equ:recip_sing}
@@ -814,9 +814,9 @@ Similarly, if the integral if $\ln|\epsilon|$ singular
 L(\zeta, \zeta_{i}) = g(\zeta, \zeta_{i}) \ln|\epsilon| = [g(\zeta, \zeta_{i}) - g(\zeta_{i}, \zeta_{i})]\ln|\epsilon| + g(\zeta_{i}, \zeta_{i})\ln|\epsilon|
 \end{equation}
 
-In both these cases, the first term on the right hand side is regular and the last term is singular but can be integrated analytically. This means that the irregular integrand can be expressed as the sum of a regular function that can be integrated numerically and an irregular function that can be integrated analytically. 
+In both these cases, the first term on the right hand side is regular and the last term is singular but can be integrated analytically. This means that the irregular integrand can be expressed as the sum of a regular function, that can be integrated numerically, and an irregular function, that can be integrated analytically. 
  
-To calculate integrals over the interface, it is necessary to evaluate the components of normal vector and its divergence at discrete points along the interface. To do this, a cubic splines are fitted to the collocation points describing the interface (WAITING FOR DE BOER BOOK TO REF THIS) using routines given in \citet{Press07} so that the interface is described parametrically with $r = r(s)$ and $z = z(s)$. Remembering that for a surface $H(r,z) = z - f(r)$, the components of the normal vector are given by $n_{i} = \partial_{i} H / \partial_{j}H \partial_{j}H$ \citep{Riley06}, the following expressions can be obtained
+To calculate integrals over the interface, it is necessary to evaluate the components of the normal vector and its divergence at discrete points along the interface. To do this, cubic splines are fitted to the collocation points describing the interface (WAITING FOR DE BOER BOOK TO REF THIS) using routines given in \citet{Press07} so that the interface is described parametrically with $r = r(s)$ and $z = z(s)$. Remembering that for a surface $H(r,z) = z - f(r)$, the components of the normal vector are given by $n_{i} = \partial_{i} H / (\partial_{j}H \partial_{j}H)$ \citep{Riley06}, the following expressions can be obtained
 
 \begin{equation}
 \label{equ:norm_rad}
@@ -840,30 +840,31 @@ These expressions are given in given in \citep{Manga94} except for a minus sign 
 \subsection{Temporal Iteration}
 \label{subsec:time}
 
-The system is iterated forward in time using an explicit first order Euler method \citep{Manga94} with timestep $\Delta t$. This means the position of the sphere $z_{s}$ at time $t + \Delta t$ is found using the discrete form of
+The system is iterated forward in time using an explicit first order Euler method \citep{Manga94} with timestep $\Delta t$. This means the position of the sphere $z_{s}$ at time $t + \Delta t$ is found using
 
 \begin{equation}
 \label{equ:sphere_it}
-z_{s}(t + \Delta t) = U'_{s}(t) \Delta t,
+z_{s}(t' + \Delta t') = U'_{s}(t) \Delta t',
 \end{equation}
 
 and the position of the collocation points on the interface moves according to
 
 \begin{equation}
 \label{equ:int_it}
-x_{r}(s_{i})(t + \Delta t) = u_{r}(s_{i},t) \Delta t,
+x_{r}(s_{i}, t' + \Delta t') = u_{r}(s_{i},t') \Delta t',
 \end{equation}
 
 and
 
 \begin{equation}
 \label{equ:int_it}
-x_{z}(s_{i})(t + \Delta t) = u_{z}(s_{i},t) \Delta t.
+x_{z}(s_{i}, t' + \Delta t') = u_{z}(s_{i},t') \Delta t'.
 \end{equation}
 
-The value of the timestep chosen is limited by the Courant-Friedrich-Lewy (CFL) criterion \citep{Courant28}, and physically to ensure the timestep is less than the timescale over which the system geometry changes (see quasi-static assumption - equation~\ref{equ:quasi_stat}). Changes in system geometry are driven by two sources: the gravitational settling of the sphere, and capillary forces acting due to the deformed interface. Therefore $\tau \sim \min[a / \max(U_{\text{t},1}, U_{\text{t},2}), a \min(\eta_{1},\eta{2}) / \sigma]$ where $U_{\text{t},l}$ is the terminal velocity of a sphere of radius $a$ in fluid $l$. Hence the quasi-static assumption can be expressed in dimensionless form as
+There are both numerical and physical constraints on the value of the timestep. Numerically, it is limited by the Courant-Friedrich-Lewy (CFL) criterion {Courant28}. Physically, it is neccessary to ensure that it is smaller than the timescale over which different processes can occur. Owing to the multi-component nature of this problem, there are four timescales instrinsic to the problem: the Stokes timescale in the upper fluid $\tau_{\text{s},1} = 9 \eta_{1} / [2 (\rho_{\text{s}} - \rho_{1}) g a]$, the Stokes timescale in the lower fluid $\tau_{\text{s},2} = 9 \eta_{2} / [2 (\rho_{\text{s}} - \rho_{2}) g a]$, the capilary time for the upper fluid $\tau_{\text{c},1} = \eta_{1} a / \sigma$ and the capilary time for the lower fluid $\tau_{\text{c},2} = \eta_{2} a / \sigma$. It is required that the timestep is smaller than all of these so that the physics occuring on each timescale can be resolved. Non-dimensionalising each of these timescales we find that in dimensionless form they exist as $\tau'_{\text{s},1} = 1$, $\tau'_{\text{s},2} = \lambda D / (D - 1)$, $\tau'_{\text{c},1} = 2 D \Bo / 9$, $\tau'_{\text{c},2} = 2 D \Bo \lambda / 9$. Hence, for each simulation, the shortest physical timescale is identified and the timestep is constrained to be smaller than this throughout the simulation. The timestep is allowed to change during the simulation such that it is as large as can be allowed by both the CFL and numerical criteria.
 
-Due to gradients in the velocity tangential to the fluid interface the distribution of collocation points is altered during this time stepping process so the collocation points are redistributed between each time step. Following the redistribution the linear system is reconstructed for the new geometry and solved using the same procedure. The process continues in this fashion until the separtation between the sphere and the interface, or two different parts of the interface equals the local separation between collocation points as the discretisation no longer provides an accurate approximation to the continuous system
+
+Due to gradients in the velocity tangential to the fluid interface, the distribution of collocation points is altered during this time stepping process, so the collocation points are redistributed between each time step. Following the redistribution, the linear system is reconstructed for the new geometry and solved using the same procedure. The process continues in this fashion until the separtation between the sphere and the interface, or two different parts of the interface equals the local separation between collocation points, as the discretisation no longer provides an accurate approximation to the continuous system
 
 
 \section{Model Testing}
@@ -872,7 +873,7 @@ Due to gradients in the velocity tangential to the fluid interface the distribut
 \subsection{Uniform and Infinite Fluid}
 \label{subsec:no_interf}
 
-To test the model, we can remove the interface and fluid 2 leaving us with the problem of the steady gravitational settling of a spheroid through fluid 1 which is uniform and infinite in extent. The terminal velocity of a spheroid settling on axis can be solved for analytically \citep{Happel73} and in our dimensionless scheme is given by
+To test the model, we can remove the interface and fluid 2, leaving us with the problem of the steady gravitational settling of a spheroid through fluid 1, which is uniform and infinite in extent. The terminal velocity of a spheroid settling on axis can be solved for analytically \citep{Happel73} and in our dimensionless scheme is given by
 
 \begin{equation}
 \label{equ:term_vel}
@@ -884,9 +885,9 @@ where
 \begin{equation}
 \label{equ:Stokes_corr}
 K = \begin{cases}
-    \frac{4}{3 (\lambda_{0}^{2} + 1)^{1/2} [\lambda_{0} - (\lambda_{0}^{2} - 1) \cot^{-1} \lambda_{0}]}       & \quad \text{when } R < 1\\
-    \frac{4}{3 (\lambda_{0}^{2} - 1)^{1/2} [(\lambda_{0}^{2} + 1) \coth^{-1}\lambda_{0} - \lambda_{0}]}  & \quad \text{when } R > 1\\
-    1 & \quad \text{when } R = 1, \\
+    \frac{4}{3 (\mu^{2} + 1)^{1/2} [\mu - (\mu^{2} - 1) \cot^{-1} \mu]}       & \quad \text{for } R < 1\\
+    \frac{4}{3 (\mu^{2} - 1)^{1/2} [(\mu^{2} + 1) \coth^{-1}\mu - \mu]}  & \quad \text{for } R > 1\\
+    1 & \quad \text{for } R = 1, \\
   \end{cases}
 \end{equation}
 
@@ -894,27 +895,27 @@ and
 
 \begin{equation}
 \label{equ:Stokes_const}
-\lambda_{0} = \frac{R}{|R^{2} - 1|^{1/2}}.
+\mu = \frac{R}{|R^{2} - 1|^{1/2}}.
 \end{equation}
 
-For the case that $\lambda = 1$ and a flat interface the integrals over the interface in equations~\ref{equ:dis_ie_1} to~\ref{equ:dis_ie_3} vanish and the system reduces to that of the case of a spheroid settling in an infinite and uniform fluid. Figure~\ref{fig:Happel_test} shows the analytical result for the terminal velocity from \citet{Happel73} compared with that calculated by our model. It can be seen that agreement is excellent for aspect ratios in the range 0.1-10.
+For the case that $\lambda = 1$, and a flat interface, the integrals over the interface in equations~\ref{equ:dis_ie_1} to~\ref{equ:dis_ie_3} vanish and the system reduces to that of the case of a spheroid settling in an infinite and uniform fluid. Figure~\ref{fig:Happel_test} shows the analytical result for the terminal velocity from \citet{Happel73} compared with that calculated by our model. It can be seen that agreement is excellent for aspect ratios in the range 0.1-10.
 
   \begin{figure}
-    $$\includegraphics[width=0.6\textwidth, angle=270]{Happel_test.eps}$$
-    \caption{Curve shows analytical solution for dimensionless terminal velocity vs. aspect ratio (equation~\ref{equ:Stokes_corr}. Points show calculated values from model. There is excellent agreement for oblate spheroids but the error increases with aspect ratio. \label{fig:Happel_test}}
+    \input{Happel.tex}
+    \caption{Curve shows analytical solution for dimensionless terminal velocity vs. aspect ratio (equation~\ref{equ:Stokes_corr}). Points show calculated values from model. There is excellent agreement for oblate spheroids but the error increases with aspect ratio. \label{fig:Happel_test}}
   \end{figure}
 
-We tested the senstivity of the results to the number of intervals on the sphere. Figure~\ref{fig:height_vol_test} shows the fractional error on the calculated terminal velocity as a function of the number of intervals used to discretise the sphere, $M$ for both a prolate and oblate spheroid, and a sphere. For $M \geq 100$, the fractional error is less than 0.003. It is also clear here that the error increases with $R$. 
+We tested the senstivity of the results to the number of intervals on the sphere. Figure~\ref{fig:int_vel_test} shows the fractional error on the calculated terminal velocity as a function of the number of intervals used to discretise the sphere $M$, for both a prolate and oblate spheroid, and a sphere. For $M \geq 100$, the fractional error is less than 0.003. It is also clear here that the error increases with $R$. 
 
   \begin{figure}
-    $$\includegraphics[width=0.4\textwidth, angle=270]{int_test.eps}$$
-    \caption{Plot showing the fractional error on the calculated terminal velocity of a spheroid in an infinite and uniform fluid as a function of the number of intervals used to discretise the sphere. Results are shown for $R = 0.5$, $1$ and $2$. When 100 intervals are used, the fractional error is less than 0.003 and this decreases as the number of intervals increases. It can also be seen that as $R$ increases so does the error. \label{fig:height_vol_test}}
+    \input{int_test.tex}
+    \caption{Plot showing the fractional error on the calculated terminal velocity of a spheroid in an infinite and uniform fluid as a function of the number of intervals used to discretise the particle surface. Results are shown for $R = 0.5$, $1$ and $2$. When 100 intervals are used, the fractional error is less than 0.003 and this decreases as the number of intervals increases. It can also be seen that as $R$ increases so does the error. \label{fig:int_vel_test}}
   \end{figure}
 
 \subsection{Initial Height of Sphere}
 \label{subsec:init_pos}
 
-The interface will deform as the particle approaches and so we require the initial position of the particle to be far enough above the interface that the results are insensitive to the initial position. We tested the model for parameter values $R = 1$, $D = 10 $, $\Bo = 1000$ and both $\lambda = 0.1$ and $\lambda = 10$. Figure~\ref{fig:height_test_pos} shows the position of the sphere against time for the different viscosity ratios. It is seen that the position curves converge for an initial position greater than or equal to 5 sphere radii above the interface. Figure~\ref{fig:height_vol_test} shows that the same is true when considering the volume of upper phase fluid entrained below the plane $z = 0$.
+The interface will deform as the particle approaches and so we require the initial position of the particle to be far enough above the interface that the results are insensitive to the initial position. We tested the model for parameter values $R = 1$, $D = 10 $, $\Bo = 1000$ and both $\lambda = 0.1$ and $\lambda = 10$. Figure~\ref{fig:height_test_pos} shows the position of the sphere against time for the different viscosity ratios. The time $t = 0$ is defined as the moment when $z_{\text{s}} = 0$. It is seen that the position curves converge for an initial position greater than or equal to 5 sphere radii above the interface. Figure~\ref{fig:height_vol_test} shows that the same is true when considering the volume of upper phase fluid entrained below the plane $z = 0$.
 
     \begin{figure}
       \centering

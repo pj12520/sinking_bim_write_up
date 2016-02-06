@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -25,12 +25,6 @@ J.U. Brackbill, D.B. Kothe, and C.~Zemach.
 \newblock A {C}ontinuum {M}ethod for {M}odeling {S}urface {T}ension.
 \newblock \emph{Journal of {C}omputational {P}hysics}, 100:\penalty0 334 --
   354, 1992.
-
-\bibitem[Courant et~al.(1928)Courant, Friedrichs, and Lewy]{Courant28}
-R.~Courant, K.~Friedrichs, and H.~Lewy.
-\newblock {\"U}ber die partiellen {D}ifferenzengleichungen der mathematischen
-  {P}hysik.
-\newblock \emph{Mathematische {A}nnalen}, 100:\penalty0 32 -- 74, 1928.
 
 \bibitem[Dussan(1976)]{Dussan76}
 E.~B.~V. Dussan.
