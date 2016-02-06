@@ -920,13 +920,13 @@ The interface will deform as the particle approaches and so we require the initi
     \begin{figure}
       \centering
       \begin{subfigure}[b]{0.5\textwidth}
-          $$\includegraphics[width=0.6\textwidth, angle=270]{lambda=0_1_height.eps}$$
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=0_1_pos_pub.tex}}
         \caption{}
         \label{fig:height_test_pos_tail}
       \end{subfigure}%
       ~
       \begin{subfigure}[b]{0.5\textwidth}
-        $$\includegraphics[width=0.6\textwidth, angle=270]{lambda=10_height.eps}$$
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=10_pos_pub.tex}}
         \caption{}
         \label{fig:height_test_pos_film}
       \end{subfigure}
@@ -934,7 +934,7 @@ The interface will deform as the particle approaches and so we require the initi
     \end{figure}
 
   \begin{figure}
-    $$\includegraphics[width=0.4\textwidth, angle=270]{height_vol_test.eps}$$
+        \input{viscos_rat=0_1_vol_pub.tex}
     \caption{Curves showing the volume of upper phase fluid entrained below the plane $z = 0$ as a function of time, for different initial sphere positions and $D = 10$, $\Bo = 1000$ and $\lambda = 0.1$. It is seen that the curves converge for an initial position greater than or equal to 5 sphere radii above the interface. \label{fig:height_vol_test}}
   \end{figure}
 
@@ -947,13 +947,13 @@ The model is also tested for its sentitivity with respect to the radial coordina
     \begin{figure}
       \centering
       \begin{subfigure}[b]{0.5\textwidth}
-          $$\includegraphics[width=0.6\textwidth, angle=270]{lambda=0_1_trunc.eps}$$
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=0_1_pos_trunc_pub.tex}}
         \caption{}
         \label{fig:trunc_test_pos_tail}
       \end{subfigure}%
       ~
       \begin{subfigure}[b]{0.5\textwidth}
-        $$\includegraphics[width=0.6\textwidth, angle=270]{lambda=10_trunc.eps}$$
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=10_pos_trunc_pub.tex}}
         \caption{}
         \label{fig:trunc_test_pos_film}
       \end{subfigure}
@@ -961,9 +961,93 @@ The model is also tested for its sentitivity with respect to the radial coordina
     \end{figure}
 
   \begin{figure}
-    $$\includegraphics[width=0.4\textwidth, angle=270]{trunc_vol_test.eps}$$
+    \resizebox{\textwidth}{!}{\Large \input{viscos_rat=0_1_vol_trunc_pub.tex}}
     \caption{Curves showing the volume of upper phase fluid entrained below the plane $z = 0$ as a function of time, for different truncation radii and $D = 10$, $\Bo = 1000$ and $\lambda = 0.1$. It is seen that the curves for $r_{N} \geq 20$ are identical from the start of the simulation, although the curve for $r_{N} = 10$ converges to the other curves during the run. \label{fig:trunc_vol_test}}
   \end{figure}
+
+\subsection{Discretisation of Interface}
+\label{subsec:interf}
+
+The number of elements used to discretise the fluid interface $N$ needs to be large enough that the model output is independent of $N$. Figure~\ref{fig:n_interf_test_pos} shows the vertical position of the sphere as a function of time for different $N$. It can be seen that for $N \geq 50$ the curves are independent of $N$. However, the larger the value of $N$ the longer the duration of the simulation. This is because larger values of $N$ allow smaller separations between surfaces to be tolerated. 
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.5\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=0_1_pos_n_interf.tex}}
+        \caption{}
+        \label{fig:n_interf_test_pos_tail}
+      \end{subfigure}%
+      ~
+      \begin{subfigure}[b]{0.5\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=10_pos_n_interf.tex}}
+        \caption{}
+        \label{fig:n_interf_test_pos_film}
+      \end{subfigure}
+      \caption{Vertical position of the sphere versus time for different numbers of elements used to discretise the interface $N$ for $D = 10$, $\Bo = 1000$ and both (a) $\lambda = 0.1$ and (b) $\lambda = 10$. The curves are identical for all choices of $N \geq 50$. However, the larger the value of $N$ the longer the duration of the simulation.}\label{fig:n_interf_test_pos}
+    \end{figure}
+
+Figure~\ref{fig:n_interf_test_vol} shows the effect of $N$ on the time dependence of the volume of upper phase fluid entrained beneath the plane $z = 0$. As with the position curves, these are seen to be independent of $N$ for $N \geq 50$.
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.5\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=0_1_vol_n_interf.tex}}
+        \caption{}
+        \label{fig:n_interf_test_vol_tail}
+      \end{subfigure}%
+      ~
+      \begin{subfigure}[b]{0.5\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=10_vol_n_interf.tex}}
+        \caption{}
+        \label{fig:n_interf_test_vol_film}
+      \end{subfigure}
+      \caption{Volume of upper phase fluid entrained below the plane $z = 0$ as a function of time for different numbers of elements used to discretise the interface $N$ for $D = 10$, $\Bo = 1000$ and both (a) $\lambda = 0.1$ and (b) $\lambda = 10$. The curves are identical for all choices of $N \geq 50$.}\label{fig:n_interf_test_vol}
+    \end{figure}
+
+\subsection{Numerical Differentiation of Interface}
+\label{subsec:num_diff}
+
+At each timestep it is necessary to differentiate the functions $r(s)$ and $z(s)$ that describe the interface as a function of arc-length (subsection~\ref{subsec:eval_coeff}). The numerical differentiation routines used require the choice of an initial step-size $\Delta s$ \citep{Press07}. The sensitivity of the model to this choice has been investigated and it is shown that results are independent of $\Delta s$ for $\Delta s \leq 0.1$ (figures~\ref{fig:diff_test_pos} and~\ref{fig:diff_test_vol}).
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.5\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=0_1_pos_diff.tex}}
+        \caption{}
+        \label{fig:diff_test_pos_tail}
+      \end{subfigure}%
+      ~
+      \begin{subfigure}[b]{0.5\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=10_pos_diff.tex}}
+        \caption{}
+        \label{fig:diff_test_pos_film}
+      \end{subfigure}
+      \caption{Vertical position of the sphere versus time for different values of the initial step size for numerical differentiation for $D = 10$, $\Bo = 1000$ and both (a) $\lambda = 0.1$ and (b) $\lambda = 10$. The curves are identical for all choices of $\Delta s \leq 0.1$.}\label{fig:diff_test_pos}
+    \end{figure}
+
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.5\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=0_1_vol_diff.tex}}
+        \caption{}
+        \label{fig:diff_test_vol_tail}
+      \end{subfigure}%
+      ~
+      \begin{subfigure}[b]{0.5\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=10_vol_diff.tex}}
+        \caption{}
+        \label{fig:diff_test_vol_film}
+      \end{subfigure}
+      \caption{Time dependence of volume of upper phase fluid entrained below the plane $z = 0$ for different values of the initial step size for numerical differentiation for $D = 10$, $\Bo = 1000$ and both (a) $\lambda = 0.1$ and (b) $\lambda = 10$. The curves are identical for all choices of $\Delta s \leq 0.1$.}\label{fig:diff_test_vol}
+    \end{figure}
+
+\subsection{Experimental Verification}
+\label{subsec:exp_verif}
+
+
+\section{Results}
+\label{sec:res}
+
 
 \appendix
 
@@ -976,33 +1060,35 @@ In a volume $\mathcal{V}$ bounded by a surface $\mathcal{S}$, the Dirac delta fu
 \label{equ:dirac}
 \int_{\mathcal{V}} f(\boldsymbol{y}) \delta(\boldsymbol{x} - \boldsymbol{y}) \mathrm{d}^{3} \boldsymbol{y} = \left\{
     \begin{array}{l l}
-      f(\boldsymbol{x}) &\quad \boldsymbol{x} \in \mathcal{V} \\
-      \frac{f(\boldsymbol{x})}{2} &\quad \boldsymbol{x} \in \mathcal{S} \\
-      0 & \quad \text{otherwise}
+      f(\boldsymbol{x}), &\quad \boldsymbol{x} \in \mathcal{V} \\
+      \frac{f(\boldsymbol{x})}{2}, &\quad \boldsymbol{x} \in \mathcal{S} \\
+      0, & \quad \text{otherwise}
 \end{array}
 \right.\ .
 \end{equation}
 
-The result for $\boldsymbol{x} \in \mathcal{S}$ is only valied for the case that the surface is Lyapunov smooth (a local tangent plane exists everywhere) (REFERENCE FOR LYAPUNOV SMOOTH SURFACE - WAITING FOR GUNTER BOOK). Equation~\ref{equ:dirac} means that
+The result for $\boldsymbol{x} \in \mathcal{S}$ is only valied for the case that the surface is Lyapunov smooth (a local tangent plane exists everywhere) \citep{Gunter67}. Equation~\ref{equ:dirac} means that
 
 \begin{equation}
 \label{equ:delta_int}
-\int_{\mathcal{V}} \delta(\boldsymbol{x} - \boldsymbol{y}) \mathrm{d}^{3} \boldsymbol{y} = 1 \quad \boldsymbol{x} \in \mathcal{V}.
+\int_{\mathcal{V}} \delta(\boldsymbol{x} - \boldsymbol{y}) \mathrm{d}^{3} \boldsymbol{y} = 1, \quad \boldsymbol{x} \in \mathcal{V}.
 \end{equation}
 
-A key property of the delta function is that it is symmetric under a change of sign of the argument
+A key property of the delta function is that it is symmetric under a change of sign of the argument;
 
 \begin{equation}
 \label{equ:delta_sym}
-\delta(-\boldsymbol{x}) = \delta(\boldsymbol{x})
+\delta(-\boldsymbol{x}) = \delta(\boldsymbol{x}).
 \end{equation}
 
 It also needs to be noted that the Dirac delta function can be expressed as \citep{Riley06}
 
 \begin{equation}
 \label{equ:delta_int_def}
-\delta (\boldsymbol{\xi}) = \frac{1}{(2 \pi)^{3}} \int \mathrm{e}^{i \boldsymbol{k} \cdot \boldsymbol{\xi}} \mathrm{d}^{3} \boldsymbol{k}
+\delta (\boldsymbol{\xi}) = \frac{1}{(2 \pi)^{3}} \int \mathrm{e}^{i \boldsymbol{k} \cdot \boldsymbol{\xi}} \mathrm{d}^{3} \boldsymbol{k},
 \end{equation}
+
+where $\boldsymbol{k}$ is the transform variable and $i$ is the imaginary unit.
 
 \section{Greens Functions for Stokes Flow}
 \label{app:Greens}
@@ -1011,11 +1097,11 @@ We present here a derivation of equations~\ref{equ:vel_green} and~\ref{equ:stres
 
 \begin{equation}
 \label{equ:press_green_def}
-\hat{T}_{ij}(\boldsymbol{\xi}) = - \hat{P}(\boldsymbol{\xi}) + \Lambda[\partial'_{i} \hat{u}_{j}(\boldsymbol{\xi}) + \partial'_{j} \hat{u}_{i}(\boldsymbol{\xi})] .
+\hat{T}_{ij}(\boldsymbol{\xi}) = - \hat{P}(\boldsymbol{\xi}) \delta_{ij} + \Lambda[\partial'_{i} \hat{u}_{j}(\boldsymbol{\xi}) + \partial'_{j} \hat{u}_{i}(\boldsymbol{\xi})] .
 \end{equation}
 
 
-Substituting this into equation~\ref{equ:stress_green_def} and using equation~\ref{equ:vel_green_def} yields 
+Substituting this into equation~\ref{equ:stress_green_def}, and using equation~\ref{equ:vel_green_def} yields 
 
 \begin{equation}
 \label{equ:stokes_green}
@@ -1023,7 +1109,7 @@ Substituting this into equation~\ref{equ:stress_green_def} and using equation~\r
 \end{equation}
 
 
-We also define two further quantities $\bar{P}_{i}$ and $\bar{u}_{ij}$ such that
+We also define two further quantities, $\bar{P}_{i}$ and $\bar{u}_{ij}$ such that
 
 \begin{equation}
 \label{equ:pres_bar}
@@ -1037,7 +1123,7 @@ and
 \hat{u}_{j}(\boldsymbol{\xi}) = \mathcal{F}_{i} \bar{u}_{ij} (\boldsymbol{\xi}) .
 \end{equation}
 
-Substitution of these expressions into equations~\ref{equ:vel_green_def} and~\ref{equ:stokes_green} and rearranging results in
+Substitution of these expressions into equations~\ref{equ:vel_green_def} and~\ref{equ:stokes_green}, and rearranging results in
 
 \begin{equation}
 \label{equ:cont_bar}
@@ -1051,7 +1137,7 @@ and
 -\partial_{j}' \bar{P}_{i} (\boldsymbol\xi) + \Lambda \partial_{k}' \partial_{k}' \bar{u}_{ij} (\boldsymbol\xi) + \delta_{ij} \delta(\boldsymbol\xi) = 0 .
 \end{equation}
 
-To derive functional forms for the Greens functions it is necessary to express equations~\ref{equ:stokes_bar} and~\ref{equ:cont_bar} in Fourier representation. To do this we need to define the Fourier transformed variables $\tilde{P}_{\alpha, i}$ and $\tilde{u}_{\alpha,ij}$ \citep{Riley06}:
+To derive functional forms for the Greens functions, it is necessary to express equations~\ref{equ:cont_bar} and~\ref{equ:stokes_bar} in Fourier representation. To do this we need to define the Fourier transformed variables $\tilde{P}_{\alpha, i}$ and $\tilde{u}_{\alpha,ij}$ \citep{Riley06}:
 
 \begin{equation}
 \label{equ:fourier_p}
@@ -1066,21 +1152,21 @@ and
 \end{equation}
 
 
-where $\boldsymbol{k}$ is the transform variable and $i$ is the unit imaginary number. Substitution of these and the Fourier definition of the Dirac delta function (equation~\ref{equ:delta_int_def} in appendix~\ref{app:delta}) into equations~\ref{equ:stokes_bar} and~\ref{equ:cont_bar} gives the Fourier representations of the Stokes equations and the continuity equation. Following some manipulation these can be written as
-
-\begin{equation}
-\label{equ:fourier_stokes}
--i k_{j} \tilde{P}_{i} (\boldsymbol{k}) - \Lambda k^{2} \tilde{u}_{ij} (\boldsymbol{k}) + \frac{\delta_{ij}}{(2 \pi)^{3/2}} = 0 ,
-\end{equation}
-
-and 
+where $\boldsymbol{k}$ is the transform variable, and $i$ is the unit imaginary number. Substitution of these, and the Fourier definition of the Dirac delta function (equation~\ref{equ:delta_int_def} in appendix~\ref{app:delta}) into equations~\ref{equ:cont_bar} and~\ref{equ:stokes_bar} gives the Fourier representations of the continuity and Stokes equations respectively. Following some manipulation these can be written as
 
 \begin{equation}
 \label{equ:fourier_cont}
 k_{i} \tilde{u}_{ij} (\boldsymbol{k}) = 0 ,
 \end{equation}
 
-where $k = k_{i} k_{i}$. By contracting equation~\ref{equ:fourier_stokes} with $k_{j}$, substituting in equation~\ref{equ:fourier_cont} and rearranging, it is then possible to obtain the Fourier representation of the Greens function for pressure;
+and
+
+\begin{equation}
+\label{equ:fourier_stokes}
+-i k_{j} \tilde{P}_{i} (\boldsymbol{k}) - \Lambda k^{2} \tilde{u}_{ij} (\boldsymbol{k}) + \frac{\delta_{ij}}{(2 \pi)^{3/2}} = 0 .
+\end{equation}
+
+where $k = k_{i} k_{i}$. By contracting equation~\ref{equ:fourier_stokes} with $k_{j}$, substituting in equation~\ref{equ:fourier_cont}, and rearranging, it is then possible to obtain the Fourier representation of the Greens function for pressure;
 
 \begin{equation}
 \label{equ:fourier_green_p}
@@ -1249,7 +1335,7 @@ Insepection of this yields
 \xi = \frac{-8 \pi}{(2 \pi)^{3}} \int \frac{\mathrm{e}^{i \boldsymbol{k} \cdot \boldsymbol{\xi}} \mathrm{d}^{3} \boldsymbol{k}}{k^{4}} .
 \end{equation}
 
-Rearrangement of this produces an expression for the integral on the right hand side of equation~\ref{equ:green_u_int2_new};
+Rearranging this produces an expression for the integral on the right hand side of equation~\ref{equ:green_u_int2_new};
 
 \begin{equation}
 \label{equ:green_u_int2_new_express}
@@ -1264,6 +1350,32 @@ Hence
 \end{equation}
 
 
+\section{Lorentz Reciprocal Theorem}
+\label{app:Lorentz}
+
+Consider a pair of velocity fields $u_{i}$ and $u'_{i}$, and a pair of stress fields $T_{ij}$ and $T'_{ij}$ defined over a domain $\mathcal{V}$ bounded by a surface $\mathcal{S}$ with normal $n_{i}$. Now suppose that that both $u_{i}$ and $T_{ij}$, and $u'_{i}$ and $T'_{ij}$ are both solutions to the Stokes equations with a point source term (equations~\ref{equ:vel_green_def} and~\ref{equ:stress_green_def}). The Lorentz reciprocal theorem then states that \citep{Kim05}
+
+\begin{align}
+\label{equ:LRT}
+\dashint_{\mathcal{S}} n_{j}(\boldsymbol{x'}) T'_{ij}(\boldsymbol{x'}) \hat{u}_{i}(\boldsymbol{\xi}) \mathrm{d} \boldsymbol{x'}^{2} - \dashint_{\mathcal{V}} [\partial'_{j} T'_{ij}(\boldsymbol{x'})] \hat{u}_{i}(\boldsymbol{\xi}) \mathrm{d} \boldsymbol{x'}^{3} = \dashint_{\mathcal{S}} n_{j}(\boldsymbol{x'}) \hat{T}_{ij}(\boldsymbol{\xi}) u'_{i}(\boldsymbol{x'}) \mathrm{d} \boldsymbol{x'}^{2} \nonumber \\
+- \dashint_{\mathcal{V}} [\partial'_{j}\hat{T}_{ij}(\boldsymbol{\xi})] u'_{i}(\boldsymbol{x'}) \mathrm{d} \boldsymbol{x'}^{3} .
+\end{align}
+
+Our definition of the theorem has defined the integrals in the sense of the Cauchy Principle Value (CPV) (appendix~\ref{app:CPV}) to allow for the case that one or more of the fields may be singular at some point in the domain (as in the case of Greens functions). For the case that all of the fields are regular, then the CPV integral just evaluates to the regular integral. In the proof of equation~\ref{equ:LRT} given by \citet{Kim05} it is straightforward to extend their result to ours just by taking care when defining the integrals. 
+
+
+\section{Cauchy Principle Value}
+\label{app:CPV}
+
+Consider a function $f(x)$ such that $f(x \to x_{0}) \to \infty$. Hence we need to take care when defining an integral of $f(x)$ over a range which contains $x_{0}$. We denote the Cauchy Principle Value of an integral with a horizontal line through the integral sign, and for a singularity at the point $x_{0}$ it is defined such that \citep{Boas83}
+
+\begin{equation}
+\label{equ:CPV}
+\dashint_{a}^{b} f(x) \mathrm{d}x = \lim_{\epsilon \to 0} \left( \int_{a}^{x_{0} - \epsilon} f(x) \mathrm{d}x + \int_{x_{0} + \epsilon}^{b} f(x) \mathrm{d}x \right)
+\end{equation}
+
+This can be readily extended to higher dimensional integrals by performing the integration everywhere except in a small region around the singular point, and then finding the limiting value of the integral as the size of that region tends to zero. Also, for the case that the function is actually regular throughout this region, then the CPV equates to the standard integral.
+
 
 \section{Divergence Theorem}
 \label{app:div_theory}
@@ -1272,32 +1384,9 @@ The divergence theorem states that for a volume $\mathcal{V}$ bounded by a surfa
 
 \begin{equation}
 \label{equ:div_theory}
-\int_{\mathcal{V}} \partial_{i} \cdot a_{i} \mathrm{d} \mathcal{V} = \oint_{\mathcal{S}} a_{i} n_{i} \mathrm{d} \mathcal{S}
+\int_{\mathcal{V}} \partial_{i} a_{i} \mathrm{d} \mathcal{V} = \oint_{\mathcal{S}} a_{i} n_{i} \mathrm{d} \mathcal{S}.
 \end{equation}
 
-\section{Lorentz Reciprocal Theorem}
-\label{app:Lorentz}
-
-Consider a pair of velocity fields $u_{i}$ and $u'_{i}$, and a pair of stress fields $T_{ij}$ and $T'_{ij}$ defined over a domain $\mathcal{V}$ bounded by a surface $\mathcal{S}$ with normal $n_{i}$. Now suppose that that both $u_{i}$ and $T_{ij}$, and $u'_{i}$ and $T'_{ij}$ are both solutions to the Stokes equations with a point source term (equations~\ref{equ:vel_green_def} and~\ref{equ:stress_green_def}). The Lorentz reciprocal theorem then states that \citep{Kim05}
-
-\begin{equation}
-\label{equ:LRT}
-\dashint_{\mathcal{S}} n_{j}(\boldsymbol{x'}) T'_{ij}(\boldsymbol{x'}) \hat{u}_{i}(\boldsymbol{\xi}) \mathrm{d} \boldsymbol{x'}^{2} - \dashint_{\mathcal{V}} [\partial'_{j} T'_{ij}(\boldsymbol{x'})] \hat{u}_{i}(\boldsymbol{\xi}) \mathrm{d} \boldsymbol{x'}^{3} = \dashint_{\mathcal{S}} n_{j}(\boldsymbol{x'}) \hat{T}_{ij}(\boldsymbol{\xi}) u'_{i}(\boldsymbol{x'}) \mathrm{d} \boldsymbol{x'}^{2} - \dashint_{\mathcal{V}} [\partial'_{j}\hat{T}_{ij}(\boldsymbol{\xi})] u'_{i}(\boldsymbol{x'}) \mathrm{d} \boldsymbol{x'}^{3} .
-\end{equation}
-
-Our definition of the theorem has defined the integrals in the sense of the Cauchy Principle Value (CPV) (appendix~\ref{app:CPV}) to allow for the case that one or more of the fields may be singular at some point in the domain (as in the case of Greens functions). For the case that all of the fields are regular, then the CPV integral just evaluates to the regular interval. In the proof of equation~\ref{equ:LRT} given by \citet{Kim05} it is straightforward to extend their result to ours just by taking care when defining the integrals. 
-
-\section{Cauchy Principle Value}
-\label{app:CPV}
-
-Consider a function $f(x)$ such that $f(x = x_{0}) \to \infty$. Hence we need to take care when defining an integral of $f(x)$ over a range which contains $x_{0}$. We denote the Cauchy Principle Value of an integral with a horizontal line through the integral sign and for a singularity at the point $x_{0}$ it is defined such that \citep{Boas83}
-
-\begin{equation}
-\label{equ:CPV}
-\dashint_{a}^{b} f(x) \mathrm{d}x = \lim_{\epsilon \to 0} \left( \int_{a}^{x_{0} - \epsilon} f(x) \mathrm{d}x + \int_{x_{0} + \epsilon}^{b} f(x) \mathrm{d}x \right)
-\end{equation}
-
-This can be readily extended to higher dimensional integrals by performing the integration everywhere except in a small region around the singular point, and then finding the limiting value of the integral as the size of that region tends to zero. Also, for the case that the function is actually regular throughout this region, then the CPV equates to the standard integral.
 \section{Elliptic Integrals}
 \label{app:ellip}
 
@@ -1316,7 +1405,7 @@ E(k^{2}) = \int_{0}^{\pi/2} (1 - k^{2} \sin^{2}\theta)^{1/2} \mathrm{d}\theta, \
 \end{equation}
 
 
-where $k^{2}$ is defined as the modulus of the integral. Polynomial approximations can be found to evaluate the integrals \citep{Roumeliotis00} and we use the following expressions from \citet{Abramowitz72}:
+where $k^{2}$ is termed the modulus of the integral. Polynomial approximations can be found to evaluate the integrals \citep{Roumeliotis00} and we use the following expressions from \citet{Abramowitz72}:
 
 \begin{equation}
 \label{equ:ellip1_app}
@@ -1353,7 +1442,7 @@ $a'_{4}$ & 0.01736506451 & $b'_{4}$ & 0.00526449639 \\
 \section{Components of $\boldsymbol{A}$, $\boldsymbol{B}$ and $\boldsymbol{C}$}
 \label{app:mat_A}
 
-Here we present expressions for the components of $\boldsymbol{A}$, $\boldsymbol{B}$ and $\boldsymbol{C}$ in terms of complete elliptic integrals of the first and second kind (appendix~\ref{app:ellip}). The expressions for $\boldsymbol{A}$ anf $\boldsymbol{B}$ are from \citet{Graziani89} although our notation is more similar to that of \citet{Manga94}. As far as the authors are aware equivalent expressions for $\boldsymbol{C}$ have never been published before although, they were undoubtedly used in the models of \citet{Lee82, Geller86,Manga95} and \citet{Roumeliotis00}. The quantities $\alpha$ and $\beta$ are defined as \citep{Manga94}
+Here we present expressions for the components of $\boldsymbol{A}$, $\boldsymbol{B}$ and $\boldsymbol{C}$ in terms of complete elliptic integrals of the first and second kind (appendix~\ref{app:ellip}). The expressions for $\boldsymbol{A}$ and $\boldsymbol{B}$ are from \citet{Graziani89} although our notation is more similar to that of \citet{Manga94}. As far as the authors are aware, equivalent expressions for $\boldsymbol{C}$ have never been published before, although they were undoubtedly used in the models of \citet{Lee82}, \citet{Geller86}, \citet{Manga95} and \citet{Roumeliotis00}. The quantities $\alpha$ and $\beta$ are defined as \citep{Manga94}
 
 \begin{equation}
 \label{equ:alpha_def}
@@ -1374,27 +1463,27 @@ The components of $\boldsymbol{A}$ are:
 
 \begin{equation}
 \label{equ:A11_comp}
-A_{11} = (c_{1} n_{r} + c_{2} n_{z})K + (c_{3} n_{r} + c_{4} n_{z})E,
+A_{11} = (c_{1} n_{r} + c_{2} n_{z})K(k^{2}) + (c_{3} n_{r} + c_{4} n_{z})E(k^{2}),
 \end{equation}
 
 \begin{equation}
 \label{equ:A12_comp}
-A_{12} = (c_{2} n_{r} + c_{6} n_{z})K + (c_{4} n_{r} + c_{8} n_{z})E,
+A_{12} = (c_{2} n_{r} + c_{6} n_{z})K(k^{2}) + (c_{4} n_{r} + c_{8} n_{z})E(k^{2}),
 \end{equation}
 
 \begin{equation}
 \label{equ:A21_comp}
-A_{21} = (c_{9} n_{r} + c_{10} n_{z})K + (c_{11} n_{r} + c_{12} n_{z})E,
+A_{21} = (c_{9} n_{r} + c_{10} n_{z})K(k^{2}) + (c_{11} n_{r} + c_{12} n_{z})E(k^{2}),
 \end{equation}
 
 and 
 
 \begin{equation}
 \label{equ:A22_comp}
-A_{22} = (c_{10} n_{r} + c_{14} n_{z})K + (c_{12} n_{r} + c_{16} n_{z})E.
+A_{22} = (c_{10} n_{r} + c_{14} n_{z})K(k^{2}) + (c_{12} n_{r} + c_{16} n_{z})E(k^{2}).
 \end{equation}
 
-The coefficients $a_{i}$ are given as
+The coefficients $c_{i}$ are given as
 
 \begin{equation}
 \label{equ:coeff_a1}
@@ -1503,7 +1592,7 @@ C_{2} = \frac{9 (\partial'_{j} n_{j} - y_{z} \text{Bo})}{4 \pi D \text{Bo} (\alp
 \subsection{Special case: $x_{r} = 0$}
 \label{subapp:spec_case}
 
-For the case that the point $\boldsymbol{x'}$ is on the axis of symmetry ($x_{r} = 0$) then expressions can be found for the components of $\boldsymbol{A}$, $\boldsymbol{B}$ and $\boldsymbol{C}$ that don't depend on elliptic integrals. Hence in this scenario the components can be evaluated exactly and don't need to be approximated by polynomials. In this case the components of $\boldsymbol{A}$ are
+For the special case that the point $\boldsymbol{x'}$ is on the axis of symmetry ($x_{r} = 0$) then expressions can be found for the components of $\boldsymbol{A}$, $\boldsymbol{B}$ and $\boldsymbol{C}$ that don't depend on elliptic integrals. Hence, in this scenario the components can be evaluated exactly and don't need to be approximated by polynomials. In this case the components of $\boldsymbol{A}$ are
 
 \begin{equation}
 \label{equ:A11_spec}

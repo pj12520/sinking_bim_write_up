@@ -18,13 +18,17 @@
 \BOOKMARK [2][-]{subsection.5.1}{Uniform and Infinite Fluid}{section.5}
 \BOOKMARK [2][-]{subsection.5.2}{Initial Height of Sphere}{section.5}
 \BOOKMARK [2][-]{subsection.5.3}{Truncation Length}{section.5}
+\BOOKMARK [2][-]{subsection.5.4}{Discretisation of Interface}{section.5}
+\BOOKMARK [2][-]{subsection.5.5}{Numerical Differentiation of Interface}{section.5}
+\BOOKMARK [2][-]{subsection.5.6}{Experimental Verification}{section.5}
+\BOOKMARK [1][-]{section.6}{Results}{}
 \BOOKMARK [1][-]{appendix.A}{Dirac Delta Function}{}
 \BOOKMARK [1][-]{appendix.B}{Greens Functions for Stokes Flow}{}
 \BOOKMARK [2][-]{subsection.B.1}{Integral for Greens Function for Pressure}{appendix.B}
 \BOOKMARK [2][-]{subsection.B.2}{Integrals for the Greens Function for Velocity}{appendix.B}
-\BOOKMARK [1][-]{appendix.C}{Divergence Theorem}{}
-\BOOKMARK [1][-]{appendix.D}{Lorentz Reciprocal Theorem}{}
-\BOOKMARK [1][-]{appendix.E}{Cauchy Principle Value}{}
+\BOOKMARK [1][-]{appendix.C}{Lorentz Reciprocal Theorem}{}
+\BOOKMARK [1][-]{appendix.D}{Cauchy Principle Value}{}
+\BOOKMARK [1][-]{appendix.E}{Divergence Theorem}{}
 \BOOKMARK [1][-]{appendix.F}{Elliptic Integrals}{}
 \BOOKMARK [1][-]{appendix.G}{Components of bold0mu mumu AAAAAA, bold0mu mumu BBBBBB and bold0mu mumu CCCCCC}{}
 \BOOKMARK [2][-]{subsection.G.1}{Special case: xr = 0}{appendix.G}

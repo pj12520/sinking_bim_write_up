@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Bash script to plot or figures and run Makefile to produce LaTeX document
+
+gnuplot 

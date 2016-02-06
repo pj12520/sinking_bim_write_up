@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -60,6 +60,12 @@ G.~Graziani.
 \newblock A boundary integral equation method for axisymmetric viscous flows.
 \newblock \emph{International {J}ournal of {E}ngineering {S}cience},
   27:\penalty0 855--864, 1989.
+
+\bibitem[Gunter(1967)]{Gunter67}
+N.~M. Gunter.
+\newblock \emph{Potential {T}heory and {I}ts {A}pplications to {B}asic
+  {P}roblems of {M}athematical {P}hysics}.
+\newblock Frederick {U}ngar {P}ublishing {C}ompany, first edition, 1967.
 
 \bibitem[Happel and Brenner(1973)]{Happel73}
 J.~Happel and H.~Brenner.
