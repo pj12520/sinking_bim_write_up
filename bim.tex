@@ -1048,6 +1048,107 @@ At each timestep it is necessary to differentiate the functions $r(s)$ and $z(s)
 \section{Results}
 \label{sec:res}
 
+\subsection{Settling Spheres}
+\label{subsec:sphere_res}
+
+\subsubsection{Floating versus Sinking}
+\label{subsubsec:sphere_float}
+
+There are two possible situations for each simulation: floating or sinking. For simulations where floating is observed, the sphere velocity becomes negligibly small as the sphere-interface separation descreases, and never increases. This leads to the sphere attaining an equilibrium position at the interface (figures~\ref{fig:floating_frame} and~\ref{fig:floating_traj}). Alternatively, the sphere velocity can remain significant at all times, and the interface deforms around the sphere as it sinks through the interface (figures~\ref{fig:sinking_frame} and~\ref{fig:sinking_traj}). 
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{floating_frame2.tex}}
+        \caption{}
+        \label{fig:floating_frame2}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{floating_frame3.tex}}
+        \caption{}
+        \label{fig:floating_frame3}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{floating_frame4.tex}}
+        \caption{}
+        \label{fig:floating_frame4}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{floating_frame5.tex}}
+        \caption{}
+        \label{fig:floating_frame5}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{floating_frame6.tex}}
+        \caption{}
+        \label{fig:floating_frame6}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{floating_frame7.tex}}
+        \caption{}
+        \label{fig:floating_frame7}
+      \end{subfigure}
+      \caption{Settling of a sphere onto the interface when $D = 2.2$, $\Bo = 2.5$ and $\lambda = 1$. The interface deforms as the sphere approaches and the sphere attains an equilibrium position with a thin film of fluid trapped between the sphere and the interface.}\label{fig:floating_frame}
+    \end{figure}
+
+  \begin{figure}
+    \resizebox{\textwidth}{!}{\Large \input{floating_traj.tex}}
+    \caption{Position curve of the sphere, which is seen to attain an equilibrium position at the interface. \label{fig:floating_traj}}
+  \end{figure}
+
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{sinking_frame1.tex}}
+        \caption{}
+        \label{fig:sinking_frame1}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{sinking_frame2.tex}}
+        \caption{}
+        \label{fig:sinking_frame2}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{sinking_frame3.tex}}
+        \caption{}
+        \label{fig:sinking_frame3}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{sinking_frame4.tex}}
+        \caption{}
+        \label{fig:sinking_frame4}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{sinking_frame5.tex}}
+        \caption{}
+        \label{fig:sinking_frame5}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{sinking_frame6.tex}}
+        \caption{}
+        \label{fig:sinking_frame6}
+      \end{subfigure}
+      \caption{Settling of a sphere onto and through the interface when $D = 2.2$, $\Bo = 3.5$ and $\lambda = 1$. The interface deforms as the sphere approaches and envelopes the sphere as it sinks.}\label{fig:sinking_frame}
+    \end{figure}
+
+  \begin{figure}
+    \resizebox{\textwidth}{!}{\Large \input{sinking_traj.tex}}
+    \caption{Position curve of the sphere, which is seen to slow down at the interface, before accelerating away.\label{fig:sinking_traj}}
+  \end{figure}
+
+A regime diagram has been constructed for the floating-sinking transition. It has been found that for $\lambda \leq 10$ the location of the transition in the parameter space defined by $D$, $\Bo$ and $\lambda$ is independent of $\lambda$. Figure~\ref{fig:trans_mag} shows the transition in a plane of constant $\lambda$ over orders of magnitude variation in $D$ and $\Bo$.
+
 
 \appendix
 
