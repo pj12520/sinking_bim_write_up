@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -152,6 +152,11 @@ James Thomson.
   and other{A}lcoholic {L}iquors.
 \newblock \emph{Philosophical {M}agazine {S}eries 4}, 10:\penalty0 330--333,
   1855.
+
+\bibitem[Vella et~al.(2006)Vella, Lee, and Kim]{Vella06}
+Dominic Vella, Duck-Gyu Lee, and Ho-Young Kim.
+\newblock The {L}oad {S}upported by {S}mall {F}loating {O}bjects.
+\newblock \emph{Langmuir}, 22:\penalty0 5979--5981, 2006.
 
 \bibitem[White(1999)]{White99}
 Frank~M. White.

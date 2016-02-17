@@ -1097,7 +1097,7 @@ There are two possible situations for each simulation: floating or sinking. For 
     \end{figure}
 
   \begin{figure}
-    \resizebox{\textwidth}{!}{\Large \input{floating_traj.tex}}
+    \resizebox{0.9\textwidth}{!}{\large \input{floating_traj.tex}}
     \caption{Position curve of the sphere, which is seen to attain an equilibrium position at the interface. \label{fig:floating_traj}}
   \end{figure}
 
@@ -1135,7 +1135,7 @@ There are two possible situations for each simulation: floating or sinking. For 
       \end{subfigure}
       ~
       \begin{subfigure}[b]{0.45\textwidth}
-        \resizebox{\textwidth}{!}{\Large \input{sinking_frame6.tex}}
+        \resizebox{\textwidth}{!}{\large \input{sinking_frame6.tex}}
         \caption{}
         \label{fig:sinking_frame6}
       \end{subfigure}
@@ -1143,13 +1143,26 @@ There are two possible situations for each simulation: floating or sinking. For 
     \end{figure}
 
   \begin{figure}
-    \resizebox{\textwidth}{!}{\Large \input{sinking_traj.tex}}
+    \resizebox{0.9\textwidth}{!}{\Large \input{sinking_traj.tex}}
     \caption{Position curve of the sphere, which is seen to slow down at the interface, before accelerating away.\label{fig:sinking_traj}}
   \end{figure}
 
-A regime diagram has been constructed for the floating-sinking transition. It has been found that for $\lambda \leq 10$ the location of the transition in the parameter space defined by $D$, $\Bo$ and $\lambda$ is independent of $\lambda$. Figure~\ref{fig:trans_mag} shows the transition in a plane of constant $\lambda$ over orders of magnitude variation in $D$ and $\Bo$.
+A regime diagram has been constructed for the floating-sinking transition. It has been found that for $\lambda \leq 10$ the location of the transition in the parameter space defined by $D$, $\Bo$ and $\lambda$ is independent of $\lambda$. Figure~\ref{fig:regime} shows the transition in a plane of constant $\lambda$ over orders of magnitude variation in $D$ and $\Bo$. Also shown is the prediction for this transition from the theoretical model of \citep{Vella06}. This model finds the maximum $D$ for a given $\Bo$ and contact angle for a sphere to be at equilibrium at an interface. This is different from our model, since no initial motion of the sphere is considered, and the existence of a contact line on the sphere is imposed. Despite these differences, we see that the results in figure~\ref{fig:regime} agree with this model. In figure~\ref{fig:zoom_regime} however, we show the results of a denser investigation of the paramter space, in the region where the transition curve has the highest curvature. It can be seen that although our model reproduces the shape of the predicted regime boundary, there is an offset such that our model predicts a higher maximum value of $D$ for a given $\Bo$.
 
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\large \input{regime_pub.tex}}
+    \caption{A regime diagram showing the fields of floating and sinking in the $\lambda = 1$ plane of the parameters space defined by ${\lambda, \Bo, D}$. Points show results of simulations. Solid line shows prediction from theoretical model of \citep{Vella06}.\label{fig:regime}}
+  \end{figure}
 
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\large \input{zoom_regime_pub.tex}}
+    \caption{A regime diagram showing the fields of floating and sinking in the $\lambda = 1$ plane of the parameters space defined by ${\lambda, \Bo, D}$. Points show results of simulations. Solid line shows prediction from theoretical model of \citep{Vella06}.\label{fig:zoom_regime}}
+  \end{figure}
+
+\subsubsection{Equilibrium Floating Position}
+\label{subsubsec:equilib_pos}
+
+For simulations where the sphere is observed to attain a static equilibrium position, the dependence of the final height of the sphere on $D$, $\Bo$ and $\lambda$ has been determined.  
 \appendix
 
 \section{Dirac Delta Function}

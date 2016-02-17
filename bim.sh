@@ -18,4 +18,8 @@ gnuplot "../../sinking_bim_data/trunk/float_sink2/D=2.2/Bo=2.5/viscos_rat=1/conf
 
 gnuplot "../../sinking_bim_data/trunk/float_sink2/D=2.2/Bo=3.5/viscos_rat=1/config_for_pub.p"
 
+gnuplot "../../sinking_bim_data/trunk/param1_comp/regime_for_pub.p"
+
+gnuplot "../../sinking_bim_data/trunk/float_sink_comp/regime_for_pub.p"
+
 make
