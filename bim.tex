@@ -1171,7 +1171,68 @@ For simulations where the sphere is observed to attain a static equilibrium posi
 \subsection{Settling Spheroids}
 \label{subsec:spheroids}
 
- 
+
+\section{Discussion}
+\label{sec:discuss}
+
+\subsection{Floating versus Sinking}
+\label{subsec:float_sink_discuss}
+
+Figure~\ref{fig:zoom_regime} shows the location of the floating and sinking regimes in the parameter space defined by $\Bo$ and $D$, as found using the BIM presented in sections~\ref{sec:theory} and~\ref{sec:num_meth}. The curve in the figure shows the prediction for the transition between the two regimes found from the model of \citet{Vella06} for a contact angle of $\pi$ (sphere is completely wetted by upper fluid). It can be see that for a given $\Bo$, the transition predicted by the BIM is found at a higher value of $D$ than for the model presented by \citet{Vella06}. To rationalise this discrepancy, a brief description of the \citet{Vella06} model is given here, highlighting the key differences with the BIM. Motivated by these differences, modifications are then proposed to the \citet{Vella06} model and the validity of these is determined by comparing with the results from the BIM.
+
+\subsubsection{\citet{Vella06} Model: A static description of the floating - sinking transition}
+\label{subsubsec:Vella_model}
+
+The model proposed in \citet{Vella06} considers the static problem of a sphere sitting at the interface between two immiscible, density stratified fluids. The presence of a three-phase contact line is assumed. The configuration is as seen in figure~\ref{fig:Vella_config}. The model is a force balance of the surface tension, buoyancy and gravitational forces present in the system, and finds the condition for there to be an equilibrium position of the sphere at the interface. 
+
+  \begin{figure}
+    $$\includegraphics[width=0.8\textwidth]{physical_formulation.eps}$$
+    \caption{The configuration of the problem as modelled by \citet{Vella06}. The key difference between this and the BIM presented in sections~\ref{sec:theory} and~\ref{sec:num_meth} is that this model is static, and a three phase contact line is assumed. \label{fig:Vella_config}}
+  \end{figure}
+
+In order to construct this model, it is neccessary to consider a result from \citet{Keller98}; the vertical contribution of the IFT force on an object floating at an interface is equivalent to the buoyancy force of the fluid in the meniscus. This was first hypothesised by Galilei \citep{Galilei1663, Vella(2)07}. Figure~\ref{fig:Keller_fig} is a useful aid in explaining this. The volume of the meniscus is shown by the shaded regions external to the vertical cylindrical surface which contains the contact line. The IFT contribution to the vertical force is equal to the buoyancy of the upper fluid in this region. This means the force baclance for a sphere in equilibrium can be expressed as
+
+\begin{equation}
+\label{equ:Vella_force}
+\frac{4 \pi (\rho_{\text{s}} - \rho_{1}) a^{3} g}{3} = 2 \pi a \sigma \sin \theta_{\text{c}} \sin (\chi - \theta_{\text{c}}) + (\rho_{2} - \rho_{1}) g \left(\frac{\pi a^{3} (2 + 3 \cos \theta_{\text{c}} - \cos^{3} \theta_{\text{c}})}{3} - \pi z_{c} a^{2} \sin^{2} \theta_{\text{c}} \right)
+\end{equation}
+
+where $\theta_{\text{c}}$ and $z_{\text{c}}$ are the polar and vertical coordinates of the contact line respectively. The left hand side corresponds to the weight of the sphere relative to the weight of the same volume of the upper fluid. The right hand side is the sum of the IFT contribution (equivalent to the buoyant force due to the volume of the meniscus external to the contact line), and the displaced weight of the lower fluid relative to the upper fluid, in the volume of the meniscus internal to the contact line (central shaded region in figure~\ref{fig:Keller_fig}).
+
+\begin{figure}
+  $$\includegraphics[width=0.8\textwidth]{Keller_fig.eps}$$
+  \caption{The different shadings show the regions internal and external to the meniscus.  \label{fig:Keller_fig}}
+\end{figure}
+
+Using the non-dimensionalisation scheme presented in section~\ref{subsec:theory} the force balance can be written as
+
+\begin{equation}
+\label{equ:Vella_non_dim}
+D = \frac{3}{4 \Bo} \left[2 \sin \theta_{\text{c}} \sin(\chi - \theta_{\text{c}}) + \Bo \left( -\frac{z'_{\text{c}} \sin^{2} \theta_{\text{c}}}{\Bo^{1/2}} + \frac{2}{3} + \cos \theta_{\text{c}} - \frac{\cos \theta_{\text{c}}}{3}\right)\right]. 
+\end{equation}
+
+For a given $\Bo$, contact angle $\chi$ and contact line position (given by $\theta_{\text{c}}$ and $z'_{\text{c}}$), this equation gives the largest possible value of $D$ for which an equilibrium floating position exists. The contact line position itself is found by solving the Laplace-Young equation for the interfacial profile subject to the boundary condition given by the contact angle condition on the sphere, and imposing that the interface returns to its equilibrium position away from the sphere. This is a boundary value problem \citep{Riley06} and has no analytical solution in an axisymmetric geometry so needs to be solved numerically. 
+
+Hence, the routine for finding the maximum $D$ at which floating can occur for a given $\Bo$ and $\chi$ is found by sweeping over different values of $\theta_{\text{c}}$ between $0$ and $\pi$ and solving the Laplace-Young equation for the corresponding height of the contact line $z_{\text{c}}$ for each case. These are then substituted into equation~\ref{equ:Vella_non_dim}. The largest value of $D$ calculated in the sweep is the largest value of $D$ for which floating is possible for a given $\Bo$ and $\chi$. The curve shown in figure~\ref{fig:zoom_regime} is the predicted floating-sinking transition for $\chi = pi$.
+
+\subsubsection{Difference between the static and BIM models}
+\label{subsubsec:model_diff}
+
+To explain the discrepancy between the two models in their prediction of the floating-sinking transition location in the $\Bo$-$D$ parameters space, it is important to consider the differences between the models. The static model, as suggested by its name, is static. It merely considers the conditions at which a sphere can be in equilibrium at an interface, given a contact line exists. It doesn't account for any prior motion of the sphere. It has been shown for cylinders and a liquid-gas interface that increasing the speed of impact reduces the maximum density and/or size of cylinder that can float at the interface \citet{Vella07, Vella10}. This situation is theoretically considered by using an initial condition of the cylinder being in contact with the interface but having some initial velocity. It is important to note that in these studies the flow is in the inertial regime.
+
+The key difference with the BIM used in this study is that in the initial state of the system the sphere is multiple radii above the interface and is settling at its terminal velocity. Hence, as well as having an initial velocity, no contact line exists. Since there is a no-slip boundary condition on the surface of the sphere (equation~\ref{equ:BC_kin_spere}), the fluid immediately adjacent to the sphere will never be displaced. This means that there will always remain a layer of upper phase fluid between the sphere and the interface. Hence it is impossible to reproduce the film drainage mode as seen in the experimental study. The presence of this layer will also have an effect on the floating-sinking transition, since it is effectively provides an extra contribution to the upward buoyancy forces. 
+
+For a given $\Bo$, the BIM predicts the value of $D$ at which the floating-sinking transition occurs to be positively displaced relative to the prediction from the static model. This suggests that the effect of the trapped layer of upper phase fluid between the sphere and the interface has a more significant effect than the impact of the sphere.
+
+\subsubsection{Modified static model}
+\label{subsubsec:mod_stat_mod}
+
+Motivated by the observation that the trapped layer has a greater effect on the floating-sinking transition than the impact of the sphere, a static model, modified from that described in section~\ref{subsubsec:Vella_model}, is presented here which accounts for a trapped layer of upper phase fluid (figure~\ref{fig:mod_stat_mod}).
+\begin{figure}
+  $$\includegraphics[width=0.8\textwidth]{mod_stat_mod.eps}$$
+  \caption{The modified static model configuration. The sphere and the interface are separated by a film of upper phase fluid of constant thickness $\delta$. \label{fig:mod_stat_mod}}
+\end{figure}
+
 \appendix
 
 \section{Dirac Delta Function}

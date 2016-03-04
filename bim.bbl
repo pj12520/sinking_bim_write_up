@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -43,6 +43,11 @@ Mark Galassi, Jim Davies, James Theiler, Brian Gough, Gerard Jungman, Patrick
 \newblock \emph{G{NU} {S}cientific {L}ibrary {R}eference {M}anual}.
 \newblock Network {T}heory {L}td., third edition, 2009.
 
+\bibitem[Galilei(1663)]{Galilei1663}
+G.~Galilei.
+\newblock \emph{Discourse on bodies in water}.
+\newblock William Leybourn, second edition, 1663.
+
 \bibitem[Geller et~al.(1985)Geller, Lee, and Leal]{Geller86}
 A.~S. Geller, S.~H. Lee, and L.~G. Leal.
 \newblock The creeping motion of a spherical particle normal to a deformable
@@ -76,6 +81,11 @@ J.~Happel and H.~Brenner.
 John~David Jackson.
 \newblock \emph{Classical electrodynamics}.
 \newblock Wiley, 3rd edition, 1999.
+
+\bibitem[Keller(1998)]{Keller98}
+Joseph~B. Keller.
+\newblock Surface tension force on a partly submerged body.
+\newblock \emph{Physics of {F}luids}, 10:\penalty0 3009--3010, 1998.
 
 \bibitem[Kim and Karrila(2005)]{Kim05}
 Sangtae Kim and Seppo~J. Karrila.
@@ -153,10 +163,25 @@ James Thomson.
 \newblock \emph{Philosophical {M}agazine {S}eries 4}, 10:\penalty0 330--333,
   1855.
 
+\bibitem[Vella and Li(2010)]{Vella10}
+Dominic Vella and Jie Li.
+\newblock The impulsive motion of a small cylinder at an interface.
+\newblock \emph{Physics of {F}luids}, 22, 2010.
+
+\bibitem[Vella and Metcalfe(2007)]{Vella07}
+Dominic Vella and Paul~D. Metcalfe.
+\newblock Surface tension dominated impact.
+\newblock \emph{Physics of {F}luids}, 19, 2007.
+
 \bibitem[Vella et~al.(2006)Vella, Lee, and Kim]{Vella06}
 Dominic Vella, Duck-Gyu Lee, and Ho-Young Kim.
 \newblock The {L}oad {S}upported by {S}mall {F}loating {O}bjects.
 \newblock \emph{Langmuir}, 22:\penalty0 5979--5981, 2006.
+
+\bibitem[Vella(2007)]{Vella(2)07}
+Dominic Joseph~Robert Vella.
+\newblock \emph{The {F}luid {M}echanics of {F}loating and {S}inking}.
+\newblock PhD thesis, University of {C}ambridge, 2007.
 
 \bibitem[White(1999)]{White99}
 Frank~M. White.

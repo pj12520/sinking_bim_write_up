@@ -2,44 +2,44 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: bim.aux
 The style file: plainnat.bst
 Database file #1: bim_bib.bib
-You've used 27 entries,
+You've used 32 entries,
             2773 wiz_defined-function locations,
-            771 strings with 8808 characters,
-and the built_in function-call counts, 10443 in all, are:
-= -- 919
-> -- 499
-< -- 21
-+ -- 177
-- -- 150
-* -- 758
-:= -- 1663
-add.period$ -- 81
-call.type$ -- 27
-change.case$ -- 129
-chr.to.int$ -- 27
-cite$ -- 54
-duplicate$ -- 538
-empty$ -- 936
-format.name$ -- 187
-if$ -- 2158
+            799 strings with 9304 characters,
+and the built_in function-call counts, 12158 in all, are:
+= -- 1076
+> -- 571
+< -- 26
++ -- 203
+- -- 171
+* -- 867
+:= -- 1941
+add.period$ -- 96
+call.type$ -- 32
+change.case$ -- 150
+chr.to.int$ -- 32
+cite$ -- 64
+duplicate$ -- 632
+empty$ -- 1091
+format.name$ -- 217
+if$ -- 2514
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 38
-newline$ -- 143
-num.names$ -- 108
-pop$ -- 274
+missing$ -- 43
+newline$ -- 168
+num.names$ -- 128
+pop$ -- 314
 preamble$ -- 1
-purify$ -- 104
+purify$ -- 121
 quote$ -- 0
-skip$ -- 370
+skip$ -- 441
 stack$ -- 0
-substring$ -- 357
-swap$ -- 27
+substring$ -- 398
+swap$ -- 32
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 232
+type$ -- 282
 warning$ -- 0
-while$ -- 105
+while$ -- 122
 width$ -- 0
-write$ -- 358
+write$ -- 423
