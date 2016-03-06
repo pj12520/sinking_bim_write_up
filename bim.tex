@@ -1227,7 +1227,10 @@ For a given $\Bo$, the BIM predicts the value of $D$ at which the floating-sinki
 \subsubsection{Modified static model}
 \label{subsubsec:mod_stat_mod}
 
-Motivated by the observation that the trapped layer has a greater effect on the floating-sinking transition than the impact of the sphere, a static model, modified from that described in section~\ref{subsubsec:Vella_model}, is presented here which accounts for a trapped layer of upper phase fluid (figure~\ref{fig:mod_stat_mod}).
+Motivated by the observation that the trapped layer has a greater effect on the floating-sinking transition than the impact of the sphere, a static model, modified from that described in section~\ref{subsubsec:Vella_model}, is presented here which accounts for a trapped layer of upper phase fluid (figure~\ref{fig:mod_stat_mod}). For simplicity, this layer is assumed to have a uniform thickness. Hence, in this model, the interface can be described by two parts. The first is a spherical cap of radius $a + \delta$ concentric with the sphere. At some polar angle $\theta_{\text{c}}$ this transitions into a meniscus whose geometry is determined by the Laplace-Young equation subject to the condition that at $theta = theta_{\text{c}}$, the tangent planes to both the spherical cap and the meniscus are coincident. 
+
+The force balance for this geometry can be realised by modifying equation~\ref{equ:Vella_force} by replacing all the occurences of $a$ on the right-hand side by $a + \delta$ and setting $\chi = \pi$.
+
 \begin{figure}
   $$\includegraphics[width=0.8\textwidth]{mod_stat_mod.eps}$$
   \caption{The modified static model configuration. The sphere and the interface are separated by a film of upper phase fluid of constant thickness $\delta$. \label{fig:mod_stat_mod}}
