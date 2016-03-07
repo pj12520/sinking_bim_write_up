@@ -1227,14 +1227,50 @@ For a given $\Bo$, the BIM predicts the value of $D$ at which the floating-sinki
 \subsubsection{Modified static model}
 \label{subsubsec:mod_stat_mod}
 
-Motivated by the observation that the trapped layer has a greater effect on the floating-sinking transition than the impact of the sphere, a static model, modified from that described in section~\ref{subsubsec:Vella_model}, is presented here which accounts for a trapped layer of upper phase fluid (figure~\ref{fig:mod_stat_mod}). For simplicity, this layer is assumed to have a uniform thickness. Hence, in this model, the interface can be described by two parts. The first is a spherical cap of radius $a + \delta$ concentric with the sphere. At some polar angle $\theta_{\text{c}}$ this transitions into a meniscus whose geometry is determined by the Laplace-Young equation subject to the condition that at $theta = theta_{\text{c}}$, the tangent planes to both the spherical cap and the meniscus are coincident. 
-
-The force balance for this geometry can be realised by modifying equation~\ref{equ:Vella_force} by replacing all the occurences of $a$ on the right-hand side by $a + \delta$ and setting $\chi = \pi$.
+Motivated by the observation that the trapped layer has a greater effect on the floating-sinking transition than the impact of the sphere, a static model, modified from that described in section~\ref{subsubsec:Vella_model}, is presented here which accounts for a trapped layer of upper phase fluid (figure~\ref{fig:mod_stat_mod}). For simplicity, this layer is assumed to have a uniform thickness. Hence, in this model, the interface can be described by two parts. The first is a spherical cap of radius $a + \delta$ concentric with the sphere. At some polar angle $\theta_{\text{c}}$ this transitions into a meniscus whose geometry is determined by the Laplace-Young equation subject to the condition that at $\theta = \theta_{\text{c}}$, the tangent planes to both the spherical cap and the meniscus are coincident. 
 
 \begin{figure}
   $$\includegraphics[width=0.8\textwidth]{mod_stat_mod.eps}$$
   \caption{The modified static model configuration. The sphere and the interface are separated by a film of upper phase fluid of constant thickness $\delta$. \label{fig:mod_stat_mod}}
 \end{figure}
+
+The force balance for this geometry can be realised by modifying equation~\ref{equ:Vella_force} by replacing all the occurences of $a$ on the right-hand side by $a + \delta$ and setting $\chi = \pi$;
+
+\begin{equation}
+\label{equ:mod_force}
+\frac{4 \pi (\rho_{\text{s}} - \rho_{1}) a^{3} g}{3} = 2 \pi (a + \delta) \sigma \sin^{2} \theta_{\text{c}} + (\rho_{2} - \rho_{1}) g \left(\frac{\pi (a + \delta)^{3} (2 + 3 \cos \theta_{\text{c}} - \cos^{3} \theta_{\text{c}})}{3} - \pi z_{c} (a + \delta)^{2} \sin^{2} \theta_{\text{c}} \right).
+\end{equation}
+
+As in section~\ref{subsubsec:Vella_model}, this can be non dimensionalised to give
+
+\begin{equation}
+\label{equ:mod_non_dim}
+D = \frac{3 \Delta^{1/2}}{4 \Bo} \left[2 \sin^{2} \theta_{\text{c}} + \Bo \Delta \left( -\frac{z'_{\text{c}} \sin^{2} \theta_{\text{c}}}{\Bo^{1/2} \Delta^{1/2}} + \frac{2}{3} + \cos \theta_{\text{c}} - \frac{\cos \theta_{\text{c}}}{3}\right)\right],
+\end{equation}
+
+where
+
+\begin{equation}
+\label{equ:non_dim_film}
+\Delta = \left(1 + \frac{\delta}{a}\right)^{2}.
+\end{equation}
+
+For a given $\Bo$, $\theta_{\text{c}}$ and $\Delta$, equation~\ref{equ:mod_non_dim} gives the maximum value of $D$ for which a sphere is in equilibrium whilst separated from an interface by a film of thickness $\delta$. Using a routine similar to that described in section~\ref{subsubsec:Vella_model} the floating-sinking transition in the $\Bo$-$D$ space for different $\delta$ can be found (figure~\ref{fig:Delta_trans}). It can be seen that increasing the value of $\Delta$. and so the relative thickness of the trapped film, it is possible to support denser and larger spheres at a fluid interface. This is intuitively explained by the additional contribution of the buoyant fluid in the film to the upward force.
+
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\large \input{Delta_trans_pub.tex}}
+    \caption{Plots of equation~\ref{equ:mod_non_dim} for different values of $\Delta$. As $\Delta$ increases the floating-sinking transition at a given value of $\Bo$ shifts to higher values of $D$. \label{fig:Delta_trans}}
+  \end{figure}
+
+\subsubsection{Comparison with BIM results}
+\label{subsubsection:mod_comp_bim}
+
+The floating-sinking transition as predicted by equation~\ref{equ:mod_non_dim} has been found for many different values of $\Delta$ to find one which closely approximates the observed transition in the BIM results. A good fit is found for a value of $\Delta = 1.334$ which is equivalent to $\delta / a = 0.155$ (figure~\ref{fig:static_bim_comp}). To test whether this simplified model provides a good explanation for the BIm results the final film thicknesses for simulations close to the floating-sinking transition have been measured.
+
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\large \input{static_bim_comp.tex}}
+    \caption{The observed floating-sinking transition in the BIM results is best fitted with a value of $\Delta = 1.334$ (equivalent to $\delta / a = 0.155$). \label{fig:static_bim_comp}}
+  \end{figure}
 
 \appendix
 

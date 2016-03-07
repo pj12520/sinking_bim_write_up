@@ -22,4 +22,8 @@ gnuplot "../../sinking_bim_data/trunk/param1_comp/regime_for_pub.p"
 
 gnuplot "../../sinking_bim_data/trunk/float_sink_comp/regime_for_pub.p"
 
+gnuplot "../../static_models/trunk/static_film/trans.p"
+
+gnuplot "../../sinking_bim_data/trunk/float_sink_comp/static_comp.p"
+
 make
