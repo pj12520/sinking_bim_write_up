@@ -1245,7 +1245,7 @@ As in section~\ref{subsubsec:Vella_model}, this can be non dimensionalised to gi
 
 \begin{equation}
 \label{equ:mod_non_dim}
-D = \frac{3 \Delta^{1/2}}{4 \Bo} \left[2 \sin^{2} \theta_{\text{c}} + \Bo \Delta \left( -\frac{z'_{\text{c}} \sin^{2} \theta_{\text{c}}}{\Bo^{1/2} \Delta^{1/2}} + \frac{2}{3} + \cos \theta_{\text{c}} - \frac{\cos \theta_{\text{c}}}{3}\right)\right],
+D = \frac{3 \Delta^{1/2}}{4 \Bo} \left[2 \sin^{2} \theta_{\text{c}} + \Bo \Delta \left( -\frac{z'_{\text{c}} \sin^{2} \theta_{\text{c}}}{\Bo^{1/2} \Delta^{1/2}} + \frac{2}{3} + \cos \theta_{\text{c}} - \frac{\cos^{3} \theta_{\text{c}}}{3}\right)\right],
 \end{equation}
 
 where
@@ -1265,12 +1265,86 @@ For a given $\Bo$, $\theta_{\text{c}}$ and $\Delta$, equation~\ref{equ:mod_non_d
 \subsubsection{Comparison with BIM results}
 \label{subsubsection:mod_comp_bim}
 
-The floating-sinking transition as predicted by equation~\ref{equ:mod_non_dim} has been found for many different values of $\Delta$ to find one which closely approximates the observed transition in the BIM results. A good fit is found for a value of $\Delta = 1.334$ which is equivalent to $\delta / a = 0.155$ (figure~\ref{fig:static_bim_comp}). To test whether this simplified model provides a good explanation for the BIm results the final film thicknesses for simulations close to the floating-sinking transition have been measured.
+To test if the modified static model provides a suitable explanation for the observed floating-sinking transition in the BIM results, the results of four simulations where floating was observed but the parameters are close to the transition were chosen for further analysis (see table~\ref{tab:film_sims}). For each of these simulations, the final profile of the thickness of the film separating the sphere from the interface was considered (figure~\ref{fig:float_films}) and the mean thickness of the film, weighted by the radial coordinate of the fluid, was calculated (given in table~\ref{tab:film_sims}).
 
-  \begin{figure}
-    \resizebox{0.9\textwidth}{!}{\large \input{static_bim_comp.tex}}
-    \caption{The observed floating-sinking transition in the BIM results is best fitted with a value of $\Delta = 1.334$ (equivalent to $\delta / a = 0.155$). \label{fig:static_bim_comp}}
-  \end{figure}
+\begin{longtable}{|c|c|c|}
+  \caption{BIM simulations chosen for comparison with the modified static model, and the mean final thickness of the film separating the sphere from the interface. \label{tab:film_sims}} \\ % title name of the table
+  \hline
+$D$ & $\Bo$ & $\bar{\delta}$ \\
+  \hline % inserts single-line
+  3.4 & 1.0 & 1.381 \\
+  2.8 & 1.5 & 1.371 \\
+  2.2 & 2.5 & 1.346 \\
+  2.0 & 3.5 & 1.339 \\
+  \hline
+\end{longtable}
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.225\textwidth}
+        \resizebox{\textwidth}{!}{\Huge \input{float1.tex}}
+        \caption{}
+        \label{fig:float1}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.225\textwidth}
+        \resizebox{\textwidth}{!}{\Huge \input{float2.tex}}
+        \caption{}
+        \label{fig:float2}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.225\textwidth}
+        \resizebox{\textwidth}{!}{\Huge \input{float3.tex}}
+        \caption{}
+        \label{fig:float3}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.225\textwidth}
+        \resizebox{\textwidth}{!}{\Huge \input{float4.tex}}
+        \caption{}
+        \label{fig:float4}
+      \end{subfigure}
+
+      \begin{subfigure}[b]{0.9\textwidth}
+        \resizebox{\textwidth}{!}{\normalsize \input{film_profiles.tex}}
+        \caption{}
+        \label{fig:film_prof}
+      \end{subfigure}
+      \vspace{-0.7cm}
+      \caption{a) to d) The final equilibrium configuration of the simulations listed in table~\ref{tab:film_sims}. In each example, the film constricts at approximately $\theta = \pi / 2$, just before the interface transitions into the meniscus profile. e) Film thickness as a function of $\theta$. The film thickness can be seen to vary up to about 50\%.}\label{fig:float_films}
+    \end{figure}
+
+As can be seen in figures~\ref{fig:float1} to~\ref{fig:float2}, the film is seen to contract at its periphery. This agrees with previous experimental observations \citep{Hartland68} where it has been noted that the film constricts at it's periphery, just inside the point where it transitions to the meniscus profile. This constriction is predicted by the theoretical model of \citep{Jones78} as a consequence of pressure gradients in the film as a consequence of the change in curvature of the interface at the film periphery. 
+
+Additionally, the point where the film transitions to the meniscus occurs at a polar angle of $\theta \approx \pi / 2$. This is the first point of agreement with the modified static model. Differentiating of equation~\ref{equ:mod_non_dim} with respect to $\theta_{\text{c}}$ and setting $\partial D / \partial \theta_{\text{c}} = 0$ gives a solution of $\theta_{\text{c}} = \pi / 2$ (other solutions may exist but cannot be extracted due to the unavailability for a closed expression for $\partial z_{\text{c}} / \partial \theta_{\text{c}}$). Hence, there is a (at least a local) maximum in maximum value of $D$ for which floating can occur at $\theta_{\text{c}} = \pi / 2$. Since the chosen simulations are close to the transition, it is to be expected that they have an equilibrium configuration which allows for this maximum upward force.
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{float1_trans.tex}}
+        \caption{}
+        \label{fig:float1}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{float2_trans.tex}}
+        \caption{}
+        \label{fig:float2}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{float3_trans.tex}}
+        \caption{}
+        \label{fig:float3}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{float4_trans.tex}}
+        \caption{}
+        \label{fig:float4}
+      \end{subfigure}
+      \caption{Predicted transitions based on the mean thickness of each film. }\label{fig:float_trans}
+    \end{figure}
 
 \appendix
 

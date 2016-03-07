@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -77,10 +77,22 @@ J.~Happel and H.~Brenner.
 \newblock \emph{Low {R}eynolds number hydrodynamics}.
 \newblock Noordhoff {I}nternational {P}ublishing, second edition, 1973.
 
+\bibitem[Hartland(1968)]{Hartland68}
+S.~Hartland.
+\newblock The {A}pproach of a {R}igid {S}phere to a {D}eformable
+  {L}iquid/{L}iquid {I}nterface.
+\newblock \emph{Journal of {C}olloid and {I}nterface {S}cience}, 26:\penalty0
+  383--394, 1968.
+
 \bibitem[Jackson(1999)]{Jackson99}
 John~David Jackson.
 \newblock \emph{Classical electrodynamics}.
 \newblock Wiley, 3rd edition, 1999.
+
+\bibitem[Jones and Wilson(1978)]{Jones78}
+A.~F. Jones and S.~D.~R. Wilson.
+\newblock The film drainage problem in droplet coalescence.
+\newblock \emph{Journal of {F}luid {M}echanics}, 87:\penalty0 263--288, 1978.
 
 \bibitem[Keller(1998)]{Keller98}
 Joseph~B. Keller.
