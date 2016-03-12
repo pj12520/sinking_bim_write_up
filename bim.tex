@@ -1162,7 +1162,17 @@ A regime diagram has been constructed for the floating-sinking transition. It ha
 \subsubsection{Equilibrium Floating Position}
 \label{subsubsec:equilib_pos}
 
-For simulations where the sphere is observed to attain a static equilibrium position, the dependence of the final height of the sphere on $D$, $\Bo$ and $\lambda$ has been determined. 
+For simulations where the sphere is observed to attain a static equilibrium position, the dependence of the final height of the sphere $z_{\text{eq}}$on $D$, $\Bo$ and $\lambda$ has been determined. A key result is that $z_{\text{eq}}$ is independent of the viscosity ratio as seen in figure~\ref{fig:fin_pos_viscos}. Figure~\ref{fig:fin_pos} shows the dependence of $z_{\text{eq}}$ on $\Bo$ for different values of $D$. There are a number of points to note here. Firstly, as $\Bo \to 0$, the dependence of $z_{\text{eq}}$ on $D$ vanishes, and $z_{\text{c}} \to 0$. Once $\Bo > 0.01$, $z_{\text{c}}$ decreases and the equilibrium position of sphere is deeper with respect to the plane of the undeformed interface. For a given $\Bo$, the larger the value of $D$, the deeper the equilibrium position of the sphere. For $D \neq 1$, as $\Bo$ increases the floating-sinking transition is crossed and $z_{\text{eq}} \to -\infty$. For $D = 1$, as $\Bo \to \infty$, $z_{\text{c}} \to -0.32$. 
+
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\large \input{fin_pos_viscos.tex}}
+    \caption{Plots of $z_{\text{eq}}$ versus $\lambda$ for $\Bo = 1$ and different values of $D$. It is seen that there is no dependence on $\lambda$. The same is true for other values of $\Bo$. \label{fig:fin_pos_viscos}}
+  \end{figure}
+
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\large \input{fin_pos.tex}}
+    \caption{Plots of $z_{\text{eq}}$ versus $\Bo$ for $\lambda = 1$ and different values of $D$. As $\Bo \to 0$, $z_{\text{eq}}$ becomes independent of $D$. As $\Bo$ increases, the sphere transitions to sinking and so the plots cannot be continued to higher $\Bo$. \label{fig:fin_pos}}
+  \end{figure}
 
 \subsubsection{Entrained Volume}
 \label{subsubsec:ent_vol_res}
@@ -1208,7 +1218,7 @@ Using the non-dimensionalisation scheme presented in section~\ref{subsec:theory}
 
 \begin{equation}
 \label{equ:Vella_non_dim}
-D = \frac{3}{4 \Bo} \left[2 \sin \theta_{\text{c}} \sin(\chi - \theta_{\text{c}}) + \Bo \left( -\frac{z'_{\text{c}} \sin^{2} \theta_{\text{c}}}{\Bo^{1/2}} + \frac{2}{3} + \cos \theta_{\text{c}} - \frac{\cos \theta_{\text{c}}}{3}\right)\right]. 
+D = \frac{3 \sin \theta_{\text{c}} \sin(\chi - \theta_{\text{c}})}{2 \Bo} + \frac{2 + 3 \cos \theta_{\text{c}} - \cos^{3} \theta_{\text{c}}}{3} - \frac{3 z'_{\text{c}} \sin^{2}\theta_{\text{c}}}{4}
 \end{equation}
 
 For a given $\Bo$, contact angle $\chi$ and contact line position (given by $\theta_{\text{c}}$ and $z'_{\text{c}}$), this equation gives the largest possible value of $D$ for which an equilibrium floating position exists. The contact line position itself is found by solving the Laplace-Young equation for the interfacial profile subject to the boundary condition given by the contact angle condition on the sphere, and imposing that the interface returns to its equilibrium position away from the sphere. This is a boundary value problem \citep{Riley06} and has no analytical solution in an axisymmetric geometry so needs to be solved numerically. 
@@ -1245,7 +1255,7 @@ As in section~\ref{subsubsec:Vella_model}, this can be non dimensionalised to gi
 
 \begin{equation}
 \label{equ:mod_non_dim}
-D = \frac{3 \Delta^{1/2}}{4 \Bo} \left[2 \sin^{2} \theta_{\text{c}} + \Bo \Delta \left( -\frac{z'_{\text{c}} \sin^{2} \theta_{\text{c}}}{\Bo^{1/2} \Delta^{1/2}} + \frac{2}{3} + \cos \theta_{\text{c}} - \frac{\cos^{3} \theta_{\text{c}}}{3}\right)\right],
+D = \Delta^{1/2} \left(\frac{3 \sin^{2} \theta_{\text{c}}}{2 \Bo} + \frac{\Delta (2 + 3 \cos \theta_{\text{c}} - \cos^{3} \theta_{\text{c}})}{4} - \frac{3 z'_{\text{c}} \Delta^{1/2} \sin^{2} \theta_{\text{c}}}{4}\right)
 \end{equation}
 
 where
@@ -1347,6 +1357,17 @@ Figure~\ref{fig:film_prof} shows the film thickness as a function of $\theta$ fo
       \caption{Predicted transitions based on the mean thickness of each film. }\label{fig:float_trans}
     \end{figure}
 
+\subsection{Equilibrium Floating Position}
+\label{subsec:dis_float_pos}
+
+As figure~\ref{fig:fin_pos_viscos} shows, the equilibrium position of a floating sphere is independent of $\lambda$. This is an intuitive result since viscosity is only relevant for situations where fluid is moving, and floating is a static phenomenon. It is also found that as $\Bo \to 0$, the dependence of $z_{\text{eq}}$ on $D$ vanishes. This is because in this limit, the gravitational forces acting to deform the interface are significantly smaller than the restorative IFT forces meaning it is very difficult to deform the fluid interface. This is why $z_{\text{eq}} \to 1$ in this limit as this corresponds to the sphere sitting on top of a flat, undeformed interface. In the other limit ($\Bo to infty$) it is only possible to consider the case $D = 1$, since the sphere sinks for all other values of $D$. Here, $z_{\text{eq}}$ is observed to tend to the constant value of $-0.32$. That the equilibrium depth of the sphere is independent of the Bond number here is predicted by the modified static model described in section~\ref{subsubsec:mod_stat_mod}, since taking the limit of equation~\ref{equ:mod_non_dim} as $\Bo \to \infty$ and setting $D = 1$ gives
+
+\begin{equation}
+\label{equ:bo_to_infty}
+z_{\text{c}} = \frac{\Delta^{1/2} (2 + 3 \cos \theta_{\text{c}} - \cos^{3} \theta_{\text{c}})}{3 \sin^{2} \theta_{\text{c}}}.
+\end{equation}
+
+Equation~\ref{equ:bo_to_infty} is independent of $\Bo$ so the equilibrium position of the sphere $z_{\text{eq}} = z_{\text{c}} - \cos \theta_{\text{c}}$ is also. 
 \appendix
 
 \section{Dirac Delta Function}

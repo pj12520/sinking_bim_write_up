@@ -30,4 +30,4 @@ gnuplot "../../sinking_bim_data/trunk/film_thickness/profile.p"
 
 gnuplot "../../sinking_bim_data/trunk/float_comp/float_pub.p"
 
-#make
+make
