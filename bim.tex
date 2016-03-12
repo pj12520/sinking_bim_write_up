@@ -1267,15 +1267,15 @@ For a given $\Bo$, $\theta_{\text{c}}$ and $\Delta$, equation~\ref{equ:mod_non_d
 
 To test if the modified static model provides a suitable explanation for the observed floating-sinking transition in the BIM results, the results of four simulations where floating was observed but the parameters are close to the transition were chosen for further analysis (see table~\ref{tab:film_sims}). For each of these simulations, the final profile of the thickness of the film separating the sphere from the interface was considered (figure~\ref{fig:float_films}) and the mean thickness of the film, weighted by the radial coordinate of the fluid, was calculated (given in table~\ref{tab:film_sims}).
 
-\begin{longtable}{|c|c|c|}
+\begin{longtable}{|c|c|c|c|}
   \caption{BIM simulations chosen for comparison with the modified static model, and the mean final thickness of the film separating the sphere from the interface. \label{tab:film_sims}} \\ % title name of the table
   \hline
-$D$ & $\Bo$ & $\bar{\delta}$ \\
+$D$ & $\Bo$ & $\bar{\delta}$ & $\Delta$ \\
   \hline % inserts single-line
-  3.4 & 1.0 & 1.381 \\
-  2.8 & 1.5 & 1.371 \\
-  2.2 & 2.5 & 1.346 \\
-  2.0 & 3.5 & 1.339 \\
+  3.4 & 1.0 & 0.175 & 1.381 \\
+  2.8 & 1.5 & 0.171 & 1.371 \\
+  2.2 & 2.5 & 0.160 & 1.346 \\
+  2.0 & 3.5 & 0.157 & 1.339 \\
   \hline
 \end{longtable}
 
@@ -1310,13 +1310,14 @@ $D$ & $\Bo$ & $\bar{\delta}$ \\
         \caption{}
         \label{fig:film_prof}
       \end{subfigure}
-      \vspace{-0.7cm}
       \caption{a) to d) The final equilibrium configuration of the simulations listed in table~\ref{tab:film_sims}. In each example, the film constricts at approximately $\theta = \pi / 2$, just before the interface transitions into the meniscus profile. e) Film thickness as a function of $\theta$. The film thickness can be seen to vary up to about 50\%.}\label{fig:float_films}
     \end{figure}
 
-As can be seen in figures~\ref{fig:float1} to~\ref{fig:float2}, the film is seen to contract at its periphery. This agrees with previous experimental observations \citep{Hartland68} where it has been noted that the film constricts at it's periphery, just inside the point where it transitions to the meniscus profile. This constriction is predicted by the theoretical model of \citep{Jones78} as a consequence of pressure gradients in the film as a consequence of the change in curvature of the interface at the film periphery. 
+As can be seen in figures~\ref{fig:float1} to~\ref{fig:float4}, the film is seen to contract at its periphery. This agrees with previous experimental observations \citep{Hartland68} where it has been noted that the film constricts at it's periphery, just inside the point where it transitions to the meniscus profile. This constriction is predicted by the theoretical model of \citep{Jones78} as a consequence of pressure gradients in the film as a consequence of the change in curvature of the interface at the film periphery. 
 
-Additionally, the point where the film transitions to the meniscus occurs at a polar angle of $\theta \approx \pi / 2$. This is the first point of agreement with the modified static model. Differentiating of equation~\ref{equ:mod_non_dim} with respect to $\theta_{\text{c}}$ and setting $\partial D / \partial \theta_{\text{c}} = 0$ gives a solution of $\theta_{\text{c}} = \pi / 2$ (other solutions may exist but cannot be extracted due to the unavailability for a closed expression for $\partial z_{\text{c}} / \partial \theta_{\text{c}}$). Hence, there is a (at least a local) maximum in maximum value of $D$ for which floating can occur at $\theta_{\text{c}} = \pi / 2$. Since the chosen simulations are close to the transition, it is to be expected that they have an equilibrium configuration which allows for this maximum upward force.
+Additionally, the point where the film transitions to the meniscus occurs at a polar angle of $\theta \approx \pi / 2$. This is the first point of agreement with the modified static model. Differentiating of equation~\ref{equ:mod_non_dim} with respect to $\theta_{\text{c}}$ and setting $\partial D / \partial \theta_{\text{c}} = 0$ gives a solution of $\theta_{\text{c}} = \pi / 2$ (other solutions may exist but cannot be extracted due to the unavailability for a closed expression for $\partial z_{\text{c}} / \partial \theta_{\text{c}}$). Hence, there is a (at least a local) maximum in maximum value of $D$ for which floating can occur at $\theta_{\text{c}} = \pi / 2$. Since the chosen simulations are close to the transition, it is to be expected that they have an equilibrium configuration which gives this maximum upward force.
+
+Figure~\ref{fig:film_prof} shows the film thickness as a function of $\theta$ for the different simulations. It can be seen that, unlike in the modified static model, the film has a variable thickness which can vary by up to 50\%. Therefore, to compare these simulations with the results from the static model, the mean thickness of the film, weighted by the radial coordinate, has been calculated. The reason for weighting by the radial coordinate is because the axisymmtric geometry means, for a given film thickness, there is a greater volume of fluid at a larger radius. The weighted mean thicknesses $\bar{\delta}$ and their corresponding value of $\Delta$ are given in table~\ref{tab:film_sims}. Figure~\ref{fig:float_trans} shows the predicted transitions for these values of $\Delta$ compared to the results from the BIM. It can be seen that all values of $\Delta$ reproduce the observed transition for $\Bo \geq 4$ and that as $\Delta$ decreases then the lowest value of $\Bo$ at which there is agreement becomes smaller; for $\Delta = 1.339$ there is agreement for $\Bo \geq 1.5$. For smaller $\Bo$, the static model predicts the transition to be at larger values of $D$ than the BIM model. This discrepancy is most likely explained by the fact that as $\Bo$ decreases, the amount of variation in film thickness increases (figure~\ref{fig:film_prof}) so the assumption of constant film thickness in the static model begins to no longer be valid. However, regardless, the modified static model still does a very good job of predicting the transition observed in the BIM, compared to the original static model (see figure~\ref{fig:zoom_regime}).
 
     \begin{figure}
       \centering

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.12.18)  7 MAR 2016 21:33
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.12.18)  8 MAR 2016 09:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -643,10 +643,10 @@ it/12 s\OT1/cmr/m/n/12 )d\OML/cmm/m/it/12 s;
 \gptboxwidth=\skip66
 \gptboxtext=\box62
 Package epstopdf Info: Source file: <Happel.eps>
-(epstopdf)                    date: 2016-03-07 21:33:15
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 18857 bytes
 (epstopdf)             Output file: <Happel-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:36
 (epstopdf)                    size: 3486 bytes
 (epstopdf)             Command: <epstopdf --outfile=Happel-eps-converted-to.pdf
  Happel.eps>
@@ -658,10 +658,10 @@ File: Happel-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Happel-eps-converted-to.pdf>) (./int_test.tex
 Package epstopdf Info: Source file: <int_test.eps>
-(epstopdf)                    date: 2016-03-07 21:33:15
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 18371 bytes
 (epstopdf)             Output file: <int_test-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:36
 (epstopdf)                    size: 3431 bytes
 (epstopdf)             Command: <epstopdf --outfile=int_test-eps-converted-to.p
 df int_test.eps>
@@ -674,11 +674,11 @@ File: int_test-eps-converted-to.pdf Graphic file (type pdf)
 <use int_test-eps-converted-to.pdf>) [25 <./Happel-eps-converted-to.pdf>]
 [26 <./int_test-eps-converted-to.pdf>] (./viscos_rat=0_1_pos_pub.tex
 Package epstopdf Info: Source file: <viscos_rat=0_1_pos_pub.eps>
-(epstopdf)                    date: 2016-03-07 21:33:15
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 60041 bytes
 (epstopdf)             Output file: <viscos_rat=0_1_pos_pub-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2016-03-07 21:33:17
+(epstopdf)                    date: 2016-03-08 09:44:36
 (epstopdf)                    size: 28862 bytes
 (epstopdf)             Command: <epstopdf --outfile=viscos_rat=0_1_pos_pub-eps-
 converted-to.pdf viscos_rat=0_1_pos_pub.eps>
@@ -690,11 +690,11 @@ File: viscos_rat=0_1_pos_pub-eps-converted-to.pdf Graphic file (type pdf)
 
 <use viscos_rat=0_1_pos_pub-eps-converted-to.pdf>) (./viscos_rat=10_pos_pub.tex
 Package epstopdf Info: Source file: <viscos_rat=10_pos_pub.eps>
-(epstopdf)                    date: 2016-03-07 21:33:15
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 61903 bytes
 (epstopdf)             Output file: <viscos_rat=10_pos_pub-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2016-03-07 21:33:17
+(epstopdf)                    date: 2016-03-08 09:44:37
 (epstopdf)                    size: 29347 bytes
 (epstopdf)             Command: <epstopdf --outfile=viscos_rat=10_pos_pub-eps-c
 onverted-to.pdf viscos_rat=10_pos_pub.eps>
@@ -710,11 +710,11 @@ Overfull \hbox (5.22217pt too wide) in paragraph at lines 922--933
 
 (./viscos_rat=0_1_vol_pub.tex
 Package epstopdf Info: Source file: <viscos_rat=0_1_vol_pub.eps>
-(epstopdf)                    date: 2016-03-07 21:33:15
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 54737 bytes
 (epstopdf)             Output file: <viscos_rat=0_1_vol_pub-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2016-03-07 21:33:17
+(epstopdf)                    date: 2016-03-08 09:44:37
 (epstopdf)                    size: 28968 bytes
 (epstopdf)             Command: <epstopdf --outfile=viscos_rat=0_1_vol_pub-eps-
 converted-to.pdf viscos_rat=0_1_vol_pub.eps>
@@ -729,11 +729,11 @@ b-eps-converted-to.pdf> <./viscos_rat=10_pos_pub-eps-converted-to.pdf>]
 [28 <./viscos_rat=0_1_vol_pub-eps-converted-to.pdf>]
 (./viscos_rat=0_1_pos_trunc_pub.tex
 Package epstopdf Info: Source file: <viscos_rat=0_1_pos_trunc_pub.eps>
-(epstopdf)                    date: 2016-03-07 21:33:15
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 68990 bytes
 (epstopdf)             Output file: <viscos_rat=0_1_pos_trunc_pub-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:17
+(epstopdf)                    date: 2016-03-08 09:44:37
 (epstopdf)                    size: 18760 bytes
 (epstopdf)             Command: <epstopdf --outfile=viscos_rat=0_1_pos_trunc_pu
 b-eps-converted-to.pdf viscos_rat=0_1_pos_trunc_pub.eps>
@@ -747,11 +747,11 @@ File: viscos_rat=0_1_pos_trunc_pub-eps-converted-to.pdf Graphic file (type pdf)
  <use viscos_rat=0_1_pos_trunc_pub-eps-converted-to.pdf>)
 (./viscos_rat=10_pos_trunc_pub.tex
 Package epstopdf Info: Source file: <viscos_rat=10_pos_trunc_pub.eps>
-(epstopdf)                    date: 2016-03-07 21:33:15
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 70940 bytes
 (epstopdf)             Output file: <viscos_rat=10_pos_trunc_pub-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:18
+(epstopdf)                    date: 2016-03-08 09:44:37
 (epstopdf)                    size: 27433 bytes
 (epstopdf)             Command: <epstopdf --outfile=viscos_rat=10_pos_trunc_pub
 -eps-converted-to.pdf viscos_rat=10_pos_trunc_pub.eps>
@@ -768,11 +768,11 @@ Overfull \hbox (5.22217pt too wide) in paragraph at lines 949--960
 
 (./viscos_rat=0_1_vol_trunc_pub.tex
 Package epstopdf Info: Source file: <viscos_rat=0_1_vol_trunc_pub.eps>
-(epstopdf)                    date: 2016-03-07 21:33:15
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 62974 bytes
 (epstopdf)             Output file: <viscos_rat=0_1_vol_trunc_pub-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:18
+(epstopdf)                    date: 2016-03-08 09:44:37
 (epstopdf)                    size: 31567 bytes
 (epstopdf)             Command: <epstopdf --outfile=viscos_rat=0_1_vol_trunc_pu
 b-eps-converted-to.pdf viscos_rat=0_1_vol_trunc_pub.eps>
@@ -786,11 +786,11 @@ File: viscos_rat=0_1_vol_trunc_pub-eps-converted-to.pdf Graphic file (type pdf)
  <use viscos_rat=0_1_vol_trunc_pub-eps-converted-to.pdf>)
 (./viscos_rat=0_1_pos_n_interf.tex
 Package epstopdf Info: Source file: <viscos_rat=0_1_pos_n_interf.eps>
-(epstopdf)                    date: 2016-03-07 21:33:15
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 104482 bytes
 (epstopdf)             Output file: <viscos_rat=0_1_pos_n_interf-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:18
+(epstopdf)                    date: 2016-03-08 09:44:38
 (epstopdf)                    size: 22445 bytes
 (epstopdf)             Command: <epstopdf --outfile=viscos_rat=0_1_pos_n_interf
 -eps-converted-to.pdf viscos_rat=0_1_pos_n_interf.eps>
@@ -803,11 +803,11 @@ File: viscos_rat=0_1_pos_n_interf-eps-converted-to.pdf Graphic file (type pdf)
  <use viscos_rat=0_1_pos_n_interf-eps-converted-to.pdf>)
 (./viscos_rat=10_pos_n_interf.tex
 Package epstopdf Info: Source file: <viscos_rat=10_pos_n_interf.eps>
-(epstopdf)                    date: 2016-03-07 21:33:15
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 225495 bytes
 (epstopdf)             Output file: <viscos_rat=10_pos_n_interf-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:18
+(epstopdf)                    date: 2016-03-08 09:44:38
 (epstopdf)                    size: 81859 bytes
 (epstopdf)             Command: <epstopdf --outfile=viscos_rat=10_pos_n_interf-
 eps-converted-to.pdf viscos_rat=10_pos_n_interf.eps>
@@ -823,11 +823,11 @@ Overfull \hbox (5.22217pt too wide) in paragraph at lines 975--986
 
 (./viscos_rat=0_1_vol_n_interf.tex
 Package epstopdf Info: Source file: <viscos_rat=0_1_vol_n_interf.eps>
-(epstopdf)                    date: 2016-03-07 21:33:15
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 96403 bytes
 (epstopdf)             Output file: <viscos_rat=0_1_vol_n_interf-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:18
+(epstopdf)                    date: 2016-03-08 09:44:38
 (epstopdf)                    size: 36441 bytes
 (epstopdf)             Command: <epstopdf --outfile=viscos_rat=0_1_vol_n_interf
 -eps-converted-to.pdf viscos_rat=0_1_vol_n_interf.eps>
@@ -840,11 +840,11 @@ File: viscos_rat=0_1_vol_n_interf-eps-converted-to.pdf Graphic file (type pdf)
  <use viscos_rat=0_1_vol_n_interf-eps-converted-to.pdf>)
 (./viscos_rat=10_vol_n_interf.tex
 Package epstopdf Info: Source file: <viscos_rat=10_vol_n_interf.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 215438 bytes
 (epstopdf)             Output file: <viscos_rat=10_vol_n_interf-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:19
+(epstopdf)                    date: 2016-03-08 09:44:39
 (epstopdf)                    size: 90663 bytes
 (epstopdf)             Command: <epstopdf --outfile=viscos_rat=10_vol_n_interf-
 eps-converted-to.pdf viscos_rat=10_vol_n_interf.eps>
@@ -860,11 +860,11 @@ Overfull \hbox (5.22217pt too wide) in paragraph at lines 993--1004
 
 (./viscos_rat=0_1_pos_diff.tex
 Package epstopdf Info: Source file: <viscos_rat=0_1_pos_diff.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 126166 bytes
 (epstopdf)             Output file: <viscos_rat=0_1_pos_diff-eps-converted-to.p
 df>
-(epstopdf)                    date: 2016-03-07 21:33:19
+(epstopdf)                    date: 2016-03-08 09:44:39
 (epstopdf)                    size: 18351 bytes
 (epstopdf)             Command: <epstopdf --outfile=viscos_rat=0_1_pos_diff-eps
 -converted-to.pdf viscos_rat=0_1_pos_diff.eps>
@@ -877,11 +877,11 @@ File: viscos_rat=0_1_pos_diff-eps-converted-to.pdf Graphic file (type pdf)
 <use viscos_rat=0_1_pos_diff-eps-converted-to.pdf>)
 (./viscos_rat=10_pos_diff.tex
 Package epstopdf Info: Source file: <viscos_rat=10_pos_diff.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 301098 bytes
 (epstopdf)             Output file: <viscos_rat=10_pos_diff-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2016-03-07 21:33:19
+(epstopdf)                    date: 2016-03-08 09:44:39
 (epstopdf)                    size: 102006 bytes
 (epstopdf)             Command: <epstopdf --outfile=viscos_rat=10_pos_diff-eps-
 converted-to.pdf viscos_rat=10_pos_diff.eps>
@@ -903,11 +903,11 @@ _rat=10_pos_n_interf-eps-converted-to.pdf> <./viscos_rat=0_1_vol_n_interf-eps-c
 onverted-to.pdf> <./viscos_rat=10_vol_n_interf-eps-converted-to.pdf>]
 (./viscos_rat=0_1_vol_diff.tex
 Package epstopdf Info: Source file: <viscos_rat=0_1_vol_diff.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 115076 bytes
 (epstopdf)             Output file: <viscos_rat=0_1_vol_diff-eps-converted-to.p
 df>
-(epstopdf)                    date: 2016-03-07 21:33:20
+(epstopdf)                    date: 2016-03-08 09:44:40
 (epstopdf)                    size: 19584 bytes
 (epstopdf)             Command: <epstopdf --outfile=viscos_rat=0_1_vol_diff-eps
 -converted-to.pdf viscos_rat=0_1_vol_diff.eps>
@@ -920,11 +920,11 @@ File: viscos_rat=0_1_vol_diff-eps-converted-to.pdf Graphic file (type pdf)
 <use viscos_rat=0_1_vol_diff-eps-converted-to.pdf>)
 (./viscos_rat=10_vol_diff.tex
 Package epstopdf Info: Source file: <viscos_rat=10_vol_diff.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 299942 bytes
 (epstopdf)             Output file: <viscos_rat=10_vol_diff-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2016-03-07 21:33:20
+(epstopdf)                    date: 2016-03-08 09:44:40
 (epstopdf)                    size: 110642 bytes
 (epstopdf)             Command: <epstopdf --outfile=viscos_rat=10_vol_diff-eps-
 converted-to.pdf viscos_rat=10_vol_diff.eps>
@@ -942,10 +942,10 @@ Overfull \hbox (5.22217pt too wide) in paragraph at lines 1030--1041
 [32 <./viscos_rat=0_1_pos_diff-eps-converted-to.pdf> <./viscos_rat=10_pos_diff-
 eps-converted-to.pdf>] (./floating_frame2.tex
 Package epstopdf Info: Source file: <floating_frame2.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 22129 bytes
 (epstopdf)             Output file: <floating_frame2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:20
+(epstopdf)                    date: 2016-03-08 09:44:40
 (epstopdf)                    size: 4384 bytes
 (epstopdf)             Command: <epstopdf --outfile=floating_frame2-eps-convert
 ed-to.pdf floating_frame2.eps>
@@ -957,10 +957,10 @@ File: floating_frame2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use floating_frame2-eps-converted-to.pdf>) (./floating_frame3.tex
 Package epstopdf Info: Source file: <floating_frame3.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 22127 bytes
 (epstopdf)             Output file: <floating_frame3-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:20
+(epstopdf)                    date: 2016-03-08 09:44:41
 (epstopdf)                    size: 4645 bytes
 (epstopdf)             Command: <epstopdf --outfile=floating_frame3-eps-convert
 ed-to.pdf floating_frame3.eps>
@@ -972,10 +972,10 @@ File: floating_frame3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use floating_frame3-eps-converted-to.pdf>) (./floating_frame4.tex
 Package epstopdf Info: Source file: <floating_frame4.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 22128 bytes
 (epstopdf)             Output file: <floating_frame4-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:20
+(epstopdf)                    date: 2016-03-08 09:44:41
 (epstopdf)                    size: 4784 bytes
 (epstopdf)             Command: <epstopdf --outfile=floating_frame4-eps-convert
 ed-to.pdf floating_frame4.eps>
@@ -987,10 +987,10 @@ File: floating_frame4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use floating_frame4-eps-converted-to.pdf>) (./floating_frame5.tex
 Package epstopdf Info: Source file: <floating_frame5.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 22128 bytes
 (epstopdf)             Output file: <floating_frame5-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:21
+(epstopdf)                    date: 2016-03-08 09:44:41
 (epstopdf)                    size: 4806 bytes
 (epstopdf)             Command: <epstopdf --outfile=floating_frame5-eps-convert
 ed-to.pdf floating_frame5.eps>
@@ -1002,10 +1002,10 @@ File: floating_frame5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use floating_frame5-eps-converted-to.pdf>) (./floating_frame6.tex
 Package epstopdf Info: Source file: <floating_frame6.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 22129 bytes
 (epstopdf)             Output file: <floating_frame6-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:21
+(epstopdf)                    date: 2016-03-08 09:44:41
 (epstopdf)                    size: 4660 bytes
 (epstopdf)             Command: <epstopdf --outfile=floating_frame6-eps-convert
 ed-to.pdf floating_frame6.eps>
@@ -1017,10 +1017,10 @@ File: floating_frame6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use floating_frame6-eps-converted-to.pdf>) (./floating_frame7.tex
 Package epstopdf Info: Source file: <floating_frame7.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 22303 bytes
 (epstopdf)             Output file: <floating_frame7-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:21
+(epstopdf)                    date: 2016-03-08 09:44:41
 (epstopdf)                    size: 4633 bytes
 (epstopdf)             Command: <epstopdf --outfile=floating_frame7-eps-convert
 ed-to.pdf floating_frame7.eps>
@@ -1032,10 +1032,10 @@ File: floating_frame7-eps-converted-to.pdf Graphic file (type pdf)
 
 <use floating_frame7-eps-converted-to.pdf>) (./floating_traj.tex
 Package epstopdf Info: Source file: <floating_traj.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 66646 bytes
 (epstopdf)             Output file: <floating_traj-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:21
+(epstopdf)                    date: 2016-03-08 09:44:42
 (epstopdf)                    size: 5684 bytes
 (epstopdf)             Command: <epstopdf --outfile=floating_traj-eps-converted
 -to.pdf floating_traj.eps>
@@ -1047,10 +1047,10 @@ File: floating_traj-eps-converted-to.pdf Graphic file (type pdf)
 
 <use floating_traj-eps-converted-to.pdf>) (./sinking_frame1.tex
 Package epstopdf Info: Source file: <sinking_frame1.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 22127 bytes
 (epstopdf)             Output file: <sinking_frame1-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:21
+(epstopdf)                    date: 2016-03-08 09:44:42
 (epstopdf)                    size: 4631 bytes
 (epstopdf)             Command: <epstopdf --outfile=sinking_frame1-eps-converte
 d-to.pdf sinking_frame1.eps>
@@ -1062,10 +1062,10 @@ File: sinking_frame1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use sinking_frame1-eps-converted-to.pdf>) (./sinking_frame2.tex
 Package epstopdf Info: Source file: <sinking_frame2.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 22124 bytes
 (epstopdf)             Output file: <sinking_frame2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:21
+(epstopdf)                    date: 2016-03-08 09:44:42
 (epstopdf)                    size: 4778 bytes
 (epstopdf)             Command: <epstopdf --outfile=sinking_frame2-eps-converte
 d-to.pdf sinking_frame2.eps>
@@ -1077,10 +1077,10 @@ File: sinking_frame2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use sinking_frame2-eps-converted-to.pdf>) (./sinking_frame3.tex
 Package epstopdf Info: Source file: <sinking_frame3.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 22126 bytes
 (epstopdf)             Output file: <sinking_frame3-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:21
+(epstopdf)                    date: 2016-03-08 09:44:42
 (epstopdf)                    size: 4796 bytes
 (epstopdf)             Command: <epstopdf --outfile=sinking_frame3-eps-converte
 d-to.pdf sinking_frame3.eps>
@@ -1092,10 +1092,10 @@ File: sinking_frame3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use sinking_frame3-eps-converted-to.pdf>) (./sinking_frame4.tex
 Package epstopdf Info: Source file: <sinking_frame4.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 22127 bytes
 (epstopdf)             Output file: <sinking_frame4-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:21
+(epstopdf)                    date: 2016-03-08 09:44:42
 (epstopdf)                    size: 4664 bytes
 (epstopdf)             Command: <epstopdf --outfile=sinking_frame4-eps-converte
 d-to.pdf sinking_frame4.eps>
@@ -1107,10 +1107,10 @@ File: sinking_frame4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use sinking_frame4-eps-converted-to.pdf>) (./sinking_frame5.tex
 Package epstopdf Info: Source file: <sinking_frame5.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 22342 bytes
 (epstopdf)             Output file: <sinking_frame5-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:22
+(epstopdf)                    date: 2016-03-08 09:44:43
 (epstopdf)                    size: 4643 bytes
 (epstopdf)             Command: <epstopdf --outfile=sinking_frame5-eps-converte
 d-to.pdf sinking_frame5.eps>
@@ -1122,10 +1122,10 @@ File: sinking_frame5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use sinking_frame5-eps-converted-to.pdf>) (./sinking_frame6.tex
 Package epstopdf Info: Source file: <sinking_frame6.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 22753 bytes
 (epstopdf)             Output file: <sinking_frame6-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:22
+(epstopdf)                    date: 2016-03-08 09:44:43
 (epstopdf)                    size: 4993 bytes
 (epstopdf)             Command: <epstopdf --outfile=sinking_frame6-eps-converte
 d-to.pdf sinking_frame6.eps>
@@ -1137,10 +1137,10 @@ File: sinking_frame6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use sinking_frame6-eps-converted-to.pdf>) (./sinking_traj.tex
 Package epstopdf Info: Source file: <sinking_traj.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 55816 bytes
 (epstopdf)             Output file: <sinking_traj-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:22
+(epstopdf)                    date: 2016-03-08 09:44:43
 (epstopdf)                    size: 14226 bytes
 (epstopdf)             Command: <epstopdf --outfile=sinking_traj-eps-converted-
 to.pdf sinking_traj.eps>
@@ -1161,10 +1161,10 @@ d-to.pdf> <./sinking_frame4-eps-converted-to.pdf> <./sinking_frame5-eps-convert
 ed-to.pdf> <./sinking_frame6-eps-converted-to.pdf>] [37 <./sinking_traj-eps-con
 verted-to.pdf>] (./regime_pub.tex
 Package epstopdf Info: Source file: <regime_pub.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 19985 bytes
 (epstopdf)             Output file: <regime_pub-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:22
+(epstopdf)                    date: 2016-03-08 09:44:43
 (epstopdf)                    size: 3876 bytes
 (epstopdf)             Command: <epstopdf --outfile=regime_pub-eps-converted-to
 .pdf regime_pub.eps>
@@ -1176,10 +1176,10 @@ File: regime_pub-eps-converted-to.pdf Graphic file (type pdf)
 
 <use regime_pub-eps-converted-to.pdf>) (./zoom_regime_pub.tex
 Package epstopdf Info: Source file: <zoom_regime_pub.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 20524 bytes
 (epstopdf)             Output file: <zoom_regime_pub-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:22
+(epstopdf)                    date: 2016-03-08 09:44:43
 (epstopdf)                    size: 5336 bytes
 (epstopdf)             Command: <epstopdf --outfile=zoom_regime_pub-eps-convert
 ed-to.pdf zoom_regime_pub.eps>
@@ -1283,10 +1283,10 @@ m/it/12 ^^Z[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 g [] :
 
 [44 <./mod_stat_mod-eps-converted-to.pdf>] (./Delta_trans_pub.tex
 Package epstopdf Info: Source file: <Delta_trans_pub.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 19785 bytes
 (epstopdf)             Output file: <Delta_trans_pub-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:22
+(epstopdf)                    date: 2016-03-08 09:44:44
 (epstopdf)                    size: 3600 bytes
 (epstopdf)             Command: <epstopdf --outfile=Delta_trans_pub-eps-convert
 ed-to.pdf Delta_trans_pub.eps>
@@ -1299,10 +1299,10 @@ File: Delta_trans_pub-eps-converted-to.pdf Graphic file (type pdf)
 <use Delta_trans_pub-eps-converted-to.pdf>) [45 <./Delta_trans_pub-eps-converte
 d-to.pdf>] (./float1.tex
 Package epstopdf Info: Source file: <float1.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 19245 bytes
 (epstopdf)             Output file: <float1-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:23
+(epstopdf)                    date: 2016-03-08 09:44:44
 (epstopdf)                    size: 3741 bytes
 (epstopdf)             Command: <epstopdf --outfile=float1-eps-converted-to.pdf
  float1.eps>
@@ -1314,10 +1314,10 @@ File: float1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use float1-eps-converted-to.pdf>) (./float2.tex
 Package epstopdf Info: Source file: <float2.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 19262 bytes
 (epstopdf)             Output file: <float2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:23
+(epstopdf)                    date: 2016-03-08 09:44:44
 (epstopdf)                    size: 3763 bytes
 (epstopdf)             Command: <epstopdf --outfile=float2-eps-converted-to.pdf
  float2.eps>
@@ -1329,10 +1329,10 @@ File: float2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use float2-eps-converted-to.pdf>) (./float3.tex
 Package epstopdf Info: Source file: <float3.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 19249 bytes
 (epstopdf)             Output file: <float3-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:23
+(epstopdf)                    date: 2016-03-08 09:44:44
 (epstopdf)                    size: 3742 bytes
 (epstopdf)             Command: <epstopdf --outfile=float3-eps-converted-to.pdf
  float3.eps>
@@ -1344,10 +1344,10 @@ File: float3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use float3-eps-converted-to.pdf>) (./float4.tex
 Package epstopdf Info: Source file: <float4.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 19269 bytes
 (epstopdf)             Output file: <float4-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:23
+(epstopdf)                    date: 2016-03-08 09:44:44
 (epstopdf)                    size: 3748 bytes
 (epstopdf)             Command: <epstopdf --outfile=float4-eps-converted-to.pdf
  float4.eps>
@@ -1359,10 +1359,10 @@ File: float4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use float4-eps-converted-to.pdf>) (./film_profiles.tex
 Package epstopdf Info: Source file: <film_profiles.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 19816 bytes
 (epstopdf)             Output file: <film_profiles-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:23
+(epstopdf)                    date: 2016-03-08 09:44:44
 (epstopdf)                    size: 3819 bytes
 (epstopdf)             Command: <epstopdf --outfile=film_profiles-eps-converted
 -to.pdf film_profiles.eps>
@@ -1372,755 +1372,756 @@ Package epstopdf Info: Output file is already uptodate.
 <film_profiles-eps-converted-to.pdf, id=963, 361.35pt x 252.945pt>
 File: film_profiles-eps-converted-to.pdf Graphic file (type pdf)
 
-<use film_profiles-eps-converted-to.pdf>) (./float1_trans.tex
+<use film_profiles-eps-converted-to.pdf>) [46] [47 <./float1-eps-converted-to.p
+df> <./float2-eps-converted-to.pdf> <./float3-eps-converted-to.pdf> <./float4-e
+ps-converted-to.pdf> <./film_profiles-eps-converted-to.pdf>]
+(./float1_trans.tex
 Package epstopdf Info: Source file: <float1_trans.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 19718 bytes
 (epstopdf)             Output file: <float1_trans-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:23
+(epstopdf)                    date: 2016-03-08 09:44:45
 (epstopdf)                    size: 4578 bytes
 (epstopdf)             Command: <epstopdf --outfile=float1_trans-eps-converted-
 to.pdf float1_trans.eps>
 (epstopdf)             \includegraphics on input line 109.
 Package epstopdf Info: Output file is already uptodate.
 
-<float1_trans-eps-converted-to.pdf, id=973, 361.35pt x 252.945pt>
+<float1_trans-eps-converted-to.pdf, id=1002, 361.35pt x 252.945pt>
 File: float1_trans-eps-converted-to.pdf Graphic file (type pdf)
 
 <use float1_trans-eps-converted-to.pdf>) (./float2_trans.tex
 Package epstopdf Info: Source file: <float2_trans.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 19726 bytes
 (epstopdf)             Output file: <float2_trans-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:23
+(epstopdf)                    date: 2016-03-08 09:44:45
 (epstopdf)                    size: 4587 bytes
 (epstopdf)             Command: <epstopdf --outfile=float2_trans-eps-converted-
 to.pdf float2_trans.eps>
 (epstopdf)             \includegraphics on input line 109.
 Package epstopdf Info: Output file is already uptodate.
 
-<float2_trans-eps-converted-to.pdf, id=974, 361.35pt x 252.945pt>
+<float2_trans-eps-converted-to.pdf, id=1003, 361.35pt x 252.945pt>
 File: float2_trans-eps-converted-to.pdf Graphic file (type pdf)
 
 <use float2_trans-eps-converted-to.pdf>) (./float3_trans.tex
 Package epstopdf Info: Source file: <float3_trans.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 19727 bytes
 (epstopdf)             Output file: <float3_trans-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:24
+(epstopdf)                    date: 2016-03-08 09:44:45
 (epstopdf)                    size: 4582 bytes
 (epstopdf)             Command: <epstopdf --outfile=float3_trans-eps-converted-
 to.pdf float3_trans.eps>
 (epstopdf)             \includegraphics on input line 109.
 Package epstopdf Info: Output file is already uptodate.
 
-<float3_trans-eps-converted-to.pdf, id=975, 361.35pt x 252.945pt>
+<float3_trans-eps-converted-to.pdf, id=1004, 361.35pt x 252.945pt>
 File: float3_trans-eps-converted-to.pdf Graphic file (type pdf)
 
 <use float3_trans-eps-converted-to.pdf>) (./float4_trans.tex
 Package epstopdf Info: Source file: <float4_trans.eps>
-(epstopdf)                    date: 2016-03-07 21:33:16
+(epstopdf)                    date: 2016-03-08 09:44:35
 (epstopdf)                    size: 19727 bytes
 (epstopdf)             Output file: <float4_trans-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-07 21:33:24
+(epstopdf)                    date: 2016-03-08 09:44:45
 (epstopdf)                    size: 4583 bytes
 (epstopdf)             Command: <epstopdf --outfile=float4_trans-eps-converted-
 to.pdf float4_trans.eps>
 (epstopdf)             \includegraphics on input line 109.
 Package epstopdf Info: Output file is already uptodate.
 
-<float4_trans-eps-converted-to.pdf, id=976, 361.35pt x 252.945pt>
+<float4_trans-eps-converted-to.pdf, id=1005, 361.35pt x 252.945pt>
 File: float4_trans-eps-converted-to.pdf Graphic file (type pdf)
 
-<use float4_trans-eps-converted-to.pdf>) [46] [47 <./float1-eps-converted-to.pd
-f> <./float2-eps-converted-to.pdf> <./float3-eps-converted-to.pdf> <./float4-ep
-s-converted-to.pdf> <./film_profiles-eps-converted-to.pdf>] [48 <./float1_trans
--eps-converted-to.pdf> <./float2_trans-eps-converted-to.pdf> <./float3_trans-ep
-s-converted-to.pdf> <./float4_trans-eps-converted-to.pdf>] [49] [50] [51]
-[52] [53] [54] [55] [56]
+<use float4_trans-eps-converted-to.pdf>) [48] [49 <./float1_trans-eps-converted
+-to.pdf> <./float2_trans-eps-converted-to.pdf> <./float3_trans-eps-converted-to
+.pdf> <./float4_trans-eps-converted-to.pdf>] [50] [51] [52] [53] [54] [55]
+[56] [57]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no © in font cmr12!
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 1739.
+(hyperref)                removing `\begingroup' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 1739.
+(hyperref)                removing `\<let>-command' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@nomath' on input line 1739.
+(hyperref)                removing `\@nomath' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 1739.
+(hyperref)                removing `\begingroup' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 1739.
+(hyperref)                removing `\setbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\thinmuskip' on input line 1739.
+(hyperref)                removing `\thinmuskip' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\medmuskip' on input line 1739.
+(hyperref)                removing `\medmuskip' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\m@ne' on input line 1739.
+(hyperref)                removing `\m@ne' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\thickmuskip' on input line 1739.
+(hyperref)                removing `\thickmuskip' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ne' on input line 1739.
+(hyperref)                removing `\@ne' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 1739.
+(hyperref)                removing `\setbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 1739.
+(hyperref)                removing `\tw@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 1739.
+(hyperref)                removing `\<def>-command' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempa' on input line 1739.
+(hyperref)                removing `\@tempa' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 1739.
+(hyperref)                removing `\new@ifnextchar' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathchoice' on input line 1739.
+(hyperref)                removing `\mathchoice' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\displaystyle' on input line 1739.
+(hyperref)                removing `\displaystyle' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textstyle' on input line 1739.
+(hyperref)                removing `\textstyle' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptstyle' on input line 1739.
+(hyperref)                removing `\scriptstyle' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptscriptstyle' on input line 1739.
+(hyperref)                removing `\scriptscriptstyle' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 1739.
+(hyperref)                removing `\endgroup' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 1739.
+(hyperref)                removing `\begingroup' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 1739.
+(hyperref)                removing `\<let>-command' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@nomath' on input line 1739.
+(hyperref)                removing `\@nomath' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 1739.
+(hyperref)                removing `\begingroup' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 1739.
+(hyperref)                removing `\setbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\thinmuskip' on input line 1739.
+(hyperref)                removing `\thinmuskip' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\medmuskip' on input line 1739.
+(hyperref)                removing `\medmuskip' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\m@ne' on input line 1739.
+(hyperref)                removing `\m@ne' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\thickmuskip' on input line 1739.
+(hyperref)                removing `\thickmuskip' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ne' on input line 1739.
+(hyperref)                removing `\@ne' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 1739.
+(hyperref)                removing `\setbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 1739.
+(hyperref)                removing `\tw@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 1739.
+(hyperref)                removing `\<def>-command' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempa' on input line 1739.
+(hyperref)                removing `\@tempa' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 1739.
+(hyperref)                removing `\new@ifnextchar' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathchoice' on input line 1739.
+(hyperref)                removing `\mathchoice' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\displaystyle' on input line 1739.
+(hyperref)                removing `\displaystyle' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textstyle' on input line 1739.
+(hyperref)                removing `\textstyle' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptstyle' on input line 1739.
+(hyperref)                removing `\scriptstyle' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptscriptstyle' on input line 1739.
+(hyperref)                removing `\scriptscriptstyle' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 1739.
+(hyperref)                removing `\endgroup' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 1739.
+(hyperref)                removing `\begingroup' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 1739.
+(hyperref)                removing `\<let>-command' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@nomath' on input line 1739.
+(hyperref)                removing `\@nomath' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 1739.
+(hyperref)                removing `\begingroup' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 1739.
+(hyperref)                removing `\setbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\thinmuskip' on input line 1739.
+(hyperref)                removing `\thinmuskip' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\medmuskip' on input line 1739.
+(hyperref)                removing `\medmuskip' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\m@ne' on input line 1739.
+(hyperref)                removing `\m@ne' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\thickmuskip' on input line 1739.
+(hyperref)                removing `\thickmuskip' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ne' on input line 1739.
+(hyperref)                removing `\@ne' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 1739.
+(hyperref)                removing `\setbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 1739.
+(hyperref)                removing `\tw@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 1739.
+(hyperref)                removing `\<def>-command' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempa' on input line 1739.
+(hyperref)                removing `\@tempa' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 1739.
+(hyperref)                removing `\new@ifnextchar' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathchoice' on input line 1739.
+(hyperref)                removing `\mathchoice' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\displaystyle' on input line 1739.
+(hyperref)                removing `\displaystyle' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textstyle' on input line 1739.
+(hyperref)                removing `\textstyle' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptstyle' on input line 1739.
+(hyperref)                removing `\scriptstyle' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1739.
+(hyperref)                removing `\hbox' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1739.
+(hyperref)                removing `\mathsurround' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1739.
+(hyperref)                removing `\z@' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptscriptstyle' on input line 1739.
+(hyperref)                removing `\scriptscriptstyle' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 1739.
+(hyperref)                removing `\endgroup' on input line 1740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1739.
+(hyperref)                removing `math shift' on input line 1740.
 
-[57] [58]
-Overfull \hbox (6.09344pt too wide) detected at line 1788
+[58] [59]
+Overfull \hbox (6.09344pt too wide) detected at line 1789
 \OML/cmm/m/it/12 c[] \OT1/cmr/m/n/12 = []\OML/cmm/m/it/12 ;
  []
 
-[59] [60]
+[60] [61]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1889.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1889.
+(hyperref)                removing `math shift' on input line 1890.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1889.
+(hyperref)                removing `subscript' on input line 1890.
 
-[61] (./bim.bbl [62] [63] [64]) [65] (./bim.aux)
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1890.
+
+[62] (./bim.bbl [63] [64] [65]) [66] (./bim.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9268 strings out of 495061
- 141982 string characters out of 1182620
+ 9269 strings out of 495061
+ 141989 string characters out of 1182620
  261443 words of memory out of 3000000
  11790 multiletter control sequences out of 15000+50000
  25370 words of font info for 94 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,19n,58p,1474b,486s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,19n,58p,1683b,486s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/shar
 e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-tex
@@ -2141,9 +2142,9 @@ xlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts
 c/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb
 >
-Output written on bim.pdf (65 pages, 1303227 bytes).
+Output written on bim.pdf (66 pages, 1306329 bytes).
 PDF statistics:
- 1404 PDF objects out of 1440 (max. 8388607)
- 337 named destinations out of 1000 (max. 500000)
+ 1413 PDF objects out of 1440 (max. 8388607)
+ 338 named destinations out of 1000 (max. 500000)
  606 words of extra memory for PDF output out of 10000 (max. 10000000)
 

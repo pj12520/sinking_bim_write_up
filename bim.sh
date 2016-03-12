@@ -28,4 +28,6 @@ gnuplot "../../sinking_bim_data/trunk/float_sink_comp/static_comp.p"
 
 gnuplot "../../sinking_bim_data/trunk/film_thickness/profile.p"
 
-make
+gnuplot "../../sinking_bim_data/trunk/float_comp/float_pub.p"
+
+#make
