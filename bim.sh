@@ -30,4 +30,10 @@ gnuplot "../../sinking_bim_data/trunk/film_thickness/profile.p"
 
 gnuplot "../../sinking_bim_data/trunk/float_comp/float_pub.p"
 
+gnuplot "../../sinking_bim_data/trunk/snap_bond/snap_pub.p"
+
+gnuplot "../../sinking_bim_data/trunk/highBo_redo/snap_for_pub.p"
+
+gnuplot "../../sinking_bim_data/trunk/highBo_redo/grad_pub.p"
+
 make

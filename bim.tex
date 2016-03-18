@@ -26,6 +26,7 @@
 \usepackage{amsfonts}
 \usepackage{bigints}
 \usepackage{verbatim}
+\usepackage{amssymb}
 
 \textwidth 160mm
 \textheight 235mm
@@ -1177,6 +1178,88 @@ For simulations where the sphere is observed to attain a static equilibrium posi
 \subsubsection{Entrained Volume}
 \label{subsubsec:ent_vol_res}
 
+As described in section~\ref{sec:num_meth}, one of the criteria for the termination of the model is that two separate branches of the interface become closer to each other than the smallest interval length on either the sphere or the interface. In the case, the interface is assumed to snap at this point and the volume of upper phase fluid beneath the point of snapping is defined as the entrained volume $V$. The range of parameters for which the entrained volume was investigated is limited by the termination criteria of the model. For $D < 4$ or $\lambda > 0.03$, most simulations where sinking was observed terminated when the sphere and the interface became too close. For $D = 4$, the same is true for $\Bo <1$ and as $D$ increases, this critical value of $\Bo$ decreases, such that for $D = 1000$ interface snapping was observed down to $\Bo = 0.01$, the smallest value used.
+
+Figure~\ref{fig:mdr_snap} shows the dependence of the entrained volume of $\Bo$ for different values of $D$ and $\lambda$. For $D = 8$ (figure~\ref{fig:mdr=8}), it can be seen that for $\Bo < 1$, $V$ is approximately independent of $\lambda$ and $V \sim \ln\Bo$. For $\Bo > 1$, $V$ becomes independent of $\Bo$ and there is a weak dependence on $\lambda$; the more viscous the upper fluid relative to the lower fluid, the greater the volume of entrained fluid. Increasing $D$ to 50 (figure~\ref{fig:mdr=50}) it can be seen that the viscosity independent linear relationship between $V$ and $\ln\Bo$ is present for $\ln \Bo < -2$ ($\Bo < 0.14$). For larger Bond numbers, $V$ again becomes independent of $\Bo$ although the viscosity dependence is stronger than for $D = 8$. Additionally, for a given $\Bo$ and $\lambda$, $V$ is greater for $D = 50$ than $D = 8$.
+
+These trends are continued to higher values of $D$ (figures~\ref{fig:mdr=100} and~\ref{fig:mdr=1000}). The transitional value of $\Bo$ decreases as $D$ increases; for $D = 1000$ this transitional value is smaller than the smallest $\Bo$ used. Also, as $D$ increases at fixed $\lambda$ and $\Bo$, so does $V$.
+
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{mdr=8_pub.tex}}
+        \caption{}
+        \label{fig:mdr=8}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{mdr=50_pub.tex}}
+        \caption{}
+        \label{fig:mdr=50}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{mdr=100_pub.tex}}
+        \caption{}
+        \label{fig:mdr=100}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{mdr=1000_pub.tex}}
+        \caption{}
+        \label{fig:mdr=1000}
+      \end{subfigure}
+      \caption{Dependence of entrained volume $V$ on $\Bo$ for different $\lambda$ for a) $D = 8$, b) $D = 50$, c) $D = 100$ and d) $D = 1000$. At small $\Bo$ there seems to be a linear relationship between $V$ and $\ln\Bo$ but as $\Bo$ increases, $V$ becomes independent of $\Bo$. }\label{fig:mdr_snap}
+    \end{figure}
+
+Figure~\ref{fig:viscos_snap} shows the same data as in figure~\ref{fig:mdr_snap} but with curves with different values of $D$ shown on the same plot with a fixed value of $\lambda$. All of the previously described features can be observed including the two regimes: $V \sim \ln\Bo$ and $V \neq V(\Bo)$, and the increase in $V$ with increasing $D$ and decreasing $\lambda$.
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=001_pub.tex}}
+        \caption{}
+        \label{fig:viscos_rat=0.001}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=005_pub.tex}}
+        \caption{}
+        \label{fig:viscos_rat=0.005}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=01_pub.tex}}
+        \caption{}
+        \label{fig:viscos_rat=0.01}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=03_pub.tex}}
+        \caption{}
+        \label{fig:mdr=viscos_rat=0.03}
+      \end{subfigure}
+      \caption{Dependence of entrained volume $V$ on $\Bo$ for different $D$ for a) $\lambda = 0.001$, b) $\lambda = 0.005$, c) $\lambda = 0.01$ and d) $\lambda = 0.03$. At small $\Bo$ there seems to be a linear relationship between $V$ and $\ln\Bo$ but as $\Bo$ increases, $V$ becomes independent of $\Bo$. }\label{fig:viscos_snap}
+    \end{figure}
+
+In magmas, the IFt $\sigma$ between two melts is expected to be equal to zero or very small (melts of different compositions are miscible). Therefore, in magmatic systems $\Bo \to \infty$. Motivated by this, figure~\ref{fig:highBo} shows the dependence of $V$ on $\lambda$ and $D$ for $\Bo = 1000$, which as can be seen from figures~\ref{fig:mdr_snap} and~\ref{fig:viscos_snap} is well into the regime where $V$ is independent of $\Bo$. Hence, these results can be considered the same as for when $\Bo \to \infty$. As seen in figure~\ref{fig:highBo_viscos}, for small values of $D$ ($\leq 3.5$) $V$ is nearly independent of $\lambda$. However, as $D$ increases, it is seen that $V$ decreases with $\lambda$. These features can also be seen in figure~\ref{fig:highBo_mdr} where it appears that the dependence on $D$ can be split into two regimes. For $\ln D$ between 0 and some critical value, $V \sim \ln D$. For $\lambda = 0.001$, this critical value is approximately 3, and this decreases to 1.4 for $\lambda = 0.05$. Above this critical value, the dependence on $D$ weakens, and it is possible that as $D \to \infty$, $V$ becomes independent of $D$, although further simulations at higher $D$ would be needed to verify this.
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{highBo_viscos_for_pub.tex}}
+        \caption{}
+        \label{fig:highBo_viscos}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{highBo_mdr_for_pub.tex}}
+        \caption{}
+        \label{fig:highBo_mdr}
+      \end{subfigure}
+      \caption{Dependence of $V$ on a) $\lambda$ for different $D$ and b) $D$ for different $\lambda$, for $\Bo = 1000$, which is in the regime where $V$ is independent of $\Bo$.}\label{fig:highBo}
+    \end{figure}
 
 \subsection{Settling Spheroids}
 \label{subsec:spheroids}
@@ -1368,6 +1451,54 @@ z_{\text{c}} = \frac{\Delta^{1/2} (2 + 3 \cos \theta_{\text{c}} - \cos^{3} \thet
 \end{equation}
 
 Equation~\ref{equ:bo_to_infty} is independent of $\Bo$ so the equilibrium position of the sphere $z_{\text{eq}} = z_{\text{c}} - \cos \theta_{\text{c}}$ is also. 
+
+\subsection{Entrained Volume}
+\label{subsec:dis_ent_vol}
+
+Figures~\ref{fig:mdr_snap} and~\ref{fig:viscos_snap} show that below a critical value of $\Bo$, $V \sim \ln \Bo$ at a fixed $D$ and $\lambda$. This result can be compared that obtained by \citet{Pitois99} who performed experiments where steel or glass beads were dropped onto the interface between PDMS oil and water. They found that the volume of the entrained upper phase fluid was independent of $\lambda$ (although in their experiments $10^{-9} \leq \lambda \leq 10^{-10}$) and $V \sim \ln(D \Bo)$. To compare to this study, the data from figure~\ref{fig:viscos_snap} has been replotted with $\ln(D \Bo)$ on the x-axis (figure~\ref{fig:viscos_snap_DBo}). As can be seen, this has the effect of shifting the curves along the x-axis by an amount $\ln D$. It can be seen that at $\ln(D \Bo) \approx 1$, then all of the curves for different values of $D$ are coincident. However, this is generally not true. Hence the conclusion of \citet{Pitois99} that $V \sim \ln(D \Bo)$ is only valid for $\ln(D \Bo) \to 1$ from above. 
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=001_DBo_pub.tex}}
+        \caption{}
+        \label{fig:viscos_rat=0.001_DBo}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=005_DBo_pub.tex}}
+        \caption{}
+        \label{fig:viscos_rat=0.005_DBo}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=01_DBo_pub.tex}}
+        \caption{}
+        \label{fig:viscos_rat=0.01_DBo}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{viscos_rat=03_DBo_pub.tex}}
+        \caption{}
+        \label{fig:mdr=viscos_rat=0.03_DBo}
+      \end{subfigure}
+      \caption{Dependence of entrained volume $V$ on $\ln(D \Bo)$ for different $D$ for a) $\lambda = 0.001$, b) $\lambda = 0.005$, c) $\lambda = 0.01$ and d) $\lambda = 0.03$. }\label{fig:viscos_snap_DBo}
+    \end{figure}
+
+Our results show that for $D \Bo \sim O(1) - O(10)$, as the Bond number or MDR increase, so does the entrained volume. A qualitative explanation of this is relatively intuitive. As you increase the Bond number, the relative strength of IFT forces that oppose deformation of the interface decreases, allowing interfacial deformation further away from the sphere. By widening the field of deformation on the interface, the sphere can sink further into the lower fluid (extending the length of the column) before the column becomes so thin that it snaps. Increasing the density ratio means that, relative to the density of the sphere, the density difference between the two fluids is decreased. Hence, the buoyancy force on the upper phase fluid being dragged down into the entraining column is weaker compared to the drag force on the fluid from the sphere. Hence, as $D$ increases the amount of upper phase fluid entrained into the lower phase increases. It is also observed for $D \Bo \sim O(1) - O(10)$ that the entrained volume is largely independent of the viscosity ratio (at least in the range $0.001 \leq \lambda \leq 0.03$). Quantitatively, this is expected, since taking the limit of equation~\ref{equ:I1} as $\lambda \to 0$ shows that dependence of the system on the viscosity ratio vanishes. A physical explanation for this can be deduced by considering a force balance on the sphere. The upward forces on the sphere are governed by the IFT and the viscosity of the two fluids. Decreasing the value of the viscosity ratio whilst keeping $\Bo$ fixed means that the IFT becomes the dominant contribution to the upward forces. Hence changes in the viscosity ratio when $\lambda \ll 1$ have little affect on the entrained volume. 
+
+Figure~\ref{fig:highBo} shows the dependence of the entrained volume $V$ on $\lambda$ and $D$ for the case where $\Bo \to \infty$. It can be seen that for $\ln D \lesssim 2$, $V \sim \ln D$. The data in this linear regime has been fitted to the model $V = m(\lambda) \ln D + c$ and figure~\ref{fig:grad} shows the function $m(\lambda)$. This relationship cannot be fitted by either an exponential or power law relationship but qualitatively, $m(\lambda)$ decreases as $\lambda$ increases, with $m$ decreasing by approximately 30\% over $0.001 \leq \lambda \leq 0.05$. 
+
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\large \input{grad_pub.tex}}
+    \caption{\label{fig:grad}}
+  \end{figure}
+
+In the high $\Bo$ limit, it is seen that $V$ is independent of $\Bo$. This can be explained with a similar argument to above. As the Bond number decreases, so do the relative magnitudes of IFT forces. Hence, the dominant upward force on the sphere becomes the viscous drag. Once the IFT force is significantly smaller than the viscous drag, changes in the IFT force no longer affect the sphere, or the fluid entrained during sinking. This also explains why the effect of the viscosity ratio increases as the Bond number increases. 
+
+Also in the high $\Bo$ limit, for $D \sim O(1)$, $V$ is largely independent of the viscosity ratio. This is because only small viscosity ratios are considered, and the dominant control on the behaviour is the balance between the gravitational force on the sphere and the buoyant force on the fluid in the column. As $D \to \infty$, the upward force due to the buoyancy of the fluid in the column becomes smaller relative to the viscous drag force induced by the surrounding fluid. Hence, in this limit, the viscosity ratio becomes important. Larger viscosity ratios means a larger upward force on the sphere, so the sphere sinks slower, allowing the column to thin quicker than it can lengthen, thus leading to smaller entrained volumes.
+
+Although physical principles have been able to provide a qualitatibe rationale for the observed results, a theoretical description providing a quantitative prediction of these results has not been attempted. 
 \appendix
 
 \section{Dirac Delta Function}
