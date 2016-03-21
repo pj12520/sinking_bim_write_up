@@ -1261,12 +1261,122 @@ In magmas, the IFt $\sigma$ between two melts is expected to be equal to zero or
       \caption{Dependence of $V$ on a) $\lambda$ for different $D$ and b) $D$ for different $\lambda$, for $\Bo = 1000$, which is in the regime where $V$ is independent of $\Bo$.}\label{fig:highBo}
     \end{figure}
 
+\subsubsection{Sinking Timescale}
+\label{subsubsec:sink_time}
+
+The sinking timescale $t_{\text{s}}$ is defined as the time between the sphere first touching the plane of the undeformed interface and the moment at which the sphere loses contact with the bulk of the upper phase i.e. when the tail snaps. Within the BIM, this is interpretted as the moment at which the separation between the two branches of the interface becomes smaller than the separation between the points use to discretise it. Figure~\ref{fig:mdr_time} shows the dependence of the sinking time on the Bond number, for different values of the MDR and viscosity ratio. It is observed that the function $t_{\text{s}} = t_{\text{s}}(\Bo, D, \lambda)$ is not simple. For all values of $D$ and $\Bo$, the larger the value of the viscosity ratio, the longer the sinking time. Additionally, for all values of $D$, as $\Bo$ approaches the floating transition, the time taken for sinking tends to infinity, and as $\Bo \to \infty$ the sinking time becomes independent of $\Bo$. However, the behaviour is complicated for intermediate value of $\Bo$. For $D = 8$, the decrease in sinking time with $\Bo$ is monotonic. However as $D$ increases, a minimum in the sinking time as a function of $\Bo$ appears. This minimum only appears for larger values of the viscosity ratio and becomes more pronounced as the viscosity ratio increases. For the case $D = 1000$, it is inferred that the minimum in the curve for $\lambda = 0.03$ occurs at a vlaue of $\Bo < 0.01$ (the smallest Bond number investigated).
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{mdr=8_time.tex}}
+        \caption{}
+        \label{fig:mdr=8_time}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{mdr=50_time.tex}}
+        \caption{}
+        \label{fig:mdr=50_time}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{mdr=100_time.tex}}
+        \caption{}
+        \label{fig:mdr=100_time}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{mdr=1000_time.tex}}
+        \caption{}
+        \label{fig:mdr=1000_time}
+      \end{subfigure}
+      \caption{Dependence of the sinking timescale $t_{\text{s}}$ on $\Bo$ for different $\lambda$ and a) $D = 8$, b) $D = 50$, c) $D = 100$ and d) $D = 1000$. Note the difference in vertical scale between the figures.}\label{fig:mdr_time}
+    \end{figure}
+
+Bearing in mind the application to mixing magmas, the high Bond number limit has been investigated (figure~\ref{fig:highBo_time}). As before, figure~\ref{fig:time_viscos} shows that an increase in the value of the viscosity ratio leads to an increase in the sinking timescale. Like with $\Bo$, the sinking timescale depends on $D$ in a non-monotonic fashion (figure~\ref{fig:time_mdr}). As $D \to 1$, $t_{\text{s}} \to \infty$ and as $D \to \infty$ the sinking timescale becomes independent of $D$. However, there is a local minimum in the value of $t_{\text{s}}$ at approximately $\ln D \approx 2$ ($D \approx 7.3$).
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{time_viscos.tex}}
+        \caption{}
+        \label{fig:time_viscos}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{time_mdr.tex}}
+        \caption{}
+        \label{fig:time_mdr}
+      \end{subfigure}
+      \caption{Dependence of $t_{\text{s}}$ on a) $\lambda$ for different $D$ and b) $D$ for different $\lambda$, for $\Bo = 1000$, which is in the regime where $t_{\text{s}}$ is independent of $\Bo$.}\label{fig:highBo_time}
+    \end{figure}
+
 \subsection{Settling Spheroids}
 \label{subsec:spheroids}
 
+The settling of non-spherical particles shows different behaviour. Figure~\ref{fig:float_oblate} shows the settling of an oblate spheroid of aspect ratio $R = 0.5$ onto an interface, where the dimensionless parameters are $D = 2$, $\Bo = 10$ and $\lambda = 1$. As can be seen, the speroid is able to float at the interface. Comparing with figure~\ref{zoom_regime_pub.tex} it can be seen that for these values, spheres are observed to sink through the interface. Therefore, decreasing the aspect ratio of the particle can inhibit sinking. 
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{ob_float1.tex}}
+        \caption{}
+        \label{fig:ob_float1}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{ob_float2.tex}}
+        \caption{}
+        \label{fig:ob_float2}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{ob_float3.tex}}
+        \caption{}
+        \label{fig:ob_float3}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{ob_float4.tex}}
+        \caption{}
+        \label{fig:ob_float4}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{ob_float5.tex}}
+        \caption{}
+        \label{fig:ob_float5}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\large \input{ob_float6.tex}}
+        \caption{}
+        \label{fig:ob_float6}
+      \end{subfigure}
+      \caption{Settling of an oblate spheroid with aspect ratio $R = 0.5$ onto the interface when $D = 2$, $\Bo = 10$ and $\lambda = 1$. The interface deforms as the sphere approaches and forms a depression into which the spheroid sits. }\label{fig:float_oblate}
+    \end{figure}
+
+Figure~\ref{fig:sinking_comp} compares the sinking of a sphere and that of a spheroid of aspect ratio $0.5$ where $D = \Bo = 1000$ and $\lambda = 1$. It is seen that at a given depth, the interfacial profile in both simulations is very similar, although it takes the spheroid much longer for it to reach that depth. In all simulations of an oblate spheroid where sinking was observed, all models terminated due to the separation between particle and interface becoming smaller than the distance between discretisation points. Hence, no simulations proceeded to tail snapping and therefore no data has been obtained regarding the sinking timescale and the entrained volume.
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{sphere_frame.tex}}
+        \caption{}
+        \label{fig:sphere_sink}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{ob_frame.tex}}
+        \caption{}
+        \label{fig:ob_sink}
+      \end{subfigure}
+      \caption{Comparing the sinking of a a) sphere and an b) oblate spheroid with $R = 0.5$ for $D = \Bo = 1000$ and $\lambda = 1$. Both interfacial profiles are very similar.}\label{fig:sinking_comp}
+    \end{figure}
 
 \section{Discussion}
 \label{sec:discuss}
+
 
 \subsection{Floating versus Sinking}
 \label{subsec:float_sink_discuss}
@@ -1499,6 +1609,31 @@ In the high $\Bo$ limit, it is seen that $V$ is independent of $\Bo$. This can b
 Also in the high $\Bo$ limit, for $D \sim O(1)$, $V$ is largely independent of the viscosity ratio. This is because only small viscosity ratios are considered, and the dominant control on the behaviour is the balance between the gravitational force on the sphere and the buoyant force on the fluid in the column. As $D \to \infty$, the upward force due to the buoyancy of the fluid in the column becomes smaller relative to the viscous drag force induced by the surrounding fluid. Hence, in this limit, the viscosity ratio becomes important. Larger viscosity ratios means a larger upward force on the sphere, so the sphere sinks slower, allowing the column to thin quicker than it can lengthen, thus leading to smaller entrained volumes.
 
 Although physical principles have been able to provide a qualitatibe rationale for the observed results, a theoretical description providing a quantitative prediction of these results has not been attempted. 
+
+\subsection{Sinking Timescale}
+\label{subsec:diss_sink_time}
+
+As the results of section~\ref{subsubsec:sink_time} show, the dependence of the sinking timescale $t_{\text{s}}$ on the dimensionless parameters $D$, $\Bo$ and $\lambda$ is non-trivial. The simplest dependence is on the viscosity ratio; as $\lambda$ increases from 0.001 to 0.03 the sinking timescale increases. This is a fairly intuitive observation; the larger the viscosity of the lower fluid the larger the drag force on the sphere and the longer the sphere takes to sink. The dependence on the $\Bo$ is significantly more complicated. As $\Bo$ tends to the floating transition, $t_{\text{s}} \to \infty$. This is to be expected as simulations where floating is observed can be interpretted as taking an infinite time to sink. Also, as $\Bo \to \infty$, $t_{\text{s}}$ becomes independent of the Bond number. This can be explained by the fact that in this limit, the IFT forces are negligible, so viscous forces provide the dominant contribution to the upward component of force. Hence, the Bond number has no control on the rate of sinking in this regime.
+
+The behaviour at intermediate Bond numbers is harder to explain. At $D = 8$, the sinking time decreases monotonically as $\Bo$ increases. However, as $D$ increases, a minimum in $t_{\text{s}}$ appears at some value of $\Bo$. As both $D$ and $\lambda$ increase, the difference between the minimum sinking time, and the value of $t_{\text{s}}$ as $\Bo \to \infty$ increases. This type of behaviour suggests that there is more than one process determining the rate at which the sphere sinks, with each process having a different timescale.
+
+The sinking of a sphere can be considered to proceed in two stages: deformation and column thinning (figure~\ref{fig:sink_stages}). The deformation stage takes place from the moment the sphere first touches the plane $z = 0$ and is characterised by the sphere deforming the interface around it as it settles through this plane. Once the sphere has moved beyond this plane, a column of upper phase fluid connects the sphere to the bulk of the upper phase. The second stage of sinking is the thinning of this column as the sphere continues to move away from the interface, dragging some of the upper phase fluid with it, whilst fluid higher in the column rises buoyantly back into the bulk of the upper phase. Once the column has thinned to a critical thickness rupture occurs. 
+
+\begin{figure}
+  $$\includegraphics[width=0.8\textwidth]{sink_stages.png}$$
+  \caption{Two stages of a sphere sinking through an interface. Deformation: The sphere deforms the interface as it settles through the $z = 0$ plane. Column thinning: Once the sphere is beyond the $z = 0$ plane, a column of upper phase fluid is entrained behind the sphere. Sinking is complete once this has thinned and snapped. \label{fig:sink_stages}}
+\end{figure}
+
+The two stages of sinking can be considered to have intrinsic timescale associated with them, $t_{1}$ for deformation and $t_{2}$ for column thinning. The total sinking timescale is then given by $t_{\text{s}} = t_{1} + t_{2}$. The effect of the dimensionless parameters on the individual timescales can be examined. The larger the viscosity ratio, the larger the viscous forces acting upward on the sphere during both stages of the sinking. Hence, increasing the value of the viscosity ratio extends both $t_{1}$ and $t_{2}$. During the deformation stage, decreasing the Bond number also increases the upward force on the sphere due to the relative increase in IFT forces. Hence, decreasing $\Bo$ increases $t_{1}$. However, in the column thinning stage, a larger IFT will lead to pinching occuuring at a larger column radius so a decrease in $\Bo$ decreases $t_{2}$. The opposing effects of $\Bo$ on $t_{1}$ and $t_{2}$ lead to the non-monotonic behaviour at intermediate Bond numbers.
+
+A similar argument can be used to explain the similar behaviour observed in figure~\ref{fig:time_mdr}. Increasing $D$ decreases the density difference between the two fluid relative to that of the sphere, reducing the upward buoyancy force due to the volume of upper phase fluid displaced below the plane $z = 0$ and so $t_{1}$ decreases. However, this also means that the return velocity of the fluid in the resultant column is small and so $t_{2}$ increases. This again leads to non-monotonic behaviour. 
+
+In the simulations, it is difficult to identify the time at which the deformation stage ends and the column thinning stage begins. It is therefore difficult to identify these intinsic timescales from the data.
+
+\subsection{Settling Spheroids}
+\label{subsec:spheroid_dis}
+
+Whilst qualtiative comparisons between the behaviour of spheres and oblate spheroids, it has not been possible to produce a more quantitative comparison. The primary reason for this is that the majority of simulations involving a prolate spheroid have terminated due to the separation between the particle and the interface becoming smaller than the distance between collocation points on either the sphere or the interface. This often occurs during the deformation phase, and so it is impossible to tell whether the particle would float or sink. Additionally, if the simulation does proceed to the column-thinning stage, the particle-interface separation criteria is satisfied long before the interface snapping criteria meaning no data regarding the sinking timescale or the entrained volume can be obtained. With further development of the numerical method, it should be possible to overcome these issues.
 \appendix
 
 \section{Dirac Delta Function}

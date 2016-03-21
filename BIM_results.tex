@@ -1,0 +1,603 @@
+%---------------------------------------------------------------------------------
+%	CHAPTER FILE (C.Stamper template)
+%---------------------------------------------------------------------------------
+
+%\onehalfspace
+\chapter[Boundary integral model: Results and discussion]{Boundary integral model: Results and discussion}
+\chaptermark{BIM Results}
+\label{ch:mod_res} % label for referring to chapter in other parts of the thesis
+\textbf{ABSTRACT}\\
+\small{Chapter abstract} % Having a chapter abstract is optional
+\vfill
+\small{\textbf{Author Contributions:} Detail who did what.
+\newpage
+
+
+\section{Results}
+\label{sec:res}
+
+\subsection{Settling Spheres}
+\label{subsec:sphere_res}
+
+\subsubsection{Floating versus Sinking}
+\label{subsubsec:sphere_float}
+
+There are two possible situations for each simulation: floating or sinking. For simulations where floating is observed, the sphere velocity becomes negligibly small as the sphere-interface separation descreases, and never increases. This leads to the sphere attaining an equilibrium position at the interface (figures~\ref{fig:floating_frame} and~\ref{fig:floating_traj}). Alternatively, the sphere velocity can remain significant at all times, and the interface deforms around the sphere as it sinks through the interface (figures~\ref{fig:sinking_frame} and~\ref{fig:sinking_traj}). 
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/floating_frame2.tex}}
+        \caption{}
+        \label{fig:floating_frame2}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/floating_frame3.tex}}
+        \caption{}
+        \label{fig:floating_frame3}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/floating_frame4.tex}}
+        \caption{}
+        \label{fig:floating_frame4}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/floating_frame5.tex}}
+        \caption{}
+        \label{fig:floating_frame5}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/floating_frame6.tex}}
+        \caption{}
+        \label{fig:floating_frame6}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/floating_frame7.tex}}
+        \caption{}
+        \label{fig:floating_frame7}
+      \end{subfigure}
+      \caption{Settling of a sphere onto the interface when $D = 2.2$, $\Bo = 2.5$ and $\lambda = 1$. The interface deforms as the sphere approaches and the sphere attains an equilibrium position with a thin film of fluid trapped between the sphere and the interface.}\label{fig:floating_frame}
+    \end{figure}
+
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\large \input{../../Programming/sinking_bim_write_up/trunk/floating_traj.tex}}
+    \caption{Position curve of the sphere, which is seen to attain an equilibrium position at the interface. \label{fig:floating_traj}}
+  \end{figure}
+
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/sinking_frame1.tex}}
+        \caption{}
+        \label{fig:sinking_frame1}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/sinking_frame2.tex}}
+        \caption{}
+        \label{fig:sinking_frame2}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/sinking_frame3.tex}}
+        \caption{}
+        \label{fig:sinking_frame3}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/sinking_frame4.tex}}
+        \caption{}
+        \label{fig:sinking_frame4}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/sinking_frame5.tex}}
+        \caption{}
+        \label{fig:sinking_frame5}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\large \input{../../Programming/sinking_bim_write_up/trunk/sinking_frame6.tex}}
+        \caption{}
+        \label{fig:sinking_frame6}
+      \end{subfigure}
+      \caption{Settling of a sphere onto and through the interface when $D = 2.2$, $\Bo = 3.5$ and $\lambda = 1$. The interface deforms as the sphere approaches and envelopes the sphere as it sinks.}\label{fig:sinking_frame}
+    \end{figure}
+
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/sinking_traj.tex}}
+    \caption{Position curve of the sphere, which is seen to slow down at the interface, before accelerating away.\label{fig:sinking_traj}}
+  \end{figure}
+
+A regime diagram has been constructed for the floating-sinking transition. It has been found that for $\lambda \leq 10$ the location of the transition in the parameter space defined by $D$, $\Bo$ and $\lambda$ is independent of $\lambda$. Figure~\ref{fig:regime} shows the transition in a plane of constant $\lambda$ over orders of magnitude variation in $D$ and $\Bo$. Also shown is the prediction for this transition from the theoretical model of \citep{Vella06}. This model finds the maximum $D$ for a given $\Bo$ and contact angle for a sphere to be at equilibrium at an interface. This is different from our model, since no initial motion of the sphere is considered, and the existence of a contact line on the sphere is imposed. Despite these differences, we see that the results in figure~\ref{fig:regime} agree with this model. In figure~\ref{fig:zoom_regime} however, we show the results of a denser investigation of the paramter space, in the region where the transition curve has the highest curvature. It can be seen that although our model reproduces the shape of the predicted regime boundary, there is an offset such that our model predicts a higher maximum value of $D$ for a given $\Bo$.
+
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\large \input{../../Programming/sinking_bim_write_up/trunk/regime_pub.tex}}
+    \caption{A regime diagram showing the fields of floating and sinking in the $\lambda = 1$ plane of the parameters space defined by ${\lambda, \Bo, D}$. Points show results of simulations. Solid line shows prediction from theoretical model of \citep{Vella06}.\label{fig:regime}}
+  \end{figure}
+
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\large \input{../../Programming/sinking_bim_write_up/trunk/zoom_regime_pub.tex}}
+    \caption{A regime diagram showing the fields of floating and sinking in the $\lambda = 1$ plane of the parameters space defined by ${\lambda, \Bo, D}$. Points show results of simulations. Solid line shows prediction from theoretical model of \citep{Vella06}.\label{fig:zoom_regime}}
+  \end{figure}
+
+\subsubsection{Equilibrium Floating Position}
+\label{subsubsec:equilib_pos}
+
+For simulations where the sphere is observed to attain a static equilibrium position, the dependence of the final height of the sphere $z_{\text{eq}}$on $D$, $\Bo$ and $\lambda$ has been determined. A key result is that $z_{\text{eq}}$ is independent of the viscosity ratio as seen in figure~\ref{fig:fin_pos_viscos}. Figure~\ref{fig:fin_pos} shows the dependence of $z_{\text{eq}}$ on $\Bo$ for different values of $D$. There are a number of points to note here. Firstly, as $\Bo \to 0$, the dependence of $z_{\text{eq}}$ on $D$ vanishes, and $z_{\text{c}} \to 0$. Once $\Bo > 0.01$, $z_{\text{c}}$ decreases and the equilibrium position of sphere is deeper with respect to the plane of the undeformed interface. For a given $\Bo$, the larger the value of $D$, the deeper the equilibrium position of the sphere. For $D \neq 1$, as $\Bo$ increases the floating-sinking transition is crossed and $z_{\text{eq}} \to -\infty$. For $D = 1$, as $\Bo \to \infty$, $z_{\text{c}} \to -0.32$. 
+
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\large \input{../../Programming/sinking_bim_write_up/trunk/fin_pos_viscos.tex}}
+    \caption{Plots of $z_{\text{eq}}$ versus $\lambda$ for $\Bo = 1$ and different values of $D$. It is seen that there is no dependence on $\lambda$. The same is true for other values of $\Bo$. \label{fig:fin_pos_viscos}}
+  \end{figure}
+
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\large \input{../../Programming/sinking_bim_write_up/trunk/fin_pos.tex}}
+    \caption{Plots of $z_{\text{eq}}$ versus $\Bo$ for $\lambda = 1$ and different values of $D$. As $\Bo \to 0$, $z_{\text{eq}}$ becomes independent of $D$. As $\Bo$ increases, the sphere transitions to sinking and so the plots cannot be continued to higher $\Bo$. \label{fig:fin_pos}}
+  \end{figure}
+
+\subsubsection{Entrained Volume}
+\label{subsubsec:ent_vol_res}
+
+As described in section~\ref{sec:num_meth}, one of the criteria for the termination of the model is that two separate branches of the interface become closer to each other than the smallest interval length on either the sphere or the interface. In the case, the interface is assumed to snap at this point and the volume of upper phase fluid beneath the point of snapping is defined as the entrained volume $V$. The range of parameters for which the entrained volume was investigated is limited by the termination criteria of the model. For $D < 4$ or $\lambda > 0.03$, most simulations where sinking was observed terminated when the sphere and the interface became too close. For $D = 4$, the same is true for $\Bo <1$ and as $D$ increases, this critical value of $\Bo$ decreases, such that for $D = 1000$ interface snapping was observed down to $\Bo = 0.01$, the smallest value used.
+
+Figure~\ref{fig:mdr_snap} shows the dependence of the entrained volume of $\Bo$ for different values of $D$ and $\lambda$. For $D = 8$ (figure~\ref{fig:mdr=8}), it can be seen that for $\Bo < 1$, $V$ is approximately independent of $\lambda$ and $V \sim \ln\Bo$. For $\Bo > 1$, $V$ becomes independent of $\Bo$ and there is a weak dependence on $\lambda$; the more viscous the upper fluid relative to the lower fluid, the greater the volume of entrained fluid. Increasing $D$ to 50 (figure~\ref{fig:mdr=50}) it can be seen that the viscosity independent linear relationship between $V$ and $\ln\Bo$ is present for $\ln \Bo < -2$ ($\Bo < 0.14$). For larger Bond numbers, $V$ again becomes independent of $\Bo$ although the viscosity dependence is stronger than for $D = 8$. Additionally, for a given $\Bo$ and $\lambda$, $V$ is greater for $D = 50$ than $D = 8$.
+
+These trends are continued to higher values of $D$ (figures~\ref{fig:mdr=100} and~\ref{fig:mdr=1000}). The transitional value of $\Bo$ decreases as $D$ increases; for $D = 1000$ this transitional value is smaller than the smallest $\Bo$ used. Also, as $D$ increases at fixed $\lambda$ and $\Bo$, so does $V$.
+
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/mdr=8_pub.tex}}
+        \caption{}
+        \label{fig:mdr=8}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/mdr=50_pub.tex}}
+        \caption{}
+        \label{fig:mdr=50}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/mdr=100_pub.tex}}
+        \caption{}
+        \label{fig:mdr=100}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/mdr=1000_pub.tex}}
+        \caption{}
+        \label{fig:mdr=1000}
+      \end{subfigure}
+      \caption{Dependence of entrained volume $V$ on $\Bo$ for different $\lambda$ for a) $D = 8$, b) $D = 50$, c) $D = 100$ and d) $D = 1000$. At small $\Bo$ there seems to be a linear relationship between $V$ and $\ln\Bo$ but as $\Bo$ increases, $V$ becomes independent of $\Bo$. }\label{fig:mdr_snap}
+    \end{figure}
+
+Figure~\ref{fig:viscos_snap} shows the same data as in figure~\ref{fig:mdr_snap} but with curves with different values of $D$ shown on the same plot with a fixed value of $\lambda$. All of the previously described features can be observed including the two regimes: $V \sim \ln\Bo$ and $V \neq V(\Bo)$, and the increase in $V$ with increasing $D$ and decreasing $\lambda$.
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/viscos_rat=001_pub.tex}}
+        \caption{}
+        \label{fig:viscos_rat=0.001}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/viscos_rat=005_pub.tex}}
+        \caption{}
+        \label{fig:viscos_rat=0.005}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/viscos_rat=01_pub.tex}}
+        \caption{}
+        \label{fig:viscos_rat=0.01}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/viscos_rat=03_pub.tex}}
+        \caption{}
+        \label{fig:mdr=viscos_rat=0.03}
+      \end{subfigure}
+      \caption{Dependence of entrained volume $V$ on $\Bo$ for different $D$ for a) $\lambda = 0.001$, b) $\lambda = 0.005$, c) $\lambda = 0.01$ and d) $\lambda = 0.03$. At small $\Bo$ there seems to be a linear relationship between $V$ and $\ln\Bo$ but as $\Bo$ increases, $V$ becomes independent of $\Bo$. }\label{fig:viscos_snap}
+    \end{figure}
+
+In magmas, the IFt $\sigma$ between two melts is expected to be equal to zero or very small (melts of different compositions are miscible). Therefore, in magmatic systems $\Bo \to \infty$. Motivated by this, figure~\ref{fig:highBo} shows the dependence of $V$ on $\lambda$ and $D$ for $\Bo = 1000$, which as can be seen from figures~\ref{fig:mdr_snap} and~\ref{fig:viscos_snap} is well into the regime where $V$ is independent of $\Bo$. Hence, these results can be considered the same as for when $\Bo \to \infty$. As seen in figure~\ref{fig:highBo_viscos}, for small values of $D$ ($\leq 3.5$) $V$ is nearly independent of $\lambda$. However, as $D$ increases, it is seen that $V$ decreases with $\lambda$. These features can also be seen in figure~\ref{fig:highBo_mdr} where it appears that the dependence on $D$ can be split into two regimes. For $\ln D$ between 0 and some critical value, $V \sim \ln D$. For $\lambda = 0.001$, this critical value is approximately 3, and this decreases to 1.4 for $\lambda = 0.05$. Above this critical value, the dependence on $D$ weakens, and it is possible that as $D \to \infty$, $V$ becomes independent of $D$, although further simulations at higher $D$ would be needed to verify this.
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/highBo_viscos_for_pub.tex}}
+        \caption{}
+        \label{fig:highBo_viscos}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/highBo_mdr_for_pub.tex}}
+        \caption{}
+        \label{fig:highBo_mdr}
+      \end{subfigure}
+      \caption{Dependence of $V$ on a) $\lambda$ for different $D$ and b) $D$ for different $\lambda$, for $\Bo = 1000$, which is in the regime where $V$ is independent of $\Bo$.}\label{fig:highBo}
+    \end{figure}
+
+\subsubsection{Sinking Timescale}
+\label{subsubsec:sink_time}
+
+The sinking timescale $t_{\text{s}}$ is defined as the time between the sphere first touching the plane of the undeformed interface and the moment at which the sphere loses contact with the bulk of the upper phase i.e. when the tail snaps. Within the BIM, this is interpretted as the moment at which the separation between the two branches of the interface becomes smaller than the separation between the points use to discretise it. Figure~\ref{fig:mdr_time} shows the dependence of the sinking time on the Bond number, for different values of the MDR and viscosity ratio. It is observed that the function $t_{\text{s}} = t_{\text{s}}(\Bo, D, \lambda)$ is not simple. For all values of $D$ and $\Bo$, the larger the value of the viscosity ratio, the longer the sinking time. Additionally, for all values of $D$, as $\Bo$ approaches the floating transition, the time taken for sinking tends to infinity, and as $\Bo \to \infty$ the sinking time becomes independent of $\Bo$. However, the behaviour is complicated for intermediate value of $\Bo$. For $D = 8$, the decrease in sinking time with $\Bo$ is monotonic. However as $D$ increases, a minimum in the sinking time as a function of $\Bo$ appears. This minimum only appears for larger values of the viscosity ratio and becomes more pronounced as the viscosity ratio increases. For the case $D = 1000$, it is inferred that the minimum in the curve for $\lambda = 0.03$ occurs at a vlaue of $\Bo < 0.01$ (the smallest Bond number investigated).
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/mdr=8_time.tex}}
+        \caption{}
+        \label{fig:mdr=8_time}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/mdr=50_time.tex}}
+        \caption{}
+        \label{fig:mdr=50_time}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/mdr=100_time.tex}}
+        \caption{}
+        \label{fig:mdr=100_time}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/mdr=1000_time.tex}}
+        \caption{}
+        \label{fig:mdr=1000_time}
+      \end{subfigure}
+      \caption{Dependence of the sinking timescale $t_{\text{s}}$ on $\Bo$ for different $\lambda$ and a) $D = 8$, b) $D = 50$, c) $D = 100$ and d) $D = 1000$. Note the difference in vertical scale between the figures.}\label{fig:mdr_time}
+    \end{figure}
+
+Bearing in mind the application to mixing magmas, the high Bond number limit has been investigated (figure~\ref{fig:highBo_time}). As before, figure~\ref{fig:time_viscos} shows that an increase in the value of the viscosity ratio leads to an increase in the sinking timescale. Like with $\Bo$, the sinking timescale depends on $D$ in a non-monotonic fashion (figure~\ref{fig:time_mdr}). As $D \to 1$, $t_{\text{s}} \to \infty$ and as $D \to \infty$ the sinking timescale becomes independent of $D$. However, there is a local minimum in the value of $t_{\text{s}}$ at approximately $\ln D \approx 2$ ($D \approx 7.3$).
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/time_viscos.tex}}
+        \caption{}
+        \label{fig:time_viscos}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/time_mdr.tex}}
+        \caption{}
+        \label{fig:time_mdr}
+      \end{subfigure}
+      \caption{Dependence of $t_{\text{s}}$ on a) $\lambda$ for different $D$ and b) $D$ for different $\lambda$, for $\Bo = 1000$, which is in the regime where $t_{\text{s}}$ is independent of $\Bo$.}\label{fig:highBo_time}
+    \end{figure}
+
+\subsection{Settling Spheroids}
+\label{subsec:spheroids}
+
+The settling of non-spherical particles shows different behaviour. Figure~\ref{fig:float_oblate} shows the settling of an oblate spheroid of aspect ratio $R = 0.5$ onto an interface, where the dimensionless parameters are $D = 2$, $\Bo = 10$ and $\lambda = 1$. As can be seen, the speroid is able to float at the interface. Comparing with figure~\ref{zoom_regime_pub.tex} it can be seen that for these values, spheres are observed to sink through the interface. Therefore, decreasing the aspect ratio of the particle can inhibit sinking. 
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/ob_float1.tex}}
+        \caption{}
+        \label{fig:ob_float1}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/ob_float2.tex}}
+        \caption{}
+        \label{fig:ob_float2}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/ob_float3.tex}}
+        \caption{}
+        \label{fig:ob_float3}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/ob_float4.tex}}
+        \caption{}
+        \label{fig:ob_float4}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/ob_float5.tex}}
+        \caption{}
+        \label{fig:ob_float5}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\large \input{../../Programming/sinking_bim_write_up/trunk/ob_float6.tex}}
+        \caption{}
+        \label{fig:ob_float6}
+      \end{subfigure}
+      \caption{Settling of an oblate spheroid with aspect ratio $R = 0.5$ onto the interface when $D = 2$, $\Bo = 10$ and $\lambda = 1$. The interface deforms as the sphere approaches and forms a depression into which the spheroid sits. }\label{fig:float_oblate}
+    \end{figure}
+
+Figure~\ref{fig:sinking_comp} compares the sinking of a sphere and that of a spheroid of aspect ratio $0.5$ where $D = \Bo = 1000$ and $\lambda = 1$. It is seen that at a given depth, the interfacial profile in both simulations is very similar, although it takes the spheroid much longer for it to reach that depth. In all simulations of an oblate spheroid where sinking was observed, all models terminated due to the separation between particle and interface becoming smaller than the distance between discretisation points. Hence, no simulations proceeded to tail snapping and therefore no data has been obtained regarding the sinking timescale and the entrained volume.
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/sphere_frame.tex}}
+        \caption{}
+        \label{fig:sphere_sink}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/ob_frame.tex}}
+        \caption{}
+        \label{fig:ob_sink}
+      \end{subfigure}
+      \caption{Comparing the sinking of a a) sphere and an b) oblate spheroid with $R = 0.5$ for $D = \Bo = 1000$ and $\lambda = 1$. Both interfacial profiles are very similar.}\label{fig:sinking_comp}
+    \end{figure}
+
+\section{Discussion}
+\label{sec:discuss}
+
+
+\subsection{Floating versus Sinking}
+\label{subsec:float_sink_discuss}
+
+Figure~\ref{fig:zoom_regime} shows the location of the floating and sinking regimes in the parameter space defined by $\Bo$ and $D$, as found using the BIM presented in sections~\ref{sec:theory} and~\ref{sec:num_meth}. The curve in the figure shows the prediction for the transition between the two regimes found from the model of \citet{Vella06} for a contact angle of $\pi$ (sphere is completely wetted by upper fluid). It can be see that for a given $\Bo$, the transition predicted by the BIM is found at a higher value of $D$ than for the model presented by \citet{Vella06}. To rationalise this discrepancy, a brief description of the \citet{Vella06} model is given here, highlighting the key differences with the BIM. Motivated by these differences, modifications are then proposed to the \citet{Vella06} model and the validity of these is determined by comparing with the results from the BIM.
+
+\subsubsection{\citet{Vella06} Model: A static description of the floating - sinking transition}
+\label{subsubsec:Vella_model}
+
+The model proposed in \citet{Vella06} considers the static problem of a sphere sitting at the interface between two immiscible, density stratified fluids. The presence of a three-phase contact line is assumed. The configuration is as seen in figure~\ref{fig:Vella_config}. The model is a force balance of the surface tension, buoyancy and gravitational forces present in the system, and finds the condition for there to be an equilibrium position of the sphere at the interface. 
+
+  \begin{figure}
+    $$\includegraphics[width=0.8\textwidth]{../../Programming/sinking_bim_write_up/trunk/physical_formulation.eps}$$
+    \caption{The configuration of the problem as modelled by \citet{Vella06}. The key difference between this and the BIM presented in sections~\ref{sec:theory} and~\ref{sec:num_meth} is that this model is static, and a three phase contact line is assumed. \label{fig:Vella_config}}
+  \end{figure}
+
+In order to construct this model, it is neccessary to consider a result from \citet{Keller98}; the vertical contribution of the IFT force on an object floating at an interface is equivalent to the buoyancy force of the fluid in the meniscus. This was first hypothesised by Galilei \citep{Galilei1663, Vella(2)07}. Figure~\ref{fig:Keller_fig} is a useful aid in explaining this. The volume of the meniscus is shown by the shaded regions external to the vertical cylindrical surface which contains the contact line. The IFT contribution to the vertical force is equal to the buoyancy of the upper fluid in this region. This means the force baclance for a sphere in equilibrium can be expressed as
+
+\begin{equation}
+\label{equ:Vella_force}
+\frac{4 \pi (\rho_{\text{s}} - \rho_{1}) a^{3} g}{3} = 2 \pi a \sigma \sin \theta_{\text{c}} \sin (\chi - \theta_{\text{c}}) + (\rho_{2} - \rho_{1}) g \left(\frac{\pi a^{3} (2 + 3 \cos \theta_{\text{c}} - \cos^{3} \theta_{\text{c}})}{3} - \pi z_{c} a^{2} \sin^{2} \theta_{\text{c}} \right)
+\end{equation}
+
+where $\theta_{\text{c}}$ and $z_{\text{c}}$ are the polar and vertical coordinates of the contact line respectively. The left hand side corresponds to the weight of the sphere relative to the weight of the same volume of the upper fluid. The right hand side is the sum of the IFT contribution (equivalent to the buoyant force due to the volume of the meniscus external to the contact line), and the displaced weight of the lower fluid relative to the upper fluid, in the volume of the meniscus internal to the contact line (central shaded region in figure~\ref{fig:Keller_fig}).
+
+\begin{figure}
+  $$\includegraphics[width=0.8\textwidth]{../../Programming/sinking_bim_write_up/trunk/Keller_fig.eps}$$
+  \caption{The different shadings show the regions internal and external to the meniscus.  \label{fig:Keller_fig}}
+\end{figure}
+
+Using the non-dimensionalisation scheme presented in section~\ref{subsec:theory} the force balance can be written as
+
+\begin{equation}
+\label{equ:Vella_non_dim}
+D = \frac{3 \sin \theta_{\text{c}} \sin(\chi - \theta_{\text{c}})}{2 \Bo} + \frac{2 + 3 \cos \theta_{\text{c}} - \cos^{3} \theta_{\text{c}}}{3} - \frac{3 z'_{\text{c}} \sin^{2}\theta_{\text{c}}}{4}
+\end{equation}
+
+For a given $\Bo$, contact angle $\chi$ and contact line position (given by $\theta_{\text{c}}$ and $z'_{\text{c}}$), this equation gives the largest possible value of $D$ for which an equilibrium floating position exists. The contact line position itself is found by solving the Laplace-Young equation for the interfacial profile subject to the boundary condition given by the contact angle condition on the sphere, and imposing that the interface returns to its equilibrium position away from the sphere. This is a boundary value problem \citep{Riley06} and has no analytical solution in an axisymmetric geometry so needs to be solved numerically. 
+
+Hence, the routine for finding the maximum $D$ at which floating can occur for a given $\Bo$ and $\chi$ is found by sweeping over different values of $\theta_{\text{c}}$ between $0$ and $\pi$ and solving the Laplace-Young equation for the corresponding height of the contact line $z_{\text{c}}$ for each case. These are then substituted into equation~\ref{equ:Vella_non_dim}. The largest value of $D$ calculated in the sweep is the largest value of $D$ for which floating is possible for a given $\Bo$ and $\chi$. The curve shown in figure~\ref{fig:zoom_regime} is the predicted floating-sinking transition for $\chi = pi$.
+
+\subsubsection{Difference between the static and BIM models}
+\label{subsubsec:model_diff}
+
+To explain the discrepancy between the two models in their prediction of the floating-sinking transition location in the $\Bo$-$D$ parameters space, it is important to consider the differences between the models. The static model, as suggested by its name, is static. It merely considers the conditions at which a sphere can be in equilibrium at an interface, given a contact line exists. It doesn't account for any prior motion of the sphere. It has been shown for cylinders and a liquid-gas interface that increasing the speed of impact reduces the maximum density and/or size of cylinder that can float at the interface \citet{Vella07, Vella10}. This situation is theoretically considered by using an initial condition of the cylinder being in contact with the interface but having some initial velocity. It is important to note that in these studies the flow is in the inertial regime.
+
+The key difference with the BIM used in this study is that in the initial state of the system the sphere is multiple radii above the interface and is settling at its terminal velocity. Hence, as well as having an initial velocity, no contact line exists. Since there is a no-slip boundary condition on the surface of the sphere (equation~\ref{equ:BC_kin_spere}), the fluid immediately adjacent to the sphere will never be displaced. This means that there will always remain a layer of upper phase fluid between the sphere and the interface. Hence it is impossible to reproduce the film drainage mode as seen in the experimental study. The presence of this layer will also have an effect on the floating-sinking transition, since it is effectively provides an extra contribution to the upward buoyancy forces. 
+
+For a given $\Bo$, the BIM predicts the value of $D$ at which the floating-sinking transition occurs to be positively displaced relative to the prediction from the static model. This suggests that the effect of the trapped layer of upper phase fluid between the sphere and the interface has a more significant effect than the impact of the sphere.
+
+\subsubsection{Modified static model}
+\label{subsubsec:mod_stat_mod}
+
+Motivated by the observation that the trapped layer has a greater effect on the floating-sinking transition than the impact of the sphere, a static model, modified from that described in section~\ref{subsubsec:Vella_model}, is presented here which accounts for a trapped layer of upper phase fluid (figure~\ref{fig:mod_stat_mod}). For simplicity, this layer is assumed to have a uniform thickness. Hence, in this model, the interface can be described by two parts. The first is a spherical cap of radius $a + \delta$ concentric with the sphere. At some polar angle $\theta_{\text{c}}$ this transitions into a meniscus whose geometry is determined by the Laplace-Young equation subject to the condition that at $\theta = \theta_{\text{c}}$, the tangent planes to both the spherical cap and the meniscus are coincident. 
+
+\begin{figure}
+  $$\includegraphics[width=0.8\textwidth]{../../Programming/sinking_bim_write_up/trunk/mod_stat_mod.eps}$$
+  \caption{The modified static model configuration. The sphere and the interface are separated by a film of upper phase fluid of constant thickness $\delta$. \label{fig:mod_stat_mod}}
+\end{figure}
+
+The force balance for this geometry can be realised by modifying equation~\ref{equ:Vella_force} by replacing all the occurences of $a$ on the right-hand side by $a + \delta$ and setting $\chi = \pi$;
+
+\begin{equation}
+\label{equ:mod_force}
+\frac{4 \pi (\rho_{\text{s}} - \rho_{1}) a^{3} g}{3} = 2 \pi (a + \delta) \sigma \sin^{2} \theta_{\text{c}} + (\rho_{2} - \rho_{1}) g \left(\frac{\pi (a + \delta)^{3} (2 + 3 \cos \theta_{\text{c}} - \cos^{3} \theta_{\text{c}})}{3} - \pi z_{c} (a + \delta)^{2} \sin^{2} \theta_{\text{c}} \right).
+\end{equation}
+
+As in section~\ref{subsubsec:Vella_model}, this can be non dimensionalised to give
+
+\begin{equation}
+\label{equ:mod_non_dim}
+D = \Delta^{1/2} \left(\frac{3 \sin^{2} \theta_{\text{c}}}{2 \Bo} + \frac{\Delta (2 + 3 \cos \theta_{\text{c}} - \cos^{3} \theta_{\text{c}})}{4} - \frac{3 z'_{\text{c}} \Delta^{1/2} \sin^{2} \theta_{\text{c}}}{4}\right)
+\end{equation}
+
+where
+
+\begin{equation}
+\label{equ:non_dim_film}
+\Delta = \left(1 + \frac{\delta}{a}\right)^{2}.
+\end{equation}
+
+For a given $\Bo$, $\theta_{\text{c}}$ and $\Delta$, equation~\ref{equ:mod_non_dim} gives the maximum value of $D$ for which a sphere is in equilibrium whilst separated from an interface by a film of thickness $\delta$. Using a routine similar to that described in section~\ref{subsubsec:Vella_model} the floating-sinking transition in the $\Bo$-$D$ space for different $\delta$ can be found (figure~\ref{fig:Delta_trans}). It can be seen that increasing the value of $\Delta$. and so the relative thickness of the trapped film, it is possible to support denser and larger spheres at a fluid interface. This is intuitively explained by the additional contribution of the buoyant fluid in the film to the upward force.
+
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\large \input{../../Programming/sinking_bim_write_up/trunk/Delta_trans_pub.tex}}
+    \caption{Plots of equation~\ref{equ:mod_non_dim} for different values of $\Delta$. As $\Delta$ increases the floating-sinking transition at a given value of $\Bo$ shifts to higher values of $D$. \label{fig:Delta_trans}}
+  \end{figure}
+
+\subsubsection{Comparison with BIM results}
+\label{subsubsection:mod_comp_bim}
+
+To test if the modified static model provides a suitable explanation for the observed floating-sinking transition in the BIM results, the results of four simulations where floating was observed but the parameters are close to the transition were chosen for further analysis (see table~\ref{tab:film_sims}). For each of these simulations, the final profile of the thickness of the film separating the sphere from the interface was considered (figure~\ref{fig:float_films}) and the mean thickness of the film, weighted by the radial coordinate of the fluid, was calculated (given in table~\ref{tab:film_sims}).
+
+\begin{longtable}{|c|c|c|c|}
+  \caption{BIM simulations chosen for comparison with the modified static model, and the mean final thickness of the film separating the sphere from the interface. \label{tab:film_sims}} \\ % title name of the table
+  \hline
+$D$ & $\Bo$ & $\bar{\delta}$ & $\Delta$ \\
+  \hline % inserts single-line
+  3.4 & 1.0 & 0.175 & 1.381 \\
+  2.8 & 1.5 & 0.171 & 1.371 \\
+  2.2 & 2.5 & 0.160 & 1.346 \\
+  2.0 & 3.5 & 0.157 & 1.339 \\
+  \hline
+\end{longtable}
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.225\textwidth}
+        \resizebox{\textwidth}{!}{\Huge \input{../../Programming/sinking_bim_write_up/trunk/float1.tex}}
+        \caption{}
+        \label{fig:float1}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.225\textwidth}
+        \resizebox{\textwidth}{!}{\Huge \input{../../Programming/sinking_bim_write_up/trunk/float2.tex}}
+        \caption{}
+        \label{fig:float2}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.225\textwidth}
+        \resizebox{\textwidth}{!}{\Huge \input{../../Programming/sinking_bim_write_up/trunk/float3.tex}}
+        \caption{}
+        \label{fig:float3}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.225\textwidth}
+        \resizebox{\textwidth}{!}{\Huge \input{../../Programming/sinking_bim_write_up/trunk/float4.tex}}
+        \caption{}
+        \label{fig:float4}
+      \end{subfigure}
+
+      \begin{subfigure}[b]{0.9\textwidth}
+        \resizebox{\textwidth}{!}{\normalsize \input{../../Programming/sinking_bim_write_up/trunk/film_profiles.tex}}
+        \caption{}
+        \label{fig:film_prof}
+      \end{subfigure}
+      \caption{a) to d) The final equilibrium configuration of the simulations listed in table~\ref{tab:film_sims}. In each example, the film constricts at approximately $\theta = \pi / 2$, just before the interface transitions into the meniscus profile. e) Film thickness as a function of $\theta$. The film thickness can be seen to vary up to about 50\%.}\label{fig:float_films}
+    \end{figure}
+
+As can be seen in figures~\ref{fig:float1} to~\ref{fig:float4}, the film is seen to contract at its periphery. This agrees with previous experimental observations \citep{Hartland68} where it has been noted that the film constricts at it's periphery, just inside the point where it transitions to the meniscus profile. This constriction is predicted by the theoretical model of \citep{Jones78} as a consequence of pressure gradients in the film as a consequence of the change in curvature of the interface at the film periphery. 
+
+Additionally, the point where the film transitions to the meniscus occurs at a polar angle of $\theta \approx \pi / 2$. This is the first point of agreement with the modified static model. Differentiating of equation~\ref{equ:mod_non_dim} with respect to $\theta_{\text{c}}$ and setting $\partial D / \partial \theta_{\text{c}} = 0$ gives a solution of $\theta_{\text{c}} = \pi / 2$ (other solutions may exist but cannot be extracted due to the unavailability for a closed expression for $\partial z_{\text{c}} / \partial \theta_{\text{c}}$). Hence, there is a (at least a local) maximum in maximum value of $D$ for which floating can occur at $\theta_{\text{c}} = \pi / 2$. Since the chosen simulations are close to the transition, it is to be expected that they have an equilibrium configuration which gives this maximum upward force.
+
+Figure~\ref{fig:film_prof} shows the film thickness as a function of $\theta$ for the different simulations. It can be seen that, unlike in the modified static model, the film has a variable thickness which can vary by up to 50\%. Therefore, to compare these simulations with the results from the static model, the mean thickness of the film, weighted by the radial coordinate, has been calculated. The reason for weighting by the radial coordinate is because the axisymmtric geometry means, for a given film thickness, there is a greater volume of fluid at a larger radius. The weighted mean thicknesses $\bar{\delta}$ and their corresponding value of $\Delta$ are given in table~\ref{tab:film_sims}. Figure~\ref{fig:float_trans} shows the predicted transitions for these values of $\Delta$ compared to the results from the BIM. It can be seen that all values of $\Delta$ reproduce the observed transition for $\Bo \geq 4$ and that as $\Delta$ decreases then the lowest value of $\Bo$ at which there is agreement becomes smaller; for $\Delta = 1.339$ there is agreement for $\Bo \geq 1.5$. For smaller $\Bo$, the static model predicts the transition to be at larger values of $D$ than the BIM model. This discrepancy is most likely explained by the fact that as $\Bo$ decreases, the amount of variation in film thickness increases (figure~\ref{fig:film_prof}) so the assumption of constant film thickness in the static model begins to no longer be valid. However, regardless, the modified static model still does a very good job of predicting the transition observed in the BIM, compared to the original static model (see figure~\ref{fig:zoom_regime}).
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/float1_trans.tex}}
+        \caption{}
+        \label{fig:float1}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/float2_trans.tex}}
+        \caption{}
+        \label{fig:float2}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/float3_trans.tex}}
+        \caption{}
+        \label{fig:float3}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/float4_trans.tex}}
+        \caption{}
+        \label{fig:float4}
+      \end{subfigure}
+      \caption{Predicted transitions based on the mean thickness of each film. }\label{fig:float_trans}
+    \end{figure}
+
+\subsection{Equilibrium Floating Position}
+\label{subsec:dis_float_pos}
+
+As figure~\ref{fig:fin_pos_viscos} shows, the equilibrium position of a floating sphere is independent of $\lambda$. This is an intuitive result since viscosity is only relevant for situations where fluid is moving, and floating is a static phenomenon. It is also found that as $\Bo \to 0$, the dependence of $z_{\text{eq}}$ on $D$ vanishes. This is because in this limit, the gravitational forces acting to deform the interface are significantly smaller than the restorative IFT forces meaning it is very difficult to deform the fluid interface. This is why $z_{\text{eq}} \to 1$ in this limit as this corresponds to the sphere sitting on top of a flat, undeformed interface. In the other limit ($\Bo to infty$) it is only possible to consider the case $D = 1$, since the sphere sinks for all other values of $D$. Here, $z_{\text{eq}}$ is observed to tend to the constant value of $-0.32$. That the equilibrium depth of the sphere is independent of the Bond number here is predicted by the modified static model described in section~\ref{subsubsec:mod_stat_mod}, since taking the limit of equation~\ref{equ:mod_non_dim} as $\Bo \to \infty$ and setting $D = 1$ gives
+
+\begin{equation}
+\label{equ:bo_to_infty}
+z_{\text{c}} = \frac{\Delta^{1/2} (2 + 3 \cos \theta_{\text{c}} - \cos^{3} \theta_{\text{c}})}{3 \sin^{2} \theta_{\text{c}}}.
+\end{equation}
+
+Equation~\ref{equ:bo_to_infty} is independent of $\Bo$ so the equilibrium position of the sphere $z_{\text{eq}} = z_{\text{c}} - \cos \theta_{\text{c}}$ is also. 
+
+\subsection{Entrained Volume}
+\label{subsec:dis_ent_vol}
+
+Figures~\ref{fig:mdr_snap} and~\ref{fig:viscos_snap} show that below a critical value of $\Bo$, $V \sim \ln \Bo$ at a fixed $D$ and $\lambda$. This result can be compared that obtained by \citet{Pitois99} who performed experiments where steel or glass beads were dropped onto the interface between PDMS oil and water. They found that the volume of the entrained upper phase fluid was independent of $\lambda$ (although in their experiments $10^{-9} \leq \lambda \leq 10^{-10}$) and $V \sim \ln(D \Bo)$. To compare to this study, the data from figure~\ref{fig:viscos_snap} has been replotted with $\ln(D \Bo)$ on the x-axis (figure~\ref{fig:viscos_snap_DBo}). As can be seen, this has the effect of shifting the curves along the x-axis by an amount $\ln D$. It can be seen that at $\ln(D \Bo) \approx 1$, then all of the curves for different values of $D$ are coincident. However, this is generally not true. Hence the conclusion of \citet{Pitois99} that $V \sim \ln(D \Bo)$ is only valid for $\ln(D \Bo) \to 1$ from above. 
+
+    \begin{figure}
+      \centering
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/viscos_rat=001_DBo_pub.tex}}
+        \caption{}
+        \label{fig:viscos_rat=0.001_DBo}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/viscos_rat=005_DBo_pub.tex}}
+        \caption{}
+        \label{fig:viscos_rat=0.005_DBo}
+      \end{subfigure}
+      
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/viscos_rat=01_DBo_pub.tex}}
+        \caption{}
+        \label{fig:viscos_rat=0.01_DBo}
+      \end{subfigure}
+      ~
+      \begin{subfigure}[b]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{\Large \input{../../Programming/sinking_bim_write_up/trunk/viscos_rat=03_DBo_pub.tex}}
+        \caption{}
+        \label{fig:mdr=viscos_rat=0.03_DBo}
+      \end{subfigure}
+      \caption{Dependence of entrained volume $V$ on $\ln(D \Bo)$ for different $D$ for a) $\lambda = 0.001$, b) $\lambda = 0.005$, c) $\lambda = 0.01$ and d) $\lambda = 0.03$. }\label{fig:viscos_snap_DBo}
+    \end{figure}
+
+Our results show that for $D \Bo \sim O(1) - O(10)$, as the Bond number or MDR increase, so does the entrained volume. A qualitative explanation of this is relatively intuitive. As you increase the Bond number, the relative strength of IFT forces that oppose deformation of the interface decreases, allowing interfacial deformation further away from the sphere. By widening the field of deformation on the interface, the sphere can sink further into the lower fluid (extending the length of the column) before the column becomes so thin that it snaps. Increasing the density ratio means that, relative to the density of the sphere, the density difference between the two fluids is decreased. Hence, the buoyancy force on the upper phase fluid being dragged down into the entraining column is weaker compared to the drag force on the fluid from the sphere. Hence, as $D$ increases the amount of upper phase fluid entrained into the lower phase increases. It is also observed for $D \Bo \sim O(1) - O(10)$ that the entrained volume is largely independent of the viscosity ratio (at least in the range $0.001 \leq \lambda \leq 0.03$). Quantitatively, this is expected, since taking the limit of equation~\ref{equ:I1} as $\lambda \to 0$ shows that dependence of the system on the viscosity ratio vanishes. A physical explanation for this can be deduced by considering a force balance on the sphere. The upward forces on the sphere are governed by the IFT and the viscosity of the two fluids. Decreasing the value of the viscosity ratio whilst keeping $\Bo$ fixed means that the IFT becomes the dominant contribution to the upward forces. Hence changes in the viscosity ratio when $\lambda \ll 1$ have little affect on the entrained volume. 
+
+Figure~\ref{fig:highBo} shows the dependence of the entrained volume $V$ on $\lambda$ and $D$ for the case where $\Bo \to \infty$. It can be seen that for $\ln D \lesssim 2$, $V \sim \ln D$. The data in this linear regime has been fitted to the model $V = m(\lambda) \ln D + c$ and figure~\ref{fig:grad} shows the function $m(\lambda)$. This relationship cannot be fitted by either an exponential or power law relationship but qualitatively, $m(\lambda)$ decreases as $\lambda$ increases, with $m$ decreasing by approximately 30\% over $0.001 \leq \lambda \leq 0.05$. 
+
+  \begin{figure}
+    \resizebox{0.9\textwidth}{!}{\large \input{../../Programming/sinking_bim_write_up/trunk/grad_pub.tex}}
+    \caption{\label{fig:grad}}
+  \end{figure}
+
+In the high $\Bo$ limit, it is seen that $V$ is independent of $\Bo$. This can be explained with a similar argument to above. As the Bond number decreases, so do the relative magnitudes of IFT forces. Hence, the dominant upward force on the sphere becomes the viscous drag. Once the IFT force is significantly smaller than the viscous drag, changes in the IFT force no longer affect the sphere, or the fluid entrained during sinking. This also explains why the effect of the viscosity ratio increases as the Bond number increases. 
+
+Also in the high $\Bo$ limit, for $D \sim O(1)$, $V$ is largely independent of the viscosity ratio. This is because only small viscosity ratios are considered, and the dominant control on the behaviour is the balance between the gravitational force on the sphere and the buoyant force on the fluid in the column. As $D \to \infty$, the upward force due to the buoyancy of the fluid in the column becomes smaller relative to the viscous drag force induced by the surrounding fluid. Hence, in this limit, the viscosity ratio becomes important. Larger viscosity ratios means a larger upward force on the sphere, so the sphere sinks slower, allowing the column to thin quicker than it can lengthen, thus leading to smaller entrained volumes.
+
+Although physical principles have been able to provide a qualitatibe rationale for the observed results, a theoretical description providing a quantitative prediction of these results has not been attempted. 
+
+\subsection{Sinking Timescale}
+\label{subsec:diss_sink_time}
+
+As the results of section~\ref{subsubsec:sink_time} show, the dependence of the sinking timescale $t_{\text{s}}$ on the dimensionless parameters $D$, $\Bo$ and $\lambda$ is non-trivial. The simplest dependence is on the viscosity ratio; as $\lambda$ increases from 0.001 to 0.03 the sinking timescale increases. This is a fairly intuitive observation; the larger the viscosity of the lower fluid the larger the drag force on the sphere and the longer the sphere takes to sink. The dependence on the $\Bo$ is significantly more complicated. As $\Bo$ tends to the floating transition, $t_{\text{s}} \to \infty$. This is to be expected as simulations where floating is observed can be interpretted as taking an infinite time to sink. Also, as $\Bo \to \infty$, $t_{\text{s}}$ becomes independent of the Bond number. This can be explained by the fact that in this limit, the IFT forces are negligible, so viscous forces provide the dominant contribution to the upward component of force. Hence, the Bond number has no control on the rate of sinking in this regime.
+
+The behaviour at intermediate Bond numbers is harder to explain. At $D = 8$, the sinking time decreases monotonically as $\Bo$ increases. However, as $D$ increases, a minimum in $t_{\text{s}}$ appears at some value of $\Bo$. As both $D$ and $\lambda$ increase, the difference between the minimum sinking time, and the value of $t_{\text{s}}$ as $\Bo \to \infty$ increases. This type of behaviour suggests that there is more than one process determining the rate at which the sphere sinks, with each process having a different timescale.
+
+The sinking of a sphere can be considered to proceed in two stages: deformation and column thinning (figure~\ref{fig:sink_stages}). The deformation stage takes place from the moment the sphere first touches the plane $z = 0$ and is characterised by the sphere deforming the interface around it as it settles through this plane. Once the sphere has moved beyond this plane, a column of upper phase fluid connects the sphere to the bulk of the upper phase. The second stage of sinking is the thinning of this column as the sphere continues to move away from the interface, dragging some of the upper phase fluid with it, whilst fluid higher in the column rises buoyantly back into the bulk of the upper phase. Once the column has thinned to a critical thickness rupture occurs. 
+
+\begin{figure}
+  $$\includegraphics[width=0.8\textwidth]{../../Programming/sinking_bim_write_up/trunk/sink_stages.png}$$
+  \caption{Two stages of a sphere sinking through an interface. Deformation: The sphere deforms the interface as it settles through the $z = 0$ plane. Column thinning: Once the sphere is beyond the $z = 0$ plane, a column of upper phase fluid is entrained behind the sphere. Sinking is complete once this has thinned and snapped. \label{fig:sink_stages}}
+\end{figure}
+
+The two stages of sinking can be considered to have intrinsic timescale associated with them, $t_{1}$ for deformation and $t_{2}$ for column thinning. The total sinking timescale is then given by $t_{\text{s}} = t_{1} + t_{2}$. The effect of the dimensionless parameters on the individual timescales can be examined. The larger the viscosity ratio, the larger the viscous forces acting upward on the sphere during both stages of the sinking. Hence, increasing the value of the viscosity ratio extends both $t_{1}$ and $t_{2}$. During the deformation stage, decreasing the Bond number also increases the upward force on the sphere due to the relative increase in IFT forces. Hence, decreasing $\Bo$ increases $t_{1}$. However, in the column thinning stage, a larger IFT will lead to pinching occuuring at a larger column radius so a decrease in $\Bo$ decreases $t_{2}$. The opposing effects of $\Bo$ on $t_{1}$ and $t_{2}$ lead to the non-monotonic behaviour at intermediate Bond numbers.
+
+A similar argument can be used to explain the similar behaviour observed in figure~\ref{fig:time_mdr}. Increasing $D$ decreases the density difference between the two fluid relative to that of the sphere, reducing the upward buoyancy force due to the volume of upper phase fluid displaced below the plane $z = 0$ and so $t_{1}$ decreases. However, this also means that the return velocity of the fluid in the resultant column is small and so $t_{2}$ increases. This again leads to non-monotonic behaviour. 
+
+In the simulations, it is difficult to identify the time at which the deformation stage ends and the column thinning stage begins. It is therefore difficult to identify these intinsic timescales from the data.
+
+\subsection{Settling Spheroids}
+\label{subsec:spheroid_dis}
+
+Whilst qualtiative comparisons between the behaviour of spheres and oblate spheroids, it has not been possible to produce a more quantitative comparison. The primary reason for this is that the majority of simulations involving a prolate spheroid have terminated due to the separation between the particle and the interface becoming smaller than the distance between collocation points on either the sphere or the interface. This often occurs during the deformation phase, and so it is impossible to tell whether the particle would float or sink. Additionally, if the simulation does proceed to the column-thinning stage, the particle-interface separation criteria is satisfied long before the interface snapping criteria meaning no data regarding the sinking timescale or the entrained volume can be obtained. With further development of the numerical method, it should be possible to overcome these issues.

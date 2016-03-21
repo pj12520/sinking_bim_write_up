@@ -26,6 +26,7 @@
 \BOOKMARK [3][-]{subsubsection.6.1.1}{Floating versus Sinking}{subsection.6.1}
 \BOOKMARK [3][-]{subsubsection.6.1.2}{Equilibrium Floating Position}{subsection.6.1}
 \BOOKMARK [3][-]{subsubsection.6.1.3}{Entrained Volume}{subsection.6.1}
+\BOOKMARK [3][-]{subsubsection.6.1.4}{Sinking Timescale}{subsection.6.1}
 \BOOKMARK [2][-]{subsection.6.2}{Settling Spheroids}{section.6}
 \BOOKMARK [1][-]{section.7}{Discussion}{}
 \BOOKMARK [2][-]{subsection.7.1}{Floating versus Sinking}{section.7}
@@ -35,6 +36,8 @@
 \BOOKMARK [3][-]{subsubsection.7.1.4}{Comparison with BIM results}{subsection.7.1}
 \BOOKMARK [2][-]{subsection.7.2}{Equilibrium Floating Position}{section.7}
 \BOOKMARK [2][-]{subsection.7.3}{Entrained Volume}{section.7}
+\BOOKMARK [2][-]{subsection.7.4}{Sinking Timescale}{section.7}
+\BOOKMARK [2][-]{subsection.7.5}{Settling Spheroids}{section.7}
 \BOOKMARK [1][-]{appendix.A}{Dirac Delta Function}{}
 \BOOKMARK [1][-]{appendix.B}{Greens Functions for Stokes Flow}{}
 \BOOKMARK [2][-]{subsection.B.1}{Integral for Greens Function for Pressure}{appendix.B}

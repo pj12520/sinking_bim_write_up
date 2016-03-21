@@ -36,4 +36,14 @@ gnuplot "../../sinking_bim_data/trunk/highBo_redo/snap_for_pub.p"
 
 gnuplot "../../sinking_bim_data/trunk/highBo_redo/grad_pub.p"
 
+gnuplot "../../sinking_bim_data/trunk/snap_bond/time_pub.p"
+
+gnuplot "../../sinking_bim_data/trunk/highBo_redo/time_pub.p"
+
+gnuplot "../../sinking_bim_data/trunk/aspect_float_sink2/pub.p"
+
+gnuplot "../../sinking_bim_data/trunk/param1_comp/D=1000/Bo=1000/viscos_rat=1/config_pub.p"
+
+gnuplot "../../sinking_bim_data/trunk/aspect_float_sink2/D=1000/Bo=1000/aspect_rat=0.5/config_pub.p"
+
 make
